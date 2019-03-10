@@ -61,7 +61,7 @@ The trick lies in that in some cases, clauses can be seen **as a whole**, and **
 
 3. Use of the commutative laws, the distributive laws and the associative laws to obtain normal form
 
-![1551875012128](..\img\CH01\010.png)
+![](../img/CH01/010.png)
 
 ## Full Disjunctive(Conjunctive) Normal Form 主析取（合取）范式
 
@@ -85,9 +85,9 @@ If a formula is expressed as **a conjunctive of maxterms**, it is said to be in 
 
  #### DNF & Truth Table
 
-![1551876073621](..\img\CH01\011.png)
+![](../img/CH01/011.png)
 
-![1551876109736](..\img\CH01\012.png)
+![](../img/CH01/012.png)
 
 The reason why this works:
 
@@ -97,7 +97,7 @@ The reason why this works:
 
 #### CNF & Truth Table
 
-![1551876669517](..\img\CH01\013.png)
+![](../img/CH01/013.png)
 
 ## Prenex Normal Form 前束范式
 
@@ -123,5 +123,5 @@ $Q_i(i = 1,2,...,n)$ is ∀ or ∃ and the formula B is **quantifier free**
 
 e.g.
 
-![1552049655225](..\img\CH01\014.png)
+![](../img/CH01/014.png)
 

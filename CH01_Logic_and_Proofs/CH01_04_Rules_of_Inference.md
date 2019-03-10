@@ -32,7 +32,7 @@ An argument in propositional logic is valid when **its argument form is valid**.
 
 e.g.
 
-![1552051586938](..\img\CH01\015.png)
+![](../img/CH01/015.png)
 
 ## Rules of Inference 推理原则
 
@@ -88,9 +88,9 @@ $∀x(P(x) → Q(x))\\¬Q(a),\ where\ a\ is\ a\ particular\ element\ in\ the\ do
 
 ### e.g.1 Propositional Logic 命题逻辑
 
-![1552052562944](..\img\CH01\016.png)
+![](../img/CH01/016.png)
 
-![1552052590682](..\img\CH01\017.png)
+![](../img/CH01/017.png)
 
 **Note**: the second example added an additional premise for the conclusion is always true when r is false, so all we need to proove if that it's true when r is true!
 
@@ -98,13 +98,13 @@ $∀x(P(x) → Q(x))\\¬Q(a),\ where\ a\ is\ a\ particular\ element\ in\ the\ do
 
 ### e.g.2 Quantified Statements 量化命题
 
-![1552125602790](..\img\CH01\018.png)
+![](../img/CH01/018.png)
 
-![1552125638066](..\img\CH01\019.png)
+![](../img/CH01/019.png)
 
 ### e.g.3 Combination 组合使用
 
-![1552059049039](..\img\CH01\020.png)
+![](../img/CH01/020.png)
 
 ## Fallacies 谬误
 
