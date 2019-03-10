@@ -2,10 +2,10 @@
 
 Explain Discrete Mathematics in Detail!
 
-[![Stars](https://img.shields.io/github/stars/mbinary/USTC-CS-Courses-Resource.svg?label=Stars&style=social)](https://github.com/mbinary/USTC-CS-Courses-Resource/stargazers)
-[![Forks](https://img.shields.io/github/forks/mbinary/USTC-CS-Courses-Resource.svg?label=Fork&style=social)](https://github.com/mbinary/USTC-CS-Courses-Resource/network/members)
-[![repo-size](https://img.shields.io/github/repo-size/mbinary/USTC-CS-Courses-Resource.svg)]()
-[![Contributors](https://img.shields.io/github/contributors/mbinary/USTC-CS-Courses-Resource.svg)](https://github.com/mbinary/USTC-CS-Courses-Resource/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg?label=Stars&style=social)](https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail/stargazers)
+[![Forks](https://img.shields.io/github/forks/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg?label=Fork&style=social)](https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail/network/members)
+[![repo-size](https://img.shields.io/github/repo-size/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg)]()
+[![Contributors](https://img.shields.io/github/contributors/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg)](https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail/graphs/contributors)
 [![License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 本项目由浙大计院的NCJ创建和维护，算是第一次在GitHub上面建立大型公开仓库的尝试吧
