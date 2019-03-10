@@ -145,7 +145,7 @@ $¬∃x P(x) ≡ ∀x ¬P(x)​$
 |  $¬∃x P(x)$  |        $∀x ¬P(x)$        |       P(x) is false for every x       | There is an x for which P(x) is true |
 |  $¬∀x P(x)$  |        $∃x ¬P(x)$        | There is an x for which P(x) is false |       P(x) is true for every x       |
 
-![1551926484392](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551926484392.png)
+![1551926484392](..\img\CH01\007.png)
 
 ## Translating from English into Logical Expressions
 
@@ -263,9 +263,9 @@ Negating nested quantifiers by successively applying the rules for negating stat
 
 e.g.
 
-![1551930158583](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551930158583.png)
+![1551930158583](..\img\CH01\008.png)
 
-![1551930172913](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551930172913.png)
+![1551930172913](..\img\CH01\009.png)
 
 ## Quantifications of Two Variables 两个变量的量化式
 

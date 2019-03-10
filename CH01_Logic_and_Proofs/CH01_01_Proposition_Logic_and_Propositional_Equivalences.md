@@ -221,13 +221,13 @@ $¬(p_1 ∧ p_2 ∧ ... ∧ p_n) ≡ ¬p_1 ∨ ¬p_2  ∨  ...  ∨ ¬p_n$
 
 $¬(p_1 ∨ p_2 ∨ ... ∨ p_n) ≡ ¬p_1 ∧ ¬p_2  ∧  ...  ∧ ¬p_n$
 
-![1551430610804](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551430610804.png)
+![](..\img\CH01\001.png)
 
 ### Key Logical Equivalences 重要的逻辑等价式
 
-![1551427074521](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551427074521.png)
+![1551427074521](..\img\CH01\002.png)
 
-![1551427088650](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551427088650.png)
+![1551427088650](..\img\CH01\003.png)
 
 ## Constructing New Logical Equivalences 构建新的逻辑等价式
 
@@ -251,9 +251,9 @@ $A_{n-1} ≡ A_n$
 
 #### Samples of Equivalence Proofs
 
-> ![1551426943535](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551426943535.png)
+> ![1551426943535](..\img\CH01\004.png)
 
-> ![1551426960864](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551426960864.png)
+> ![1551426960864](..\img\CH01\005.png)
 
 
 
@@ -284,7 +284,7 @@ p ↓ q ≡ ¬(p ∨ q)  NOR 或非
 
 ### The Dual of a Compound Proposition 对偶
 
-![1551428464396](C:\Users\Tao Chiang\AppData\Roaming\Typora\typora-user-images\1551428464396.png)
+![1551428464396](..\img\CH01\006.png)
 
 ### Functionally Complete Collection of Logical Operators 功能完备的逻辑连接词集合
 
