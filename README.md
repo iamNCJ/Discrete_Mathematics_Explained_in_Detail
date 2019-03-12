@@ -16,6 +16,10 @@ Explain Discrete Mathematics in Detail!
 
 欢迎各位同仁PR
 
+~~欢迎打赏~~
+
+![](https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG)
+
 > 友情链接：
 >
 > [https://github.com/NessOffice/Coop-Discrete_Mathematics_Explained_in_Detail](https://github.com/NessOffice/Coop-Discrete_Mathematics_Explained_in_Detail)
