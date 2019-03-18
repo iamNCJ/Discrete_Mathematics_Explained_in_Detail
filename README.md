@@ -43,6 +43,8 @@ git clone https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail.git
 >
 > （自认为本项目详细程度完全足够任何人自学）
 
+**禁止将本项目用于商业用途！！！**
+
 ## 如何为本项目做出贡献
 
 ### ~~欢迎打赏~~
