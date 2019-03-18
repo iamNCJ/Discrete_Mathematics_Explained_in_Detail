@@ -1,6 +1,6 @@
 # 离散数学详解Discrete_Mathematics_Explained_in_Detail
 
-Explain Discrete Mathematics in Detail!
+>  **Explain Discrete Mathematics in Detail!**
 
 [![Stars](https://img.shields.io/github/stars/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg?label=Stars&style=social)](https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail/stargazers)
 [![Forks](https://img.shields.io/github/forks/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg?label=Fork&style=social)](https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail/network/members)
@@ -12,16 +12,55 @@ Explain Discrete Mathematics in Detail!
 
 计划将笔记、总结、部分课本内容的翻译（没错，我们用的是全英文教材）commit到上面
 
+## 更新计划
+
 **每周更新**
 
-欢迎各位同仁PR
+## 使用方法
 
-~~欢迎打赏~~
+由于GitHub并不支持渲染Markdown中Latex数学公式，因此推荐将本项目clone下来后使用编辑器打开
+
+```bash
+git clone https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail.git
+```
+
+
+
+或者直接在[我的主页](iamncj.github.io)上阅读
+
+[https://iamncj.github.io/tags/Discrete-Math/](https://iamncj.github.io/tags/Discrete-Math/)
+
+
+
+> 本项目的几大用途：
+>
+> 1. 用于自学
+> 2. 用于预习
+> 3. 课后复习
+> 4. 考前复习
+> 5. 用于科班人士重温CS基础知识
+> 6. ……
+>
+> （自认为本项目详细程度完全足够任何人自学）
+
+## 如何为本项目做出贡献
+
+### ~~欢迎打赏~~
 
 ![](https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG)
 
-> 友情链接：
->
+### Pull Request
+
+**欢迎各位同仁PR**
+
+包括但不限于：
+
+- 将笔记中的图片转为文字（主要是是一些例题）
+- 纠错
+- 提供你的独特想法（如自己的知识框架、脑图等）
+
+## 友情链接
+
 > [https://github.com/NessOffice/Coop-Discrete_Mathematics_Explained_in_Detail](https://github.com/NessOffice/Coop-Discrete_Mathematics_Explained_in_Detail)
 >
 > （浙大软院的Ness维护的离散数学笔记）
