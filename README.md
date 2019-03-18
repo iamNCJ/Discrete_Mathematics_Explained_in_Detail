@@ -26,5 +26,5 @@ Explain Discrete Mathematics in Detail!
 >
 > （浙大软院的Ness维护的离散数学笔记）
 
-![](../img/CC-BY-NC-ND.png)
+![](img/CC-BY-NC-ND.png)
 
