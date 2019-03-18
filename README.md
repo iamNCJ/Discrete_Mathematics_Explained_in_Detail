@@ -47,7 +47,7 @@ git clone https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail.git
 
 ### ~~欢迎打赏~~
 
-![](https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG)
+<img src="https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG" width="400" hegiht="400" align=left />
 
 ### Pull Request
 
