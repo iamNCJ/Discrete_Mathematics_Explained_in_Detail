@@ -84,7 +84,7 @@ $A ⊆ B ⇔ ∀x(x ∈ A → x ∈ B)​$
 
 #### Equal 相等
 
-$A=B\\⇔∀x[(x∈A→x∈B)∧(x∈B→x∈A)]\\⇔(A⊆B)∧(B⊆A)$
+$A=B\\⇔∀x[(x∈A→x∈B)∧(x∈B→x∈A)]\\ ⇔(A⊆B)∧(B⊆A)$
 
 > To show that two sets A and B are equal, show that A ⊆ B and B ⊆ A.
 
