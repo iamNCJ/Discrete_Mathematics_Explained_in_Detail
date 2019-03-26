@@ -22,9 +22,9 @@ A set that is either **finite** *or* has the **same cardinality as the set of po
 
 A set that is not countable is called **uncountable**（**不可数的**）
 
-When an infinite set S is countable, we denote the cardinality of S by $\aleph_0$ (**aleph null**（**“阿里夫零”**）)
+When an infinite set S is countable, we denote the cardinality of S by $$\aleph_0​$$ (**aleph null**（**“阿里夫零”**）)
 
-If |A| = | Z+ |, the set A is **countably infinite**（**可数无限**）
+If $$|A|=|Z^+|$$, the set A is **countably infinite**（**可数无限**）
 
 > Below we will list some examples of countably infinite sets
 
@@ -40,7 +40,7 @@ Hilbert’s Grand Hotel （希尔伯特大酒店）是一个很有意思的问�
 
 ##### e.g.1 The set E of even positive integers 偶数集
 
-Let f(x) = 2x. Then,  f is a bijection from $Z^+$ to $E$
+Let f(x) = 2x. Then,  f is a bijection from $$Z^+$$ to $$E$$
 
 | **x**    | **1** | **2** | **3** | **4** | **……** |
 | -------- | ----- | ----- | ----- | ----- | ------ |
@@ -48,33 +48,33 @@ Let f(x) = 2x. Then,  f is a bijection from $Z^+$ to $E$
 
 > The numbers of positive even integers is the same as positive integers
 >
-> E is a proper subset of $Z^+$, but $|E|=|Z^+|$
+> E is a proper subset of $$Z^+$$, but $$|E|=|Z^+|$$
 
 ##### e.g.2 The set of integers Z 整数集
 
-$Z=\{0,1,-1,2,-2,...\}$
+$$Z=\{0,1,-1,2,-2,...\}$$
 
 $$f(n)=
 \begin{cases}
 -(n-1)/2& \text{n is odd}\\
 n/2& \text{n is even}\\
-\end{cases}​$$
+\end{cases}$$
 
 #### Method 2. Cantor Table 利用Cantor表构造映射
 
 ##### e.g.3 The set of positive rational numbers $Q^+$ 有理数集
 
-$∀x∈Q^+,x=p/q,\ p,q∈Z^+$
+$$\forall x\in Q^+,x=p/q,\ p,q\in Z^+$$
 
-Let $S=\{(p,q)|p,q∈Z^+\}=Z^+×Z^+$
+Let $$S=\{(p,q)|p,q\in Z^+\}=Z^+\times Z^+$$
 
-###### Step 1 Prove $|Q^+|≤|S|$
+###### Step 1 Prove $|Q^+|\leq|S|$
 
-$r=\frac{p}{q}∈Q^+$
+$$r=\frac{p}{q}\in Q^+$$
 
-$\frac{p}{q}→(p,q)$ is injective
+$$\frac{p}{q}\to(p,q)$$ is injective
 
-Hence, $|Q^+|≤|S|$
+Hence, $$|Q^+|\leq|S|$$
 
 ###### Step 2 Prove $|S|=|Z^+|$
 
@@ -89,19 +89,19 @@ Cantor Table
 | **q** | (1,q) | (2,q) | (3,q) |   …   | (p,q) |   …   |
 | **…** |   …   |   …   |   …   |   …   |   …   |   …   |
 
-for any pair (p,q), $n=1+2+3+...+(p+q-2)+q=\frac{(p+q-2)(p+q-1)}{2}+q$
+for any pair (p,q), $$n=1+2+3+...+(p+q-2)+q=\frac{(p+q-2)(p+q-1)}{2}+q$$
 
 this mapping is invertable, which means we found a **bijection**
 
 > An infinite set is countable iff it is possible to list all the elements of the set in a sequence
 
-###### Step 3 Prove $|Z^+|≤|Q^+|$
+###### Step 3 Prove $|Z^+|\leq|Q^+|$
 
-$∵Z^+⊆Q^+$
+$$\because Z^+\subseteq Q^+$$
 
-$∴|Z^+|≤|Q^+|$
+$$\therefore|Z^+|\leq|Q^+|$$
 
-All in all, $|Q^+|=|S|=|Z^+|$
+All in all, $$|Q^+|=|S|=|Z^+|$$
 
 > **Note**:
 >
@@ -113,14 +113,14 @@ We can arrange the numbers in a 2-dimensional table as follows:
 
 |       |       **1**       | **2**  |  **3**   |   **4**   |   **5**   | **…** |
 | :---: | :---------------: | :----: | :------: | :-------: | :-------: | :---: |
-| **1** |   $.\overline1$   |  $.1$  |  $.11$   |  $.111$   |  $.1111$  |   …   |
-| **2** |  $1.\overline1$   |  $1$   |  $1.1$   |  $1.11$   |  $1.111$  |   …   |
-| **3** |  $11.\overline1$  |  $11$  |  $11.1$  |  $11.11$  | $11.111$  |   …   |
-| **4** | $111.\overline1$  | $111$  | $111.1$  | $111.11$  | $111.111$ |   …   |
-| **5** | $1111.\overline1$ | $1111$ | $1111.1$ | $1111.11$ | $1111.111$ |   …   |
+| **1** |   $$.\overline1$$   |  $$.1$$  |  $$.11$$   |  $$.111$$   |  $$.1111$$  |   …   |
+| **2** |  $$1.\overline1$$   |  $$1$$   |  $$1.1$$   |  $$1.11$$   |  $$1.111$$  |   …   |
+| **3** |  $$11.\overline1$$  |  $$11$$  |  $$11.1$$  |  $$11.11$$  | $$11.111$$  |   …   |
+| **4** | $$111.\overline1$$  | $$111$$  | $$111.1$$  | $$111.11$$  | $$111.111$$ |   …   |
+| **5** | $$1111.\overline1$$ | $$1111$$ | $$1111.1$$ | $$1111.11$$ | $$1111.111$$ |   …   |
 | **…** |         …         |   …    |    …     |     …     |     …     |       |
 
-Then number these numbers as before, like 1 to $.\overline1$, 2 to $.1$, 3 to $1.\overline1$, 4 to $.11$, 5 to $1$……
+Then number these numbers as before, like 1 to $$.\overline1$$, 2 to $$.1$$, 3 to $$1.\overline1$$, 4 to $$.11$$, 5 to $$1$$……
 
 Thus, we found a bijection!
 
@@ -157,7 +157,7 @@ Hence, using the conclusion form the last example, we know this statement is tru
    >
    > - Case 1: A and B are finite. (Obviously…)
    > - Case 2: A is infinite and B is finite. (Obviously…)
-   > - Case 3: A and B are both countably infinite. (We can list their elements as $a_1,a_2,a_3,...,a_n,...$ and $b_1,b_2,b_3,...,b_n,...$ respectively. By alternating terms of these two sequences, we can list the elements of A∪B in the infinite sequence $a_1,b_1,a_2,b_2,a_3,b_3,...,a_n,b_n,...$, hence A∪B is countably infinite)
+   > - Case 3: A and B are both countably infinite. (We can list their elements as $$a_1,a_2,a_3,...,a_n,...$$ and $$b_1,b_2,b_3,...,b_n,...$$ respectively. By alternating terms of these two sequences, we can list the elements of A∪B in the infinite sequence $$a_1,b_1,a_2,b_2,a_3,b_3,...,a_n,b_n,...$$, hence A∪B is countably infinite)
    >
    > Q.E.D.
 
@@ -175,43 +175,43 @@ Hence, using the conclusion form the last example, we know this statement is tru
 
 ##### e.g.1 The set of real numbers between 0 and 1 is uncountable
 
-$A=\{x|x∈(0,1)∧x∈R\}$
+$$A=\{x|x\in(0,1)\wedge x\in R\}$$
 
-###### Step 1 Prove $|Z^+|≤|A|$
+###### Step 1 Prove $|Z^+|\leq|A|$
 
-$B=\{\frac{1}{n+1}|n∈Z^+\}$
+$$B=\{\frac{1}{n+1}|n\in Z^+\}$$
 
-$∵|B|=|Z^+|$
+$$\because|B|=|Z^+|$$
 
-and $B∈A$
+and $$B\in A$$
 
-$∴|Z^+|≤|A|$
+$$\therefore|Z^+|\leq|A|$$
 
-###### Step 2 Prove $|Z^+|≠|A|$
+###### Step 2 Prove $|Z^+|\ne|A|$
 
-Assume A is countable, then let $A=\{r_1,r_2,r_3,...,r_n,...\}$
+Assume A is countable, then let $$A=\{r_1,r_2,r_3,...,r_n,...\}$$
 
 Represent each real number in the list using its **decimal expansion**（**十进制表示**）
 
 > List:
 >
-> - $r_1=0.d_{11}d_{12}d_{13}d_{14}d_{15}d_{16}...$
-> - $r_2=0.d_{21}d_{22}d_{23}d_{24}d_{25}d_{26}...$
-> - $r_3=0.d_{31}d_{32}d_{33}d_{34}d_{35}d_{36}...$
+> - $$r_1=0.d_{11}d_{12}d_{13}d_{14}d_{15}d_{16}...$$
+> - $$r_2=0.d_{21}d_{22}d_{23}d_{24}d_{25}d_{26}...$$
+> - $$r_3=0.d_{31}d_{32}d_{33}d_{34}d_{35}d_{36}...$$
 >
 > - …
 
 **Now construct a new number x**
 
-$x=0.x_{1}x_{2}x_{3}x_{4}x_{5}x_{6}x_{7}...$
+$$x=0.x_{1}x_{2}x_{3}x_{4}x_{5}x_{6}x_{7}...$$
 
 $$x_i=
 \begin{cases}
-6& d_{ii}≠6\\
+6& d_{ii}\ne6\\
 7& d_{ii}=6\\
 \end{cases}$$
 
->  明白“对角线法”的意思了吗？简而言之就是将对角线上的元素$d_{ii}$换掉
+>  明白“对角线法”的意思了吗？简而言之就是将对角线上的元素$$d_{ii}$$换掉
 
 **Then x is not equal to any number in the list**
 
@@ -221,21 +221,21 @@ Hence, no such list can exist and hence the interval (0,1) is uncountable
 
 ##### e.g.2 Show that the set of the real numbers with decimal representations consisting of all 1s or 9s is uncountable
 
-Denote the set as A, assume A is countable, then let $A=\{r_1,r_2,r_3,...,r_n,...\}$
+Denote the set as A, assume A is countable, then let $$A=\{r_1,r_2,r_3,...,r_n,...\}$$
 
 Represent each real number in the list using its **decimal expansion**（**十进制表示**）
 
 > List:
 >
-> - $r_1=0.d_{11}d_{12}d_{13}d_{14}d_{15}d_{16}...$
-> - $r_2=0.d_{21}d_{22}d_{23}d_{24}d_{25}d_{26}...$
-> - $r_3=0.d_{31}d_{32}d_{33}d_{34}d_{35}d_{36}...$
+> - $$r_1=0.d_{11}d_{12}d_{13}d_{14}d_{15}d_{16}...$$
+> - $$r_2=0.d_{21}d_{22}d_{23}d_{24}d_{25}d_{26}...$$
+> - $$r_3=0.d_{31}d_{32}d_{33}d_{34}d_{35}d_{36}...$$
 >
 > - …
 
 **Now construct a new number x**
 
-$x=0.x_{1}x_{2}x_{3}x_{4}x_{5}x_{6}x_{7}...$
+$$x=0.x_{1}x_{2}x_{3}x_{4}x_{5}x_{6}x_{7}...$$
 
 $$x_i=
 \begin{cases}
@@ -249,25 +249,25 @@ So whatever sequence we construct, there is always at least a new number that is
 
 Hence, no such list can exist and hence A is uncountable
 
-> 这题与可数集的例题4很像，但是一个可数一个不可数，本质原因在于例题4中的基数为$\aleph_0$，而这里增加了一个9后，基数变为了$2^{\aleph_0}$，而这个数是不可数的，后面会给它一个记号c或者$\aleph_1$
+> 这题与可数集的例题4很像，但是一个可数一个不可数，本质原因在于例题4中的基数为$$\aleph_0$$，而这里增加了一个9后，基数变为了$$2^{\aleph_0}$$，而这个数是不可数的，后面会给它一个记号c或者$$\aleph_1$$
 
 #### Method 2. Find a bijection to an uncountable set 找出到已知不可数集的双射
 
 ##### e.g.3 The set of real numbers has the same cardinality as the set (0,1)
 
- $f(x)=tan(x)$
+ $$f(x)=tan(x)$$
 
-f(x) is a bijection from $(-\frac{\pi}{2},\frac{\pi}{2})$ to R
+f(x) is a bijection from $$(-\frac{\pi}{2},\frac{\pi}{2})$$ to R
 
-$∵|(-\frac{\pi}{2},\frac{\pi}{2})|=|(0,1)|$
+$$∵|(-\frac{\pi}{2},\frac{\pi}{2})|=|(0,1)|$$
 
-$∴|R|=|(0,1)|=c$
+$$∴|R|=|(0,1)|=c$$
 
-> $c=2^{\aleph_0}$
+> $$c=2^{\aleph_0}$$
 
 #### Method 3. Schrőder-Bernstein Theorem
 
-**Schrőder-Bernstein Theorem** : If A and B are sets with $|A|≤|B|$ and $|B|≤|A|$ then $|B|=|A|$. 
+**Schrőder-Bernstein Theorem** : If A and B are sets with $$|A|\leq|B|​$$ and $$|B|\leq|A|$$ then $$|B|=|A|$$. 
 
 In other words, if there are one-to-one functions f from A to B and g from B to A, then there is a one to –one correspondence between A and B.
 
@@ -275,49 +275,49 @@ In other words, if there are one-to-one functions f from A to B and g from B to 
 
 ##### e.g.4 Show that the cardinality of [0,1] is c
 
-$A=[0,1]=\{x|x∈R,0≤x≤1\}$
+$$A=[0,1]=\{x|x\in R,0\leq x\leq 1\}$$
 
-$B=(0,1)=\{x|x∈R,0<x<1\}$
+$$B=(0,1)=\{x|x\in R,0<x<1\}$$
 
-$B⊆A⇒|B|≤|A|$
+$$B\subseteq A\Rightarrow|B|\leq|A|$$
 
-Let $g(x)=\frac{1}{2}x+\frac{1}{4},x∈[0,1]$
+Let $$g(x)=\frac{1}{2}x+\frac{1}{4},x\in[0,1]$$
 
-Hence, g(x) is a bijection from [0,1] to $[\frac{1}{4}, \frac{3}{4}]​$
+Hence, g(x) is a bijection from [0,1] to $$[\frac{1}{4}, \frac{3}{4}]$$
 
-and $[\frac{1}{4}, \frac{3}{4}]\subset (0,1)​$
+and $$[\frac{1}{4}, \frac{3}{4}]\subset (0,1)$$
 
-Thus $|A|≤|B|​$
+Thus $$|A|\leq|B|$$
 
-$∴|A|=|B|=c​$
+$$∴|A|=|B|=c$$
 
-### [Summary 小总结] How to Prove $|A|≤|B|$
+### [Summary 小总结] How to Prove $|A|\leq|B|$
 
-通过以上几道例题可以发现，$|A|≤|B|$的证明经常被用到，这里总结证明此式子的三大方法
+通过以上几道例题可以发现，$$|A|\leq|B|$$的证明经常被用到，这里总结证明此式子的三大方法
 
 #### Method 1. Find an injective 找到一个单射
 
 > in e.g.1 Step1
 >
-> Prove $|Z^+|≤|A|$
+> Prove $$|Z^+|\leq|A|$$
 
-#### Method 2. Prove $A⊆B$
+#### Method 2. Prove $A\subseteq B$
 
 > in e.g.3
 >
-> $A=[0,1]=\{x|x∈R,0≤x≤1\}$
+> $$A=[0,1]=\{x|x\in R,0\leq x\leq 1\}$$
 >
-> $B=(0,1)=\{x|x∈R,0<x<1\}$
+> $$B=(0,1)=\{x|x\in R,0<x<1\}$$
 >
-> $B⊆A⇒|B|≤|A|$
+> $$B\subseteq A\Rightarrow|B|\leq|A|$$
 
 #### Method 3. Prove $|A|=|C|,C\subseteq B$ 在B中找到与A基数相同的子集
 
 > in e.g.3
 >
-> $|A|=[\frac{1}{4}, \frac{3}{4}]$ and $[\frac{1}{4}, \frac{3}{4}]\subset (0,1)$
+> $$|A|=[\frac{1}{4}, \frac{3}{4}]$$ and $$[\frac{1}{4}, \frac{3}{4}]\subset (0,1)​$$
 >
-> Thus $|A|≤|B|$
+> Thus $$|A|\leq|B|$$
 
 ## Applications 理论应用
 
@@ -335,14 +335,14 @@ Next, we show that there are uncountably many different functions from a particu
 
 ### The Continuum Hypothesis 连续统假设
 
-> In brief, $\aleph_0=|Z^+|<|P(Z^+)|=|R|=\aleph_1$
+> In brief, $$\aleph_0=|Z^+|<|P(Z^+)|=|R|=\aleph_1$$
 >
 
 #### 1. Show that $|P(Z^+)|=|R|$
 
-- First, for any $S\in P(Z^+)$, there is a real number r in (0,1) whose **decimal** expansion is
+- First, for any $$S\in P(Z^+)$$, there is a real number r in (0,1) whose **decimal** expansion is
 
-  $r=0.d_1d_2d_3...$
+  $$r=0.d_1d_2d_3...$$
 
   $$d_i=
   \begin{cases}
@@ -350,20 +350,20 @@ Next, we show that there are uncountably many different functions from a particu
   7& i \notin S\\
   \end{cases}$$
 
-  Then we have constructed a one-to-one function from $P(Z^+)$ to (0, 1)
+  Then we have constructed a one-to-one function from $$P(Z^+)​$$ to (0, 1)
 
-- Second, for any r in (0,1), it has a **binary** expansion $r=0.d_1d_2d_3...$ 
+- Second, for any r in (0,1), it has a **binary** expansion $$r=0.d_1d_2d_3...​$$ 
 
-  Then there is a set $\{i|d_i=1\}$
+  Then there is a set $$\{i|d_i=1\}$$
 
-  So we constructed a one-to-one function from (0, 1) to $P(Z^+)$
+  So we constructed a one-to-one function from (0, 1) to $$P(Z^+)$$
 
   > **P.S.**
   >
-  > In order that our function from (0, 1) to $P(Z^+)$ to be well-defined, we must choose which of two equivalent expressions to represent numbers thath ave terminating binary expansions to use (for example, $0.10010\overline1$ versus $0.10011\overline0$); we can decide to always use the terminating form, the one ending in all 0’s.)
+  > In order that our function from (0, 1) to $$P(Z^+)$$ to be well-defined, we must choose which of two equivalent expressions to represent numbers thath ave terminating binary expansions to use (for example, $$0.10010\overline1$$ versus $$0.10011\overline0​$$); we can decide to always use the terminating form, the one ending in all 0’s.)
 
-- By the Schrőder-Bernstein theorem we have $|P(Z^+)|=|(0,1)|=|R|=c$
-- Hence, $c=2^{\aleph_0}$
+- By the Schrőder-Bernstein theorem we have $$|P(Z^+)|=|(0,1)|=|R|=c​$$
+- Hence, $$c=2^{\aleph_0}$$
 
 #### 2. Show that $|Z^+|<|P(Z^+)|$
 
@@ -379,12 +379,12 @@ Next, we show that there are uncountably many different functions from a particu
 > >
 > > Suppose that f is a function from S to P(S). We must show that f is not onto.
 > >
-> > Let $T=\{s\in S|s\notin f(s)\}$. Although T is in the codomian of f, which is P(S), we will show that T is not in the range of f.
+> > Let $$T=\{s\in S|s\notin f(s)\}$$. Although T is in the codomian of f, which is P(S), we will show that T is not in the range of f.
 > >
-> > If it were, then we would have f(t) = T for some $t\in S$
+> > If it were, then we would have f(t) = T for some $$t\in S$$
 > >
-> > 1. Suppose that $t\in T$, then according to the definition of T, $t\notin f(t)$, thus, $t\notin T$, which is a contradiction
-> > 2. Suppose that $t\notin T$, then $t\notin f(t)$, then t follows the definition of T, so $t\in T$, which is again a contradiction
+> > 1. Suppose that $$t\in T$$, then according to the definition of T, $$t\notin f(t)$$, thus, $$t\notin T$$, which is a contradiction
+> > 2. Suppose that $$t\notin T$$, then $$t\notin f(t)$$, then t follows the definition of T, so $$t\in T$$, which is again a contradiction
 > >
 > > Hence, f is not onto. 
 > >
@@ -392,26 +392,27 @@ Next, we show that there are uncountably many different functions from a particu
 > >
 > > ***Step 2***
 > >
-> > The function sending x to {x} for each $x\in S$ is a one-to-one function from S to P(S), hence $|S|\leq|P(S)|$
+> > The function sending x to {x} for each $$x\in S$$ is a one-to-one function from S to P(S), hence $$|S|\leq|P(S)|$$
 > >
 > > ***Step 3***
 > >
-> > Since there is no onto from S to P(S), then there is no one-to-one correspondence, which implies that $|S|\neq|P(S)|$
+> > Since there is no onto from S to P(S), then there is no one-to-one correspondence, which implies that $$|S|\neq|P(S)|$$
 > >
 > > ***All in All***
 > >
-> > $|S|<|P(S)|$
+> > $$|S|<|P(S)|$$
 
-Hence, by the Cantor’s theorem, $|Z^+|<|P(Z^+)|$, which can be expressed as $\aleph_0<2^{\aleph_0}=c$
+Hence, by the Cantor’s theorem, $$|Z^+|<|P(Z^+)|$$, which can be expressed as $$\aleph_0<2^{\aleph_0}=c$$
 
 #### 3. The Hypothesis
 
-The famous continuum hypothesis asserts that there is no cardinal number X between $\aleph_0$ and c
+The famous continuum hypothesis asserts that there is no cardinal number X between $$\aleph_0$$ and c
 
-It tells us that the smallest infinite cardinal numbers forms an infinite sequence $\aleph_0,\aleph_1,\aleph_2,\aleph_3,...$
+It tells us that the smallest infinite cardinal numbers forms an infinite sequence $$\aleph_0,\aleph_1,\aleph_2,\aleph_3,...$$
 
-There are no other cardinal numbers between $\aleph_n$ and $\aleph_{n+1}$, also $\aleph_ {n+1}$is the cardinal number of the power set of a set S, whose own cardinal is $\aleph_n$
+There are no other cardinal numbers between $$\aleph_n$$ and $$\aleph_{n+1}$$, also $$\aleph_ {n+1}$$is the cardinal number of the power set of a set S, whose own cardinal is $$\aleph_n$$
 
-When we talk about $\aleph_0$ and $\aleph_1$, the continuum hypothesis (CH) asserts that there is no cardinal number （基数） *a* such that $\aleph_0<a<\aleph_1$
+When we talk about $$\aleph_0$$ and $$\aleph_1$$, the continuum hypothesis (CH) asserts that there is no cardinal number （基数） *a* such that $$\aleph_0<a<\aleph_1$$
 
-Hence, $c=2^{\aleph_0}=\aleph_1$
+Hence, $$c=2^{\aleph_0}=\aleph_1$$
+

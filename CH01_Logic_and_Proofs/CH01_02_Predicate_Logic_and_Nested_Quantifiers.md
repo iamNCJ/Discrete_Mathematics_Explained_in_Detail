@@ -16,7 +16,7 @@ A predicate (**propositional function 命题函数**) is a statement that contai
 
 Once the values of the variables are specified, the function has a truth value.
 
-$P(x_1,x_2,...,x_n)$ n-place (n-ary) predicate **n位谓词（n元谓词）**
+$$P(x_1,x_2,...,x_n)$$ n-place (n-ary) predicate **n位谓词（n元谓词）**
 
 ### Quantifiers 量词
 
@@ -44,8 +44,8 @@ We need quantifiersto express the meaning of English words including all and som
 
 |          **Statement**          | **When true?** | **When false?** |
 | :-----------------------------: | :------------: | :-------------: |
-| $∀x P(x)$ | P(x) is true for every x. | There is an x for which P(x) is false. |
-| $∃x P(x)$ | There is an x for which P(x) is true. | P(x) is false for every x. |
+| $$\forall x P(x)$$ | P(x) is true for every x. | There is an x for which P(x) is false. |
+| $$\exist x P(x)$$ | There is an x for which P(x) is true. | P(x) is false for every x. |
 
 #### Thinking about Quantifiers 深入理解量词
 
@@ -71,9 +71,9 @@ If the **domain is finite**, a universally quantified proposition is equivalent 
 
 If U consists of the integers 1,2, and 3
 
-$∀x P(x) ≡ P(1) ∧ P(2) ∧ P(3)​$
+$$\forall x P(x)\equiv P(1)\wedge P(2)\wedge P(3)$$
 
-$∃x P(x) ≡ P(1) ∨ P(2) ∨ P(3)​$
+$$\exist x P(x)\equiv P(1)\vee P(2)\vee P(3)$$
 
 > Even if the domains are infinite, you can still think of the quantifiers in this fashion, but the equivalent expressions without quantifiers will be infinitely long.
 
@@ -81,7 +81,7 @@ $∃x P(x) ≡ P(1) ∨ P(2) ∨ P(3)​$
 
  Uniqueness quantifier 唯一性量词
 
-$∃!$ or $∃_1​$
+$$\exist!$$ or $$\exist_1$$
 
 ∃!x P(x) means that P(x) is true for **one and only one x** in the universe of discourse.
 
@@ -112,38 +112,38 @@ x is not occuring in P
 
 - 量词辖域的扩张
 
-$∀xP(x)∨A ≡ ∀x(P(x)∨A)​$
+$$\forall xP(x)\vee A\equiv\forall x(P(x)\vee A)$$
 
-$∀xP(x)∧A ≡ ∀x(P(x)∧A)​$
+$$\forall xP(x)\wedge A\equiv\forall x(P(x)\wedge A)$$
 
-$∃xP(x)∨A ≡ ∃x(P(x)∨A)​$
+$$\exist xP(x)\vee A\equiv\exist x(P(x)\vee A)$$
 
-$∃xP(x)∧A ≡ ∃x(P(x)∧A)​$
+$$\exist xP(x)\wedge A\equiv\exist x(P(x)\wedge A)$$
 
 - 量词辖域的收缩
 
-$∀x(A→P(x)) ≡ A→∀xP(x)​$
+$$\forall x(A\to P(x))\equiv A\to\forall xP(x)$$
 
-$∃x(A→P(x)) ≡ A→∃xP(x)​$
+$$\exist x(A\to P(x))\equiv A\to\exist xP(x)$$
 
 （下面的两个式子很重要）
 
-$∀x(P(x)→A) ≡ ∃xP(x)→A​$
+$$\forall x(P(x)\to A)\equiv\exist xP(x)\to A$$
 
-$∃x(P(x)→A) ≡ ∀xP(x)→A$
+$$\exist x(P(x)\to A)\equiv\forall xP(x)\to A$$
 
 ## Negating Quantified Expressions 量化表达式的否定
 
 ### De Morgan’s Laws for Quantifiers 量词的德·摩根律
 
-$¬∀x P(x) ≡ ∃x ¬P(x)​$
+$$\neg\forall xP(x)\equiv\exist x\neg P(x)$$
 
-$¬∃x P(x) ≡ ∀x ¬P(x)​$
+$$\neg\exist xP(x)\exist\forall x\neg P(x)$$
 
 | **Negation** | **Equivalent Statement** |      **When is Negation True?**       |           **When False?**            |
 | :----------: | :----------------------: | :-----------------------------------: | :----------------------------------: |
-|  $¬∃x P(x)$  |        $∀x ¬P(x)$        |       P(x) is false for every x       | There is an x for which P(x) is true |
-|  $¬∀x P(x)$  |        $∃x ¬P(x)$        | There is an x for which P(x) is false |       P(x) is true for every x       |
+|  $$\neg\exist x P(x)$$  |        $$\forall x\neg P(x)$$        |       P(x) is false for every x       | There is an x for which P(x) is true |
+|  $$\neg\forall x P(x)$$  |        $$\exist x\neg P(x)$$        | There is an x for which P(x) is false |       P(x) is true for every x       |
 
 ![](../img/CH01/007.png)
 
@@ -168,7 +168,7 @@ The very first step is to decide on the domain U.
 
    if U is all people, also define a propositional function S(x) denoting “x is a student in this class”
 
-   $∀x (S(x) ∧J(x))​$ is **not** correct!!!
+   $$\forall x(S(x)\wedge J(x))$$ is **not** correct!!!
 
    if there is **one** x that does not belong to this class, then **the whole statement is false**!
 
@@ -176,7 +176,7 @@ The very first step is to decide on the domain U.
 
    if U is all people
 
-   $∃x (S(x)→ J(x))$ is **not** correct!!!
+   $$\exist x(S(x)\to J(x))$$ is **not** correct!!!
 
    if there is **one** x that does not brlong to this class, the **the whole statement is true**!
 
@@ -207,11 +207,11 @@ Later we will see how to prove that the conclusion follows from the premises.
 
 Two quantifiers are nested if one is within the scope of the other.
 
-e.g. $∀x∃yC(x,y)​$
+e.g. $$\forall x\exist yC(x,y)$$
 
 ## Translating from Nested Quantifiers into English 
 
-> Translate the statement $∀x(C(x)∨∃y(C(y)∧F(x,y)))$ into English, where C(x) is "x has a computer," F(x,y) is "x and y are friends," and the domain for both x and y consists of all students at ZJU. 
+> Translate the statement $$\forall x(C(x)\wedge \exist y(C(y)\wedge F(x,y)))$$ into English, where C(x) is "x has a computer," F(x,y) is "x and y are friends," and the domain for both x and y consists of all students at ZJU. 
 >
 > *Solution*
 >
@@ -235,7 +235,7 @@ e.g. $∀x∃yC(x,y)​$
 >
 > Let *B*(*x, y*) be the statement *y* is the best friend of *x*.
 >
-> $∀x∃y∀z(B(x,y)∧((z≠y)→¬B(x,z)))​$
+> $$\forall x\exist y\forall z(B(x,y)\wedge((z≠y)\to\neg B(x,z)))$$
 
 ## The Order of Quantifiers 量词顺序
 
@@ -243,19 +243,19 @@ The order of nested quantifiers **matters** if quantifiers are of **different ty
 
 e.g.
 
-$∀x∀yP(x,y) ≡ ∀y∀xP(x,y)$
+$$\forall x\forall yP(x,y)\equiv\forall y\forall xP(x,y)$$
 
 However
 
-$∃x∀yP(x,y)​$ is not the same as $∀y∃xP(x,y)​$
+$$\exist x\forall yP(x,y)$$ is not the same as $$\forall y\exist xP(x,y)$$
 
 > **Explanation**
 >
 > Assume P(*x*,*y*) denote "*x* loves *y*", where the domain for variables *x* and *y* consists of all people
 >
-> $∃x∀yP(x,y)$ --> There is someone who loves everyone.
+> $$\exist x\forall yP(x,y)$$ --> There is someone who loves everyone.
 >
-> $∀y∃xP(x,y)$ --> Everybodyi s loved by somebody.
+> $$\forall y\exist xP(x,y)$$ --> Everybodyi s loved by somebody.
 
 ## Negating Nested Quantifiers 嵌套量词的否定
 
@@ -271,8 +271,8 @@ e.g.
 
 |         Statement          |                      When True?                      |                      When False?                      |
 | :------------------------: | :--------------------------------------------------: | :---------------------------------------------------: |
-| $∀x∀yP(x, y)\\∀y∀xP(x, y)$ |         P(x, y) is true for every pair x, y.         |   There is a pair x, y for which P(x, y) is false.    |
-|       $∀x∃yP(x, y)$        | For every x there is a y for which P(x, y) is true.  | There is an x such that P(x, y) is false for every y. |
-|       $∃x∀yP(x, y)$        | There is an x for which P(x, y) is true for every y. | For every x there is a y for which P(x, y) is false.  |
-| $∃x∃yP(x, y)\\∃y∃xP(x, y)$ |   There is a pair x, y for which P(x, y) is true.    |         P(x, y) is false for every pair x, y.         |
+| $$\forall x\forall yP(x, y)\\\forall y\forall xP(x, y)$$ |         P(x, y) is true for every pair x, y.         |   There is a pair x, y for which P(x, y) is false.    |
+|       $$\forall x\exist yP(x, y)$$       | For every x there is a y for which P(x, y) is true.  | There is an x such that P(x, y) is false for every y. |
+|       $$\exist x\forall yP(x, y)$$       | There is an x for which P(x, y) is true for every y. | For every x there is a y for which P(x, y) is false.  |
+| $$\exist x\exist yP(x, y)\\\exist y\exist xP(x, y)$$ |   There is a pair x, y for which P(x, y) is true.    |         P(x, y) is false for every pair x, y.         |
 

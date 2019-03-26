@@ -156,13 +156,13 @@ Two propositions are equivalent if they **always** have the same truth value.
 
 #### How many rows are there in a truth table with npropositional variables?
 
-$2^n$
+$$2^n$$
 
 #### With n propositional variables, we can construct ( ) distinct (i.e., not equivalent) propositions
 
-$2^{2^n}​$
+$$2^{2^n}$$
 
-稍加解释一下，有n个命题变量时，真值表就有了$2^n$种情况，而每一个命题对于每一种情况，它都可以有T和F两个值（注意，如果两个命题在这$2^n$个情况之下真值完全相同，则它们被视为完全等价的两个命题，即在这里被算为一个）那么此时，就有了$2^{2^n}$种不同的真值组合，对应$2^{2^n}$种不同的命题
+稍加解释一下，有n个命题变量时，真值表就有了$$2^n$$种情况，而每一个命题对于每一种情况，它都可以有T和F两个值（注意，如果两个命题在这$$2^n$$个情况之下真值完全相同，则它们被视为完全等价的两个命题，即在这里被算为一个）那么此时，就有了$$2^{2^n}$$种不同的真值组合，对应$$2^{2^n}$$种不同的命题
 
 ## Bit Operations 位运算
 
@@ -170,10 +170,6 @@ $2^{2^n}​$
 - **Boolean variable**: one whose value is either **true or false**.
 - A **bit string** is a sequence of zero or more bits
 - **Bitwise operations** are bit operations extended to bit strings. （按位X）
-
-
-
-
 
 # Propositional Equivalences 命题等价式
 
@@ -217,24 +213,24 @@ The compound propositions *p* and *q* are called **logically equivalent** if *p*
 
 #### The Extended Version of  De Morgan’s Laws 德·摩根律拓展形式
 
-$¬(p_1 ∧ p_2 ∧ ... ∧ p_n) ≡ ¬p_1 ∨ ¬p_2  ∨  ...  ∨ ¬p_n$
+$$\neg(p_1\wedge p_2\wedge ...\wedge p_n) ≡ \neg p_1\vee \neg p_2\vee  ...\vee \neg p_n​$$
 
-$¬(p_1 ∨ p_2 ∨ ... ∨ p_n) ≡ ¬p_1 ∧ ¬p_2  ∧  ...  ∧ ¬p_n$
+$$\neg(p_1\vee p_2\vee ...\vee p_n) ≡ \neg p_1\wedge \neg p_2 \wedge  ...\wedge \neg p_n$$
 
-We will sometimes use the notation $\bigvee_{j = 1}^{n} p_j$ for $p_1 \vee p_2 \vee ... \vee p_n$ and $\bigwedge_{j = 1}^n p_j$ for $p_1 \wedge p_2 \wedge ... \wedge p_n$. Using this notation, the extended version of De Morgan's laws can be written concisely as $\lnot (\bigvee_{j = 1}^n p_j) \equiv \bigwedge_{j = 1}^n p_j $ and $\lnot (\bigwedge_{j = 1}^n p_j) \equiv \bigvee_{j = 1}^n \lnot p_j​$. (Methods for proving these identities will be given in Section 5.1)
+We will sometimes use the notation $$\bigvee_{j = 1}^{n} p_j​$$ for $$p_1 \vee p_2 \vee ... \vee p_n​$$ and $$\bigwedge_{j = 1}^n p_j​$$ for $$p_1 \wedge p_2 \wedge ... \wedge p_n​$$. Using this notation, the extended version of De Morgan's laws can be written concisely as $$\lnot (\bigvee_{j = 1}^n p_j) \equiv \bigwedge_{j = 1}^n p_j ​$$ and $$\lnot (\bigwedge_{j = 1}^n p_j) \equiv \bigvee_{j = 1}^n \lnot p_j​$$. (Methods for proving these identities will be given in Section 5.1)
 
 ### Key Logical Equivalences 重要的逻辑等价式
 
 | **Name**            | **Equivalences**                                             |
 | ------------------- | ------------------------------------------------------------ |
-| Identity laws       | $p \wedge T \equiv p, p \vee F \equiv p$                     |
-| Domination laws     | $p \vee T \equiv T, p \wedge F \equiv F$                     |
-| Idempotent laws     | $p \vee p \equiv p, p \wedge p \equiv p$                     |
-| Double negation law | $\lnot \lnot p \equiv p$                                     |
-| Commutative laws    | $p \vee q \equiv q \vee p, p \wedge q \equiv q \wedge p$     |
-| Associative laws    | $(p \vee q) \vee r \equiv p \vee (q \vee r), (p \wedge q) \wedge r \equiv p \wedge (q \wedge r)$ |
-| Distributive laws   | $p \vee (q \wedge r) \equiv (p \vee q) \wedge (p \vee r), p \wedge (q \vee r) \equiv (p \wedge q) \vee (p \wedge r)$ |
-| De Morgan's laws    | $\lnot (p \wedge q) \equiv \lnot p \vee \lnot q, \lnot (p \vee q) \equiv \lnot p \wedge \lnot q$ |
+| Identity laws       | $$p \wedge T \equiv p, p \vee F \equiv p$$                     |
+| Domination laws     | $$p \vee T \equiv T, p \wedge F \equiv F$$                     |
+| Idempotent laws     | $$p \vee p \equiv p, p \wedge p \equiv p$$                     |
+| Double negation law | $$\lnot \lnot p \equiv p$$                                     |
+| Commutative laws    | $$p \vee q \equiv q \vee p, p \wedge q \equiv q \wedge p$$     |
+| Associative laws    | $$(p \vee q) \vee r \equiv p \vee (q \vee r), (p \wedge q) \wedge r \equiv p \wedge (q \wedge r)$$ |
+| Distributive laws   | $$p \vee (q \wedge r) \equiv (p \vee q) \wedge (p \vee r), p \wedge (q \vee r) \equiv (p \wedge q) \vee (p \wedge r)$$ |
+| De Morgan's laws    | $$\lnot (p \wedge q) \equiv \lnot p \vee \lnot q, \lnot (p \vee q) \equiv \lnot p \wedge \lnot q$$ |
 
 ![](../img/CH01/003.png)
 
@@ -250,13 +246,13 @@ Just like what we do in Algebra
 
 #### 推理逻辑的基础——传递性
 
-$A_1 ≡ A_2$
+$$A_1\equiv A_2$$
 
-$A_2 ≡ A_3$
+$$A_2\equiv A_3$$
 
 ……
 
-$A_{n-1} ≡ A_n$
+$$A_{n-1}\equiv A_n​$$
 
 #### Samples of Equivalence Proofs
 

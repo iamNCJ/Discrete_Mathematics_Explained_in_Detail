@@ -26,7 +26,7 @@ An **argument form**（**论证形式**） in propositional logic is a sequence 
 
 **An argument form is valid** if no matter which particular propositions are substituted for the propositional variables in its premises, the conclusion is true if the premises are all true. 
 
-$p_1\\p_2\\...\\p_n\\ - \\∴q​$
+$$p_1\\p_2\\...\\p_n\\-\\\therefore q$$
 
 An argument in propositional logic is valid when **its argument form is valid**.
 
@@ -40,14 +40,14 @@ e.g.
 
 |       Rule of Inference       |            Tautology             |                             Name                             |
 | :---------------------------: | :------------------------------: | :----------------------------------------------------------: |
-|     $p\\p → q\\ --- \\∴q$     |       $(p ∧ (p → q)) → q$        |                    Modus ponens 假言推理                     |
-|    $¬q\\p → q\\---\\∴ ¬p$     |       $(¬q ∧ (p → q))→¬p$        |                     Modus tollens 取拒式                     |
-| $p → q\\q → r\\---\\∴ p → r$  | $((p → q) ∧ (q → r)) → (p → r)$  |              Hypothetical syllogism 假言三段论               |
-|     $p ∨ q\\¬p\\---\\∴ q$     |        $((p ∨ q)∧¬p) → q$        |               Disjunctive syllogism 析取三段论               |
-|       $p\\---\\∴ p ∨ q$       |          $p → (p ∨ q)$           |                       Addition 附加律                        |
-|       $p ∧ q\\---\\∴ p$       |          $(p ∧ q) → p$           |                    Simplification 化简律                     |
-|     $p\\q\\---\\∴ p ∧ q$      |     $((p) ∧ (q)) → (p ∧ q)$      |                      Conjunction 合取律                      |
-| $p ∨ q\\¬p ∨ r\\---\\∴ q ∨ r$ | $((p ∨ q) ∧ (¬p ∨ r)) → (q ∨ r)$ | Resolution 消解律（**Pay Attention!**This rule has been used widely in many programmes） |
+|     $$p\\p\to q\\ --- \\\therefore q$$     |       $$(p\wedge (p\to q))\to q$$       |                    Modus ponens 假言推理                     |
+|    $$\neg q\\p\to q\\---\\\therefore\neg p$$    |       $$(\neg q\wedge(p\to q))\to\neg p$$       |                     Modus tollens 取拒式                     |
+| $$p\to q\\q\to r\\---\\\therefore p\to r$$ | $$((p\to q)\wedge(q\to r))\to (p\to r)$$ |              Hypothetical syllogism 假言三段论               |
+|     $$p\vee q\\\neg p\\---\\\therefore q$$     |        $$((p\vee q)\wedge\neg p)\to q$$        |               Disjunctive syllogism 析取三段论               |
+|       $$p\\---\\\therefore p\vee q$$       |          $$p\to (p\vee q)$$          |                       Addition 附加律                        |
+|       $$p\wedge q\\---\\\therefore p$$       |          $$(p\wedge q)\to p$$          |                    Simplification 化简律                     |
+|     $$p\\q\\---\\\therefore p\wedge q$$     |     $$((p)\wedge(q))\to(p\wedge q)$$     |                      Conjunction 合取律                      |
+| $$p\wedge q\\\neg p\vee r\\---\\\therefore q\vee r$$ | $$((p\vee q)\wedge(\neg p\vee r))\to (q\vee r)$$ | Resolution 消解律（**Pay Attention!**This rule has been used widely in many programmes） |
 
 > ***A valid argument can lead to an incorrect conclusion if one of its premises is wrong/false!***
 
@@ -56,30 +56,30 @@ e.g.
 > Computer programs have been developed to automate the task of reasoning and proving theorems. Many of these programs make use of a rule of inference known as resolution. This rule of inference is based on the tautology
 >
 
-$((p ∨ q) ∧ (¬p ∨ r)) → (q ∨ r)$
+$$((p\vee q)\wedge (\neg p\vee r))\to(q\vee r)$$
 
-The final disjunction in the resolution rule, $q ∨ r$, is called the **resolvent**（消解式）
+The final disjunction in the resolution rule, $$q\vee r$$, is called the **resolvent**（消解式）
 
 > Resolution is very important in AI!
 
 ### Rules of Inference for Quantified Statements 量化命题的推理规则
 
-|                   Rule of Inference                   |                Name                 |
-| :---------------------------------------------------: | :---------------------------------: |
-|                 $∀xP(x)\\---\\∴ P(c)$                 |  Universal instantiation 全称实例   |
-|  $P(c) for\ an\ arbitrary\ c\\----------\\∴ ∀xP(x)$   |  Universal generalization 全称引入  |
-| $∃xP(x)\\------------\\∴ P(c)\ for\ some\ element\ c$ | Existential instantiation 存在实例  |
-| $P(c)\ for\ some\ element\ c\\-----------\\∴ ∃xP(x)$  | Existential generalization 存在引入 |
+|                      Rule of Inference                       |                Name                 |
+| :----------------------------------------------------------: | :---------------------------------: |
+|           $$\forall xP(x)\\---\\\therefore P(c)$$            |  Universal instantiation 全称实例   |
+| $$P(c) for\ an\ arbitrary\ c\\----------\\\therefore\forall xP(x)$$ |  Universal generalization 全称引入  |
+| $$\exist xP(x)\\------------\\\therefore P(c)\ for\ some\ element\ c$$ | Existential instantiation 存在实例  |
+| $$P(c)\ for\ some\ element\ c\\-----------\\\therefore\exist xP(x)$$ | Existential generalization 存在引入 |
 
 ### Combining Rules of Inference for Propositions and Quantified Statements 命题和量化命题的组合使用
 
 #### Universal Modus Ponens 全称假言推理
 
-$∀x(P(x) → Q(x))\\P(a),\ where\ a\ is\ a\ particular\ element\ in\ the\ domain\\------------------------\\∴ Q(a)​$
+$$\forall x(P(x)\to Q(x))\\P(a),\ where\ a\ is\ a\ particular\ element\ in\ the\ domain\\------------------------\\\therefore Q(a)$$
 
 #### Universal Modus Tollens 全称取拒式
 
-$∀x(P(x) → Q(x))\\¬Q(a),\ where\ a\ is\ a\ particular\ element\ in\ the\ domain\\------------------------\\∴ ¬P(a)$
+$$\forall x(P(x)\to Q(x))\\\neg Q(a),\ where\ a\ is\ a\ particular\ element\ in\ the\ domain\\------------------------\\\therefore\neg P(a)$$
 
 ## Using Rules of Inference to Build Arguments 使用推理规则建立论证
 
@@ -97,7 +97,7 @@ $∀x(P(x) → Q(x))\\¬Q(a),\ where\ a\ is\ a\ particular\ element\ in\ the\ do
 
 **Note**: the second example added an additional premise for the conclusion is always true when r is false, so all we need to proove if that it's true when r is true!
 
-**Note**: If the conclusion is given in a form of $p → q$ , we can convert the argument $p_1∧p_2∧...∧p_n→(p→q)$ to $p_1∧p_2∧...∧p_n∧p→q$ , because they are logically equivalent
+**Note**: If the conclusion is given in a form of $$p\to q$$ , we can convert the argument $$p_1\wedge p_2\wedge ...\wedge p_n\to(p\to q)$$ to $$p_1\wedge p_2\wedge...\wedge p_n\wedge p\to q$$ , because they are logically equivalent
 
 ### e.g.2 Quantified Statements 量化命题
 
@@ -128,7 +128,7 @@ but are based on contingencies rather than tautologies.
 
 **WRONG!!**
 
-$p→q\\¬p\\---\\∴¬q$
+$$p\to q\\\neg p\\---\\\therefore\neg q$$
 
 ### Fallacy of affirming the conclusion 肯定结论的谬误
 > If you are in China, you’re in Asia.
@@ -139,7 +139,7 @@ $p→q\\¬p\\---\\∴¬q$
 
 **WRONG!!**
 
-$p→q\\q\\---\\∴p$
+$$p\to q\\q\\---\\\therefore p$$
 
 # Introduction to Proofs 证明导论
 
@@ -167,9 +167,9 @@ A **conjecture**（猜想） is a statement that is being proposed to be a true 
 
 e.g.
 
-“if *x*>*y*, where x and y are positive real numbers, then $x^2>y^2$.”
+“if *x*>*y*, where x and y are positive real numbers, then $$x^2>y^2​$$.”
 
-**For all positive real numbers *x* and *y***, if *x*>*y*, then $x^2>y^2$.
+**For all positive real numbers *x* and *y***, if *x*>*y*, then $$x^2>y^2​$$.
 
 ### Implicit Implications 暗示关系
 
@@ -177,9 +177,9 @@ e.g.
 
 “The square of an odd integer is odd.”
 
-“**if** an integer *n* is odd, **then** $n^2$ is odd.”
+“**if** an integer *n* is odd, **then** $$n^2$$ is odd.”
 
- “**For all integer *n***, if *n* is odd, then $n^2$ is odd.”
+ “**For all integer *n***, if *n* is odd, then $$n^2$$ is odd.”
 
 ## Methods of Proving Theorems 证明方法
 
@@ -213,7 +213,7 @@ A direct proof shows that a conditional statement p → q is true by showing tha
 
 ### Proof by Contraposition 反证法
 
-$P→Q≡¬Q→¬P​$
+$$P\to Q\equiv\neg Q\to\neg P$$
 
 #### Vacuous Proof 空证明
 
@@ -233,7 +233,7 @@ F → T and T → T are both true.
 
 ### Proof by Contradiction 归谬证明法
 
-$¬p→(q∧¬q)$
+$$\neg p\to(q\wedge\neg q)$$
 
 直接的说，就是先假设p为假，然后推出两个相矛盾的结论
 
@@ -267,13 +267,13 @@ $¬p→(q∧¬q)$
 
 1. assumes that both *p* and *¬q* are true
 
-2. shows that $(p∧¬q)→F​$
+2. shows that $$(p\wedge\neg q)\to F$$
 
 #### Proofs of Equivalence by Contradiction 运用归谬证明法的等价证明法
 
-$p↔q≡(p→q)∧(q→p)​$
+$$p\leftrightarrow q\equiv(p\to q)\wedge(q\to p)$$
 
-$[p_1↔p_2↔...p_n]≡[(p_1→p_2)∧(p_2→p_3)∧...∧(p_n→p_1)]$
+$$[p_1\leftrightarrow p_2\leftrightarrow...p_n]\equiv[(p_1\to p_2)\wedge(p_2\to p_3)\wedge...\wedge(p_n\to p_1)]$$
 
 ### Counterexamples 反例证明法
 
@@ -306,7 +306,7 @@ An ***exhaustive proof*** is a special type of proof by cases where each case in
 
 > **Example**:
 >
-> Show that there are no solutions in integers *x* and *y* of $x^2 + 3y^2=8$
+> Show that there are no solutions in integers *x* and *y* of $$x^2 + 3y^2=8$$
 > $$
 > x = -2,-1,0,1,2
 > $$
@@ -330,7 +330,7 @@ An ***exhaustive proof*** is a special type of proof by cases where each case in
 >
 > **Explanation**:
 >
-> $∀n∃x((x+i)\ is\ composite\ for\ i\ = 1,2,...,n)$
+> $$\forall n\exist x((x+i)\ is\ composite\ for\ i\ = 1,2,...,n)$$
 >
 > **Proof**:
 >
@@ -338,7 +338,7 @@ An ***exhaustive proof*** is a special type of proof by cases where each case in
 >
 > Consider the integers x + 1, x + 2, … , x + n. 
 >
-> Note that i + 1 divides $x + i = (n + 1)! + (i + 1)\ for\ i = 1, 2, … , n$
+> Note that i + 1 divides $$x + i = (n + 1)! + (i + 1)\ for\ i = 1, 2, … , n​$$
 >
 > Hence, *n* consecutive composite positive integers have been given. 
 >
@@ -364,9 +364,9 @@ Assume no *c* exists which makes *P*(*c*) true and derive a contradiction
 >   $$
 >   p_1×p_2×…×p_k=(n!+1)
 >   $$
->   Consider the smallest $p_1$, it is still larger than n
+>   Consider the smallest $$p_1$$, it is still larger than n
 >
->   Let *p =* $p_1$ , then  *p* > *n*, and we are done.  
+>   Let *p =* $$p_1$$ , then  *p* > *n*, and we are done.  
 >
 > Q.E.D.
 >
@@ -383,13 +383,13 @@ There are two parts of a *uniqueness proof*:
 
 > **Example**:
 >
-> Show that if *a* and *b* are real numbers and *a* ≠ 0, then there is a unique real number *r* such that $ar+b=0$
+> Show that if *a* and *b* are real numbers and *a* ≠ 0, then there is a unique real number *r* such that $$ar+b=0$$
 >
 > **Proof**:
 >
-> - **Existence**:  Note that the real number $r = -b/a​$ is a solution of $ar + b = 0​$ because $a(-b/a)+b=-b+b=0​$. Thus, a real number *r* exists for which $ar + b = 0​$.
+> - **Existence**:  Note that the real number $$r = -b/a$$ is a solution of $$ar + b = 0$$ because $$a(-b/a)+b=-b+b=0$$. Thus, a real number *r* exists for which $$ar + b = 0$$.
 >
-> - **Uniqueness**: suppose that *s* is a real number such that $as + b = 0$. Then $as + b = ar + b$, where $r = -b/a$. Subtracting *b* from both sides, we find that *as* = *ar*. Dividing both sides of this last equation by *a*, which is nonzero, we see that *s* = *r*. 
+> - **Uniqueness**: suppose that *s* is a real number such that $$as + b = 0$$. Then $$as + b = ar + b$$, where $$r = -b/a$$. Subtracting *b* from both sides, we find that *as* = *ar*. Dividing both sides of this last equation by *a*, which is nonzero, we see that *s* = *r*. 
 >
 > Q.E.D. 
 
@@ -401,13 +401,13 @@ Using  premises, together with axioms and known theorems to lead to the conclusi
 
 > **Example**:
 >
-> Given two distinct positive real numbers *x* and *y*, their arithmetic mean is $(x+y)/2$ and their geometric mean is $\sqrt{xy}$, the arithmetic mean is always greater than the geometric mean.
+> Given two distinct positive real numbers *x* and *y*, their arithmetic mean is $$(x+y)/2$$ and their geometric mean is $$\sqrt{xy}$$, the arithmetic mean is always greater than the geometric mean.
 >
 > **Note**:
 >
-> if you start from $(x+y)^2≥0$, then it's **forward reasoning**
+> if you start from $$(x+y)^2≥0$$, then it's **forward reasoning**
 >
-> if you start from $(x+y)/2>\sqrt{xy}$, which is the conclusion, then it's **backward reasoning**, the strategy which we will talk about right below here.
+> if you start from $$(x+y)/2>\sqrt{xy}$$, which is the conclusion, then it's **backward reasoning**, the strategy which we will talk about right below here.
 
 ## Backward Reasoning 反向推理
 

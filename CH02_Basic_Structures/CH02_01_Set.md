@@ -74,23 +74,23 @@ The truth set of P(x) is denoted by {x ∈ D | P(x)}.
 
 #### Subset 子集
 
-$A ⊆ B ⇔ ∀x(x ∈ A → x ∈ B)​$
+$$A\subseteq B\Leftrightarrow\forall x\in A\to x\in B)$$
 
 > For any set A
 >
-> - $\phi ⊆A$
+> - $$\phi\subseteq A$$
 >
-> - $A⊆A​$ 
+> - $$A\subseteq A$$ 
 
 #### Equal 相等
 
-$A=B\\⇔∀x[(x∈A→x∈B)∧(x∈B→x∈A)]\\ ⇔(A⊆B)∧(B⊆A)$
+$$\begin{aligned}&A=B\\\Leftrightarrow&\forall x[(x\in A\to x\in B)\wedge(x\in B\to x\in A)]\\\Leftrightarrow&(A\subseteq B)\wedge(B\subseteq A)\end{aligned}$$
 
 > To show that two sets A and B are equal, show that A ⊆ B and B ⊆ A.
 
 #### Proper subset 真子集
 
-$A⊂B\\⇔∀x(x∈A→x∈B)∧∃x(x∈B∧x∉A)\\⇔(A⊆B)∧(A≠B)$
+$$\begin{aligned}&A\subset B\\\Leftrightarrow&\forall x(x\in A\to x\in B)\wedge\exist x(x\in B\wedge x\notin A)\\\Leftrightarrow&(A\subseteq B)\wedge(A\ne B)\end{aligned}$$
 
 ### The Size of a Set 集合的大小
 
@@ -114,9 +114,9 @@ Given a set S, the **power set** of S is the set of all subsets of the set S.
 
 > Note:
 >
-> 1. |S|=n implies |P(S)| = $2^n​$
+> 1. |S|=n implies |P(S)| = $$2^n$$
 > 2. S is finite and so is P(S)
-> 3. $x∈P(S)⇒x⊆S（此处x是一个集合）\\x∈S⇒\{x\}∈P(S)（此处x是一个元素）\\S∈P(S)$
+> 3. $$x\in P(S)\Rightarrow x\in S（此处x是一个集合）\\x\in S\Rightarrow\{x\}\in P(S)（此处x是一个元素）\\S\in P(S)$$
 
 > e.g.
 >
@@ -127,7 +127,7 @@ Given a set S, the **power set** of S is the set of all subsets of the set S.
 > The set {∅} has exactly two subsets, namely, ∅ and the set {∅} itself. Therefore,
 > P({∅}) = {∅, {∅}}.
 >
-> ***A good way to check is to make sure |P(S)| = $2^n$***
+> ***A good way to check is to make sure |P(S)| = $$2^n$$***
 
 ### Cartesian Products 笛卡尔积
 
@@ -137,15 +137,15 @@ The **ordered n-tuple**（有序n元组） (a1, a2, . . . , an) is the ordered c
 
 In particular, **ordered 2-tuples** are called **ordered pairs**（序偶）
 
-> $(x,y)=(u,v)⇒(x=u)∧(y=u)$
+> $$(x,y)=(u,v)\Rightarrow(x=u)\wedge(y=u)$$
 >
-> If $x≠y$, then $(x,y)≠(y,x)$
+> If $$x\ne y$$, then $$(x,y)\ne(y,x)$$
 
 The Cartesian product of A and B, denoted by A × B, is the set of all ordered pairs (a, b), where a ∈ A and b ∈ B. 
 
-$A × B = \{(a, b) | a ∈ A ∧ b ∈ B\}$
+$$A\times B = \{(a, b) | a\in A\wedge b\in B\}$$
 
-$A_1 × A_2 ×· · ·×A_n = \{(a_1, a_2, . . . , a_n) | a_i ∈ A_i\ for\ i = 1, 2, . . . , n\}$
+$$A_1\times A_2\times· · ·\times A_n = \{(a_1, a_2, . . . , a_n) | a_i\in A_i\ for\ i = 1, 2, . . . , n\}$$
 
 > **Note**:
 >
@@ -159,39 +159,39 @@ $A_1 × A_2 ×· · ·×A_n = \{(a_1, a_2, . . . , a_n) | a_i ∈ A_i\ for\ i = 
 
 ### Intersection 交集
 
-$A∩B=\{x|x∈A∧x∈B\}​$
+$$A\cap B=\{x|x\in A\wedge x\in B\}​$$
 
 ![](../img/CH02/02.png)
 
-> Two sets are called *disjoint* if their intersection is the empty set, namely $A∩B = Ø$
+> Two sets are called *disjoint* if their intersection is the empty set, namely $$A\cap B = \empty$$
 
 #### Generalized Intersections 拓展的交集
 
-$A_1∩A_2∩...∩A_n=\bigcap_{i=1}^{n}A_i$
+$$A_1\cap A_2\cap...\cap A_n=\bigcap_{i=1}^{n}A_i$$
 
 ### Union 并集
 
-$A∪B=\{x|x∈A∨x∈B\}​$
+$$A\cup B=\{x|x\in A\vee x\in B\}​$$
 
 ![](../img/CH02/03.png)
 
 > The cardinality of the union of two finite sets:
 >
-> $|A∪B|=|A|+|B|-|A∩B|$
+> $$|A\cup B|=|A|+|B|-|A\cap B|$$
 
 #### Generalized Unions 拓展的并集
 
-$A_1∪A_2∪...∪A_n=\bigcup_{i=1}^{n}A_i$
+$$A_1\cup A_2\cup...\cup A_n=\bigcup_{i=1}^{n}A_i$$
 
 ### Difference 差集
 
-$A-B=\{x|x∈A∧x∉B\}​$
+$$A-B=\{x|x\in A\wedge x\notin B\}$$
 
 ![](../img/CH02/04.png)
 
 ### Complement 补集
 
-$\overline{A} = {x ∈ U | x ∉ A}​$
+$$\overline{A} = {x\in U | x\notin A}$$
 
 (U is the universal set)
 
@@ -199,26 +199,26 @@ $\overline{A} = {x ∈ U | x ∉ A}​$
 
 > **Note**:
 >
-> $A-B=A∩\overline{B}​$
+> $$A-B=A\cap\overline{B}$$
 
 ### Symmetric Difference 对称差分
 
-$A⊕B=(A∪B)-(A∩B)​$
+$$A\oplus B=(A\cup B)-(A\cap B)$$
 
 ## Set Identities 集合恒等式
 
 |                       Identity 恒等式                        |         Name 名称          |
 | :----------------------------------------------------------: | :------------------------: |
-|                    $A ∩ U = A\\A ∪ ∅ = A$                    |    Identity laws 恒等率    |
-|                     $A ∪ U = U\\A∩∅ = ∅$                     |   Domination laws 支配率   |
-|                    $A ∪ A = A\\A ∩ A = A$                    |   Idempotent laws 幂等律   |
-|                 $\overline{\overline{A}}=A$                  |  Complementation law 补率  |
-|                $A ∪ B = B ∪ A\\A ∩ B = B ∩ A$                |  Commutative laws 交换律   |
-|    $A ∪ (B ∪ C) = (A ∪ B) ∪ C\\A ∩ (B ∩ C) = (A ∩ B) ∩ C$    |  Associative laws 结合律   |
-| $A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)\\A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)$ |  Distributive laws 分配律  |
-| $\overline{A ∩ B} = \overline{A} ∪ \overline{B}\\\overline{A ∪ B} = \overline{A} ∩ \overline{B}$ | De Morgan’s laws 德·摩根率 |
-|              $A ∪ (A ∩ B) = A\\A ∩ (A ∪ B) = A$              |   Absorption laws 吸收率   |
-|         $A ∪ \overline{A} = U\\A ∩ \overline{A} = ∅$         |   Complement laws 互补率   |
+|               $$A\cap U = A\\A\cup\empty =A$$                |    Identity laws 恒等率    |
+|             $$A\cup U = U\\A\cap\empty=\empty$$              |   Domination laws 支配率   |
+|                 $$A\cup A = A\\A\cap A = A$$                 |   Idempotent laws 幂等律   |
+|                $$\overline{\overline{A}}=A$$                 |  Complementation law 补率  |
+|           $$A\cup B = B\cup A\\A\cap B = B\cap A$$           |  Commutative laws 交换律   |
+| $$A\cup (B\cup C) = (A\cup B)\cup C\\A\cap (B\cap C) = (A\cap B)\cap C$$ |  Associative laws 结合律   |
+| $$A\cup (B\cap C) = (A\cup B)\cap(A\cup C)\\A\cap (B\cup C) = (A\cap B)\cup(A\cap C)$$ |  Distributive laws 分配律  |
+| $$\overline{A\cap B} = \overline{A} ∪ \overline{B}\\\overline{A\cup B} = \overline{A}\cap \overline{B}$$ | De Morgan’s laws 德·摩根率 |
+|         $$A\cup (A\cap B) = A\\A\cap (A\cup B) = A$$         |   Absorption laws 吸收率   |
+|    $$A\cup \overline{A} = U\\A\cap\overline{A} = \empty$$    |   Complement laws 互补率   |
 
 ### Ways to Prove Set Identities 集合恒等式的证明方法
 
@@ -250,8 +250,8 @@ $A⊕B=(A∪B)-(A∩B)​$
 
 Using bit strings to represent sets
 
-1. Specify an arbitrary ordering of the elements of *U*, for instance $a_1,a_2,...,a_n$
-2. Represent a subset *A* of *U* with the bit string of length n, where the i-th bit is 1 if $a_i$ belongs to *A* and is 0 if $a_i$ does not belong to *A*.
+1. Specify an arbitrary ordering of the elements of *U*, for instance $$a_1,a_2,...,a_n​$$
+2. Represent a subset *A* of *U* with the bit string of length n, where the i-th bit is 1 if $$a_i$$ belongs to *A* and is 0 if $$a_i$$ does not belong to *A*.
 3. Thus, **Union -> bitwise OR** **Intersection -> bitwise AND**
 
 > **Example**:

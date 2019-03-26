@@ -55,7 +55,7 @@ The trick lies in that in some cases, clauses can be seen **as a whole**, and **
 
 2. Faced with **¬**
 
-   $¬(p_1 ∧ p_2 ∧ ... ∧ p_n) ≡ ¬p_1 ∨ ¬p_2  ∨  ...  ∨ ¬p_n​$
+   $$\neg(p_1\wedge p_2\wedge...\wedge p_n)\equiv\neg p_1\vee\neg p_2\vee...\vee\neg p_n$$
 
    ¬¬p ≡ p
 
@@ -106,11 +106,9 @@ The reason why this works:
 > - simplifies the surface structure of the sentence
 > - useful to automated theorem proving
 
-$Q_1x_1Q_2x_2...Q_nx_nB$
+$$Q_1x_1Q_2x_2...Q_nx_nB​$$
 
-$Q_i(i = 1,2,...,n)$ is ∀ or ∃ and the formula B is **quantifier free**
-
-
+$$Q_i(i = 1,2,...,n)$$ is ∀ or ∃ and the formula B is **quantifier free**
 
 **Any expression can be converted into prenex normal form.**
 

@@ -86,7 +86,7 @@ A rough measurement of the running  time of an algorithm based on the **input si
 
 ![](../img/CH03/2.png)
 
-> 1. Equivalent expressions: $f(x)=O(g(x))$ $f(x)\in O(g(x))$
+> 1. Equivalent expressions: $$f(x)=O(g(x))$$ $$f(x)\in O(g(x))$$
 > 2. The pair (C,k) is **never** unique
 > 3. When f(x) is O(g(x)) , and h(x) is a function that has larger absolute values than g(x) does for sufficiently large values of x, it follows that f(x) is O(h(x)) 
 
@@ -98,7 +98,7 @@ A rough measurement of the running  time of an algorithm based on the **input si
 
 ### Some Important Big-O Results
 
-Let $f(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$, where $a_i(i=1,2,3,...)$ are real numbers, then f(x) is $O(x^n)$
+Let $$f(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$$, where $$a_i(i=1,2,3,...)$$ are real numbers, then f(x) is $$O(x^n)$$
 
 ![](../img/CH03/4.png)
 
@@ -108,23 +108,23 @@ Let $f(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$, where $a_i(i=1,2,3,...)$ are real
 
 ### Addition of functions
 
-If $f_1(x)$ is $O(g_1(x))$ and  $f_2(x)$ is $O(g_2(x))$, then  $(f_1+f_2)(x)$  is  $O(max(g_1(x),g_2(x)))$
+If $$f_1(x)$$ is $$O(g_1(x))$$ and  $$f_2(x)$$ is $$O(g_2(x))$$, then  $$(f_1+f_2)(x)$$  is  $$O(max(g_1(x),g_2(x)))$$
 
 ### Multiplication of functions
 
-If $f_1(x)$ is $O(g_1(x))$ and  $f_2(x)$ is $O(g_2(x))$, then $(f_1f_2)(x)$ is $O(g_1(x)g_2(x))$
+If $$f_1(x)$$ is $$O(g_1(x))$$ and  $$f_2(x)$$ is $$O(g_2(x))$$, then $$(f_1f_2)(x)$$ is $$O(g_1(x)g_2(x))$$
 
 ## Big-Omega and Big-Theta Notation
 
-$f(x)$ is $\Omega(g(x))$ if there are constants *C* and *k* such that $|f(x)|\geq C|g(x)|$ whenever *x* > *k*.
+$$f(x)$$ is $$\Omega(g(x))$$ if there are constants *C* and *k* such that $$|f(x)|\geq C|g(x)|$$ whenever *x* > *k*.
 
 ![](../img/CH03/6.png)
 
-$f(x)$ is $\Theta(g(x))$ if $f(x)$ is $O(g(x))$ and $f(x)$ is $\Omega(g(x))$
+$$f(x)$$ is $$\Theta(g(x))$$ if $$f(x)$$ is $$O(g(x))$$ and $$f(x)$$ is $$\Omega(g(x))$$
 
-> $f(x)$ is $\Theta(g(x))$ when there are real numbers $C_1$ and $C_2$ and a positive real number *k* such that
+> $$f(x)$$ is $$\Theta(g(x))$$ when there are real numbers $$C_1$$ and $$C_2$$ and a positive real number *k* such that
 >
-> $C_1|g(x)|\leq|f(x)|\leq C_2|g(x)|$
+> $$C_1|g(x)|\leq|f(x)|\leq C_2|g(x)|$$
 
 ![](../img/CH03/7.png)
 
@@ -189,11 +189,11 @@ be verified in polynomial time.
 
 |     Complexity      |              Terminology               |
 | :-----------------: | :------------------------------------: |
-|     $\Theta(1)$     |     Constant complexity 常量复杂度     |
-|  $\Theta(log\ n)$   |   Logarithmic complexity 对数复杂度    |
-|     $\Theta(n)$     |      Linear complexity 线性复杂度      |
-| $\Theta(n\ log\ n)$ | Linearithmic complexity 线性对数复杂度 |
-|    $\Theta(n^b)$    |   Polynomial complexity 多项式复杂度   |
-|  $\Theta(b^n),b>1$  |   Exponential complexity 指数复杂度    |
-|    $\Theta(n!)$     |    Factorial complexity 阶乘复杂度     |
+|     $$\Theta(1)$$     |     Constant complexity 常量复杂度     |
+|  $$\Theta(log\ n)$$   |   Logarithmic complexity 对数复杂度    |
+|     $$\Theta(n)$$     |      Linear complexity 线性复杂度      |
+| $$\Theta(n\ log\ n)$$ | Linearithmic complexity 线性对数复杂度 |
+|    $$\Theta(n^b)$$    |   Polynomial complexity 多项式复杂度   |
+|  $$\Theta(b^n),b>1$$  |   Exponential complexity 指数复杂度    |
+|    $$\Theta(n!)$$     |    Factorial complexity 阶乘复杂度     |
 
