@@ -16,7 +16,13 @@
 
 **每周更新**
 
-## 使用方法
+## 阅读方法
+
+### GitBook
+
+为了提升阅读效果，已将本仓库中的文章使用GitBook部署到GitHub Pages上，直接访问[https://iamncj.github.io/Discrete_Mathematics_Explained_in_Detail/](https://iamncj.github.io/Discrete_Mathematics_Explained_in_Detail/)阅读即可
+
+### 本地阅读
 
 由于GitHub并不支持渲染Markdown中Latex数学公式，因此推荐将本项目clone下来后使用编辑器打开
 
@@ -26,22 +32,22 @@ git clone https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail.git
 
 
 
-或者直接在[我的主页](iamncj.github.io)上阅读
+~~或者直接在[我的主页](iamncj.github.io)上阅读~~（已停止更新本项目到主页）
 
 [https://iamncj.github.io/tags/Discrete-Math/](https://iamncj.github.io/tags/Discrete-Math/)
 
+## 项目用途
 
+本项目的几大用途：
 
-> 本项目的几大用途：
->
-> 1. 用于自学
-> 2. 用于预习
-> 3. 课后复习
-> 4. 考前复习
-> 5. 用于科班人士重温CS基础知识
-> 6. ……
->
-> （自认为本项目详细程度完全足够任何人自学）
+1. 用于自学
+2. 用于预习
+3. 课后复习
+4. 考前复习
+5. 用于科班人士重温CS基础知识
+6. ……
+
+（自认为本项目详细程度完全足够任何人自学）
 
 **禁止将本项目用于商业用途！！！**
 
