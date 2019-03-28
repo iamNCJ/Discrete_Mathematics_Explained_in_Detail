@@ -4,3 +4,4 @@ node_modules
 book.json
 SUMMARY.md
 others
+*.json
