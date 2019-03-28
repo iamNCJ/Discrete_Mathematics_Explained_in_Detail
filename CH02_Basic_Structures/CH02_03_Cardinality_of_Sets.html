@@ -1,0 +1,878 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>03 Cardinality of Sets · Discrete Mathematics Explained in Detail</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="NCJ">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../CH03_Algorithms/CH03_01_Algorithms.html" />
+    
+    
+    <link rel="prev" href="CH02_02_Function_and_Sequence.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail" target="_blank" class="custom-link">DM Explained in Detail</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://iamncj.github.io" target="_blank" class="custom-link">Personal Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 01 Logic and Proofs</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                    
+                    01 Proposition Logic and Propositional Equivalences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                    
+                    02 Predicate Logic and Nested Quantifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                    
+                    03 Normal Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                    
+                    04 Rules of Inference and Proofs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 02 Basic Structures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="CH02_01_Set.html">
+            
+                <a href="CH02_01_Set.html">
+            
+                    
+                    01 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="CH02_02_Function_and_Sequence.html">
+            
+                <a href="CH02_02_Function_and_Sequence.html">
+            
+                    
+                    02 Function and Sequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="CH02_03_Cardinality_of_Sets.html">
+            
+                <a href="CH02_03_Cardinality_of_Sets.html">
+            
+                    
+                    03 Cardinality of Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 03 Algorithms</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                <a href="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                    
+                    01 Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >03 Cardinality of Sets</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#cardinality-of-sets-&#x96C6;&#x5408;&#x7684;&#x57FA;&#x6570;"><b>1. </b>Cardinality of Sets &#x96C6;&#x5408;&#x7684;&#x57FA;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#relation-between-sets-and-mapping-&#x96C6;&#x5408;&#x4E0E;&#x6620;&#x5C04;&#x7684;&#x5173;&#x7CFB;"><b>1.1. </b>Relation between Sets and Mapping &#x96C6;&#x5408;&#x4E0E;&#x6620;&#x5C04;&#x7684;&#x5173;&#x7CFB;</a></li><li><span class="title-icon "></span><a href="#countable-sets-&#x53EF;&#x6570;&#x96C6;"><b>1.2. </b>Countable Sets &#x53EF;&#x6570;&#x96C6;</a></li><ul><li><span class="title-icon "></span><a href="#hilberts-grand-hotel-&#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x5927;&#x9152;&#x5E97;"><b>1.2.1. </b>Hilbert&#x2019;s Grand Hotel &#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x5927;&#x9152;&#x5E97;</a></li><li><span class="title-icon "></span><a href="#show-that-a-set-is-countable-&#x53EF;&#x6570;&#x6027;&#x8BC1;&#x660E;"><b>1.2.2. </b>Show that a set is countable &#x53EF;&#x6570;&#x6027;&#x8BC1;&#x660E;</a></li><li><span class="title-icon "></span><a href="#the-properties-of-the-countable-sets-&#x53EF;&#x6570;&#x96C6;&#x6027;&#x8D28;"><b>1.2.3. </b>The properties of the countable sets &#x53EF;&#x6570;&#x96C6;&#x6027;&#x8D28;</a></li></ul><li><span class="title-icon "></span><a href="#uncountable-sets-&#x4E0D;&#x53EF;&#x6570;&#x96C6;"><b>1.3. </b>Uncountable Sets &#x4E0D;&#x53EF;&#x6570;&#x96C6;</a></li><ul><li><span class="title-icon "></span><a href="#examples-of-proof-&#x8BC1;&#x660E;&#x4E3E;&#x4F8B;"><b>1.3.1. </b>Examples of Proof &#x8BC1;&#x660E;&#x4E3E;&#x4F8B;</a></li><li><span class="title-icon "></span><a href="#summary-&#x5C0F;&#x603B;&#x7ED3;-how-to-prove-aleqb"><b>1.3.2. </b>[Summary &#x5C0F;&#x603B;&#x7ED3;] How to Prove $|A|\leq|B|$</a></li></ul><li><span class="title-icon "></span><a href="#applications-&#x7406;&#x8BBA;&#x5E94;&#x7528;"><b>1.4. </b>Applications &#x7406;&#x8BBA;&#x5E94;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#computability-&#x53EF;&#x8BA1;&#x7B97;&#x6027;"><b>1.4.1. </b>Computability &#x53EF;&#x8BA1;&#x7B97;&#x6027;</a></li><li><span class="title-icon "></span><a href="#the-continuum-hypothesis-&#x8FDE;&#x7EED;&#x7EDF;&#x5047;&#x8BBE;"><b>1.4.2. </b>The Continuum Hypothesis &#x8FDE;&#x7EED;&#x7EDF;&#x5047;&#x8BBE;</a></li></ul></ul></ul></div><a href="#cardinality-of-sets-&#x96C6;&#x5408;&#x7684;&#x57FA;&#x6570;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><font size="6"> Chaptcer 02 Basic Structures &#x57FA;&#x672C;&#x7ED3;&#x6784;</font>
+
+<p>Part 03 Cardinality of Sets</p>
+<p>Covering 2.5</p>
+<hr>
+<h1 id="cardinality-of-sets-&#x96C6;&#x5408;&#x7684;&#x57FA;&#x6570;"><a name="cardinality-of-sets-&#x96C6;&#x5408;&#x7684;&#x57FA;&#x6570;" class="anchor-navigation-ex-anchor" href="#cardinality-of-sets-&#x96C6;&#x5408;&#x7684;&#x57FA;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Cardinality of Sets &#x96C6;&#x5408;&#x7684;&#x57FA;&#x6570;</h1>
+<p>[TOC]</p>
+<h2 id="relation-between-sets-and-mapping-&#x96C6;&#x5408;&#x4E0E;&#x6620;&#x5C04;&#x7684;&#x5173;&#x7CFB;"><a name="relation-between-sets-and-mapping-&#x96C6;&#x5408;&#x4E0E;&#x6620;&#x5C04;&#x7684;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#relation-between-sets-and-mapping-&#x96C6;&#x5408;&#x4E0E;&#x6620;&#x5C04;&#x7684;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Relation between Sets and Mapping &#x96C6;&#x5408;&#x4E0E;&#x6620;&#x5C04;&#x7684;&#x5173;&#x7CFB;</h2>
+<p>The cardinality of a set A is equal to the cardinality of a set B, denoted | A | = | B |, iff <strong>there exists a bijection from A to B</strong>.</p>
+<p>If <strong>there is an injection from A to B</strong>, the cardinality of A is less than or the same as the cardinality of B and we write  |A| &#x2264; |B|. When |A| &#x2264; |B| and A and B have different cardinality, we say that the cardinality of A is less than the cardinality of B and write |A| &lt; |B|.</p>
+<h2 id="countable-sets-&#x53EF;&#x6570;&#x96C6;"><a name="countable-sets-&#x53EF;&#x6570;&#x96C6;" class="anchor-navigation-ex-anchor" href="#countable-sets-&#x53EF;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Countable Sets &#x53EF;&#x6570;&#x96C6;</h2>
+<p>A set that is either <strong>finite</strong> <em>or</em> has the <strong>same cardinality as the set of positive integers</strong> called <strong>countable</strong>&#xFF08;<strong>&#x53EF;&#x6570;&#x7684;</strong>&#xFF09;</p>
+<p>A set that is not countable is called <strong>uncountable</strong>&#xFF08;<strong>&#x4E0D;&#x53EF;&#x6570;&#x7684;</strong>&#xFF09;</p>
+<p>When an infinite set S is countable, we denote the cardinality of S by <script type="math/tex; ">\aleph_0​</script> (<strong>aleph null</strong>&#xFF08;<strong>&#x201C;&#x963F;&#x91CC;&#x592B;&#x96F6;&#x201D;</strong>&#xFF09;)</p>
+<p>If <script type="math/tex; ">|A|=|Z^+|</script>, the set A is <strong>countably infinite</strong>&#xFF08;<strong>&#x53EF;&#x6570;&#x65E0;&#x9650;</strong>&#xFF09;</p>
+<blockquote>
+<p>Below we will list some examples of countably infinite sets</p>
+</blockquote>
+<h3 id="hilberts-grand-hotel-&#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x5927;&#x9152;&#x5E97;"><a name="hilberts-grand-hotel-&#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x5927;&#x9152;&#x5E97;" class="anchor-navigation-ex-anchor" href="#hilberts-grand-hotel-&#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x5927;&#x9152;&#x5E97;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Hilbert&#x2019;s Grand Hotel &#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x5927;&#x9152;&#x5E97;</h3>
+<p>Hilbert&#x2019;s Grand Hotel &#xFF08;&#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x5927;&#x9152;&#x5E97;&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x6709;&#x610F;&#x601D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5B83;&#x6709;&#x5F88;&#x591A;&#x7EC6;&#x5206;&#x5C0F;&#x95EE;&#x9898;&#xFF0C;&#x6BCF;&#x4E2A;&#x5C0F;&#x95EE;&#x9898;&#x7684;&#x8BC1;&#x660E;&#x601D;&#x60F3;&#x90FD;&#x80FD;&#x88AB;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x95EE;&#x9898;&#x7684;&#x8BC1;&#x660E;&#xFF0C;&#x53EF;&#x8C13;&#x601D;&#x60F3;&#x7684;&#x6E38;&#x620F;&#x3002;&#x7BC7;&#x5E45;&#x6709;&#x9650;&#x4E0D;&#x8FC7;&#x591A;&#x4ECB;&#x7ECD;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x53EF;&#x4EE5;&#x53C2;&#x770B;&#x300A;&#x79BB;&#x6563;&#x6570;&#x5B66;&#x53CA;&#x5176;&#x5E94;&#x7528;&#x300B;&#x7684;&#x4F8B;&#x9898;&#x548C;&#x4E60;&#x9898;&#x3002;</p>
+<h3 id="show-that-a-set-is-countable-&#x53EF;&#x6570;&#x6027;&#x8BC1;&#x660E;"><a name="show-that-a-set-is-countable-&#x53EF;&#x6570;&#x6027;&#x8BC1;&#x660E;" class="anchor-navigation-ex-anchor" href="#show-that-a-set-is-countable-&#x53EF;&#x6570;&#x6027;&#x8BC1;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Show that a set is countable &#x53EF;&#x6570;&#x6027;&#x8BC1;&#x660E;</h3>
+<blockquote>
+<p><strong>Key</strong>: <strong><em>Find a bijection!</em></strong></p>
+</blockquote>
+<h4 id="method-1-linear-mapping-&#x7B80;&#x5355;&#x7684;&#x7EBF;&#x6027;&#x6620;&#x5C04;"><a name="method-1-linear-mapping-&#x7B80;&#x5355;&#x7684;&#x7EBF;&#x6027;&#x6620;&#x5C04;" class="anchor-navigation-ex-anchor" href="#method-1-linear-mapping-&#x7B80;&#x5355;&#x7684;&#x7EBF;&#x6027;&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-1-linear-mapping-&#x7B80;&#x5355;&#x7684;&#x7EBF;&#x6027;&#x6620;&#x5C04;" class="plugin-anchor" href="#method-1-linear-mapping-&#x7B80;&#x5355;&#x7684;&#x7EBF;&#x6027;&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>Method 1. Linear Mapping &#x7B80;&#x5355;&#x7684;&#x7EBF;&#x6027;&#x6620;&#x5C04;</h4>
+<h5 id="eg1-the-set-e-of-even-positive-integers-&#x5076;&#x6570;&#x96C6;"><a name="eg1-the-set-e-of-even-positive-integers-&#x5076;&#x6570;&#x96C6;" class="anchor-navigation-ex-anchor" href="#eg1-the-set-e-of-even-positive-integers-&#x5076;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg1-the-set-e-of-even-positive-integers-&#x5076;&#x6570;&#x96C6;" class="plugin-anchor" href="#eg1-the-set-e-of-even-positive-integers-&#x5076;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.1 The set E of even positive integers &#x5076;&#x6570;&#x96C6;</h5>
+<p>Let f(x) = 2x. Then,  f is a bijection from <script type="math/tex; ">Z^+</script> to <script type="math/tex; ">E</script></p>
+<table>
+<thead>
+<tr>
+<th><strong>x</strong></th>
+<th><strong>1</strong></th>
+<th><strong>2</strong></th>
+<th><strong>3</strong></th>
+<th><strong>4</strong></th>
+<th><strong>&#x2026;&#x2026;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>f(x)</strong></td>
+<td><strong>2</strong></td>
+<td><strong>4</strong></td>
+<td><strong>6</strong></td>
+<td><strong>8</strong></td>
+<td><strong>&#x2026;&#x2026;</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The numbers of positive even integers is the same as positive integers</p>
+<p>E is a proper subset of <script type="math/tex; ">Z^+</script>, but <script type="math/tex; ">|E|=|Z^+|</script></p>
+</blockquote>
+<h5 id="eg2-the-set-of-integers-z-&#x6574;&#x6570;&#x96C6;"><a name="eg2-the-set-of-integers-z-&#x6574;&#x6570;&#x96C6;" class="anchor-navigation-ex-anchor" href="#eg2-the-set-of-integers-z-&#x6574;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg2-the-set-of-integers-z-&#x6574;&#x6570;&#x96C6;" class="plugin-anchor" href="#eg2-the-set-of-integers-z-&#x6574;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.2 The set of integers Z &#x6574;&#x6570;&#x96C6;</h5>
+<p><script type="math/tex; ">Z=\{0,1,-1,2,-2,...\}</script></p>
+<p><script type="math/tex; ">f(n)=
+\begin{cases}
+-(n-1)/2& \text{n is odd}\\
+n/2& \text{n is even}\\
+\end{cases}</script></p>
+<h4 id="method-2-cantor-table-&#x5229;&#x7528;cantor&#x8868;&#x6784;&#x9020;&#x6620;&#x5C04;"><a name="method-2-cantor-table-&#x5229;&#x7528;cantor&#x8868;&#x6784;&#x9020;&#x6620;&#x5C04;" class="anchor-navigation-ex-anchor" href="#method-2-cantor-table-&#x5229;&#x7528;cantor&#x8868;&#x6784;&#x9020;&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-2-cantor-table-&#x5229;&#x7528;cantor&#x8868;&#x6784;&#x9020;&#x6620;&#x5C04;" class="plugin-anchor" href="#method-2-cantor-table-&#x5229;&#x7528;cantor&#x8868;&#x6784;&#x9020;&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>Method 2. Cantor Table &#x5229;&#x7528;Cantor&#x8868;&#x6784;&#x9020;&#x6620;&#x5C04;</h4>
+<h5 id="eg3-the-set-of-positive-rational-numbers-q-&#x6709;&#x7406;&#x6570;&#x96C6;"><a name="eg3-the-set-of-positive-rational-numbers-q-&#x6709;&#x7406;&#x6570;&#x96C6;" class="anchor-navigation-ex-anchor" href="#eg3-the-set-of-positive-rational-numbers-q-&#x6709;&#x7406;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg3-the-set-of-positive-rational-numbers-q-&#x6709;&#x7406;&#x6570;&#x96C6;" class="plugin-anchor" href="#eg3-the-set-of-positive-rational-numbers-q-&#x6709;&#x7406;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.3 The set of positive rational numbers $Q^+$ &#x6709;&#x7406;&#x6570;&#x96C6;</h5>
+<p><script type="math/tex; ">\forall x\in Q^+,x=p/q,\ p,q\in Z^+</script></p>
+<p>Let <script type="math/tex; ">S=\{(p,q)|p,q\in Z^+\}=Z^+\times Z^+</script></p>
+<h6 id="step-1-prove-qleqs"><a name="step-1-prove-qleqs" class="anchor-navigation-ex-anchor" href="#step-1-prove-qleqs"><i class="fa fa-link" aria-hidden="true"></i></a><a name="step-1-prove-qleqs" class="plugin-anchor" href="#step-1-prove-qleqs"><i class="fa fa-link" aria-hidden="true"></i></a>Step 1 Prove $|Q^+|\leq|S|$</h6>
+<p><script type="math/tex; ">r=\frac{p}{q}\in Q^+</script></p>
+<p><script type="math/tex; ">\frac{p}{q}\to(p,q)</script> is injective</p>
+<p>Hence, <script type="math/tex; ">|Q^+|\leq|S|</script></p>
+<h6 id="step-2-prove-sz"><a name="step-2-prove-sz" class="anchor-navigation-ex-anchor" href="#step-2-prove-sz"><i class="fa fa-link" aria-hidden="true"></i></a><a name="step-2-prove-sz" class="plugin-anchor" href="#step-2-prove-sz"><i class="fa fa-link" aria-hidden="true"></i></a>Step 2 Prove $|S|=|Z^+|$</h6>
+<p>Cantor Table</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>1</strong></th>
+<th style="text-align:center"><strong>2</strong></th>
+<th style="text-align:center"><strong>3</strong></th>
+<th style="text-align:center"><strong>&#x2026;</strong></th>
+<th style="text-align:center"><strong>p</strong></th>
+<th style="text-align:center"><strong>&#x2026;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>1</strong></td>
+<td style="text-align:center">(1,1)</td>
+<td style="text-align:center">(2,1)</td>
+<td style="text-align:center">(3,1)</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">(p,1)</td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>2</strong></td>
+<td style="text-align:center">(1,2)</td>
+<td style="text-align:center">(2,2)</td>
+<td style="text-align:center">(3,2)</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">(p,2)</td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>3</strong></td>
+<td style="text-align:center">(1,3)</td>
+<td style="text-align:center">(2,3)</td>
+<td style="text-align:center">(3,3)</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">(p,3)</td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>&#x2026;</strong></td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>q</strong></td>
+<td style="text-align:center">(1,q)</td>
+<td style="text-align:center">(2,q)</td>
+<td style="text-align:center">(3,q)</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">(p,q)</td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>&#x2026;</strong></td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+<p>for any pair (p,q), <script type="math/tex; ">n=1+2+3+...+(p+q-2)+q=\frac{(p+q-2)(p+q-1)}{2}+q</script></p>
+<p>this mapping is invertable, which means we found a <strong>bijection</strong></p>
+<blockquote>
+<p>An infinite set is countable iff it is possible to list all the elements of the set in a sequence</p>
+</blockquote>
+<h6 id="step-3-prove-zleqq"><a name="step-3-prove-zleqq" class="anchor-navigation-ex-anchor" href="#step-3-prove-zleqq"><i class="fa fa-link" aria-hidden="true"></i></a><a name="step-3-prove-zleqq" class="plugin-anchor" href="#step-3-prove-zleqq"><i class="fa fa-link" aria-hidden="true"></i></a>Step 3 Prove $|Z^+|\leq|Q^+|$</h6>
+<p><script type="math/tex; ">\because Z^+\subseteq Q^+</script></p>
+<p><script type="math/tex; ">\therefore|Z^+|\leq|Q^+|</script></p>
+<p>All in all, <script type="math/tex; ">|Q^+|=|S|=|Z^+|</script></p>
+<blockquote>
+<p><strong>Note</strong>:</p>
+<p>The set of <strong>all rational numbers Q</strong>, positive and negative, is also countable infinite. </p>
+</blockquote>
+<h5 id="eg4-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-is-countable"><a name="eg4-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-is-countable" class="anchor-navigation-ex-anchor" href="#eg4-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-is-countable"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg4-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-is-countable" class="plugin-anchor" href="#eg4-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-is-countable"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.4 Show that the set of the real numbers with decimal representations consisting of all 1s is countable</h5>
+<p>We can arrange the numbers in a 2-dimensional table as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>1</strong></th>
+<th style="text-align:center"><strong>2</strong></th>
+<th style="text-align:center"><strong>3</strong></th>
+<th style="text-align:center"><strong>4</strong></th>
+<th style="text-align:center"><strong>5</strong></th>
+<th style="text-align:center"><strong>&#x2026;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>1</strong></td>
+<td style="text-align:center"><script type="math/tex; ">.\overline1</script></td>
+<td style="text-align:center"><script type="math/tex; ">.1</script></td>
+<td style="text-align:center"><script type="math/tex; ">.11</script></td>
+<td style="text-align:center"><script type="math/tex; ">.111</script></td>
+<td style="text-align:center"><script type="math/tex; ">.1111</script></td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>2</strong></td>
+<td style="text-align:center"><script type="math/tex; ">1.\overline1</script></td>
+<td style="text-align:center"><script type="math/tex; ">1</script></td>
+<td style="text-align:center"><script type="math/tex; ">1.1</script></td>
+<td style="text-align:center"><script type="math/tex; ">1.11</script></td>
+<td style="text-align:center"><script type="math/tex; ">1.111</script></td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>3</strong></td>
+<td style="text-align:center"><script type="math/tex; ">11.\overline1</script></td>
+<td style="text-align:center"><script type="math/tex; ">11</script></td>
+<td style="text-align:center"><script type="math/tex; ">11.1</script></td>
+<td style="text-align:center"><script type="math/tex; ">11.11</script></td>
+<td style="text-align:center"><script type="math/tex; ">11.111</script></td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>4</strong></td>
+<td style="text-align:center"><script type="math/tex; ">111.\overline1</script></td>
+<td style="text-align:center"><script type="math/tex; ">111</script></td>
+<td style="text-align:center"><script type="math/tex; ">111.1</script></td>
+<td style="text-align:center"><script type="math/tex; ">111.11</script></td>
+<td style="text-align:center"><script type="math/tex; ">111.111</script></td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>5</strong></td>
+<td style="text-align:center"><script type="math/tex; ">1111.\overline1</script></td>
+<td style="text-align:center"><script type="math/tex; ">1111</script></td>
+<td style="text-align:center"><script type="math/tex; ">1111.1</script></td>
+<td style="text-align:center"><script type="math/tex; ">1111.11</script></td>
+<td style="text-align:center"><script type="math/tex; ">1111.111</script></td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>&#x2026;</strong></td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+<td style="text-align:center">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+<p>Then number these numbers as before, like 1 to <script type="math/tex; ">.\overline1</script>, 2 to <script type="math/tex; ">.1</script>, 3 to <script type="math/tex; ">1.\overline1</script>, 4 to <script type="math/tex; ">.11</script>, 5 to <script type="math/tex; ">1</script>&#x2026;&#x2026;</p>
+<p>Thus, we found a bijection!</p>
+<p>Q.E.D.</p>
+<h4 id="method-3-define-an-order-for-strings-&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><a name="method-3-define-an-order-for-strings-&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#method-3-define-an-order-for-strings-&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-3-define-an-order-for-strings-&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;" class="plugin-anchor" href="#method-3-define-an-order-for-strings-&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>Method 3. Define an order for strings &#x5B57;&#x7B26;&#x4E32;&#x7684;&#x201C;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;&#x201D;</h4>
+<h5 id="eg5-show-that-the-set-of-finite-strings-s-over-a-finite-alphabet-a-is-countably-infinite"><a name="eg5-show-that-the-set-of-finite-strings-s-over-a-finite-alphabet-a-is-countably-infinite" class="anchor-navigation-ex-anchor" href="#eg5-show-that-the-set-of-finite-strings-s-over-a-finite-alphabet-a-is-countably-infinite"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg5-show-that-the-set-of-finite-strings-s-over-a-finite-alphabet-a-is-countably-infinite" class="plugin-anchor" href="#eg5-show-that-the-set-of-finite-strings-s-over-a-finite-alphabet-a-is-countably-infinite"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.5 Show that the set of finite strings S over a finite alphabet A is countably infinite</h5>
+<p>Assume an alphabetical ordering of symbols in A. Show that the strings can be listed in a sequence. First list</p>
+<ol>
+<li>All the strings of length 0 in alphabetical order.</li>
+<li>Then all the strings of length 1 in lexicographic (as in a dictionary) order.</li>
+<li>Then all the strings of length 2 in lexicographic order. </li>
+<li>And so on.</li>
+</ol>
+<p>This implies a bijection from N to S and hence it is a countably infinite set.</p>
+<h5 id="eg6-show-that-the-set-of-all-java-programs-is-countable"><a name="eg6-show-that-the-set-of-all-java-programs-is-countable" class="anchor-navigation-ex-anchor" href="#eg6-show-that-the-set-of-all-java-programs-is-countable"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg6-show-that-the-set-of-all-java-programs-is-countable" class="plugin-anchor" href="#eg6-show-that-the-set-of-all-java-programs-is-countable"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.6 Show that the set of all Java programs is countable</h5>
+<p>A computer program written in a programming language can be thought of as a string of symbols from a finite alphabet</p>
+<p>Hence, using the conclusion form the last example, we know this statement is true.</p>
+<h3 id="the-properties-of-the-countable-sets-&#x53EF;&#x6570;&#x96C6;&#x6027;&#x8D28;"><a name="the-properties-of-the-countable-sets-&#x53EF;&#x6570;&#x96C6;&#x6027;&#x8D28;" class="anchor-navigation-ex-anchor" href="#the-properties-of-the-countable-sets-&#x53EF;&#x6570;&#x96C6;&#x6027;&#x8D28;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. The properties of the countable sets &#x53EF;&#x6570;&#x96C6;&#x6027;&#x8D28;</h3>
+<ol>
+<li><p>No infinite set has a smaller cardinality than a countable set</p>
+</li>
+<li><p>The union of two countable sets is countable</p>
+<blockquote>
+<p><strong>Proof</strong>:</p>
+<p>Suppose that A and B are both countable sets. Without loss of generality, we can assume that A and B are disjoint.</p>
+<ul>
+<li>Case 1: A and B are finite. (Obviously&#x2026;)</li>
+<li>Case 2: A is infinite and B is finite. (Obviously&#x2026;)</li>
+<li>Case 3: A and B are both countably infinite. (We can list their elements as <script type="math/tex; ">a_1,a_2,a_3,...,a_n,...</script> and <script type="math/tex; ">b_1,b_2,b_3,...,b_n,...</script> respectively. By alternating terms of these two sequences, we can list the elements of A&#x222A;B in the infinite sequence <script type="math/tex; ">a_1,b_1,a_2,b_2,a_3,b_3,...,a_n,b_n,...</script>, hence A&#x222A;B is countably infinite)</li>
+</ul>
+<p>Q.E.D.</p>
+</blockquote>
+</li>
+<li><p>The union of finite number of countable sets is countable</p>
+</li>
+<li><p>The union of a countable number of countable sets is countable</p>
+</li>
+</ol>
+<h2 id="uncountable-sets-&#x4E0D;&#x53EF;&#x6570;&#x96C6;"><a name="uncountable-sets-&#x4E0D;&#x53EF;&#x6570;&#x96C6;" class="anchor-navigation-ex-anchor" href="#uncountable-sets-&#x4E0D;&#x53EF;&#x6570;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Uncountable Sets &#x4E0D;&#x53EF;&#x6570;&#x96C6;</h2>
+<blockquote>
+<p>We mainly talks about how to prove a set is uncountable</p>
+</blockquote>
+<h3 id="examples-of-proof-&#x8BC1;&#x660E;&#x4E3E;&#x4F8B;"><a name="examples-of-proof-&#x8BC1;&#x660E;&#x4E3E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#examples-of-proof-&#x8BC1;&#x660E;&#x4E3E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. Examples of Proof &#x8BC1;&#x660E;&#x4E3E;&#x4F8B;</h3>
+<h4 id="method-1-cantor-diagonalization-argument-&#x5EB7;&#x6258;&#x5C14;&#x5BF9;&#x89D2;&#x7EBF;&#x6CD5;"><a name="method-1-cantor-diagonalization-argument-&#x5EB7;&#x6258;&#x5C14;&#x5BF9;&#x89D2;&#x7EBF;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#method-1-cantor-diagonalization-argument-&#x5EB7;&#x6258;&#x5C14;&#x5BF9;&#x89D2;&#x7EBF;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-1-cantor-diagonalization-argument-&#x5EB7;&#x6258;&#x5C14;&#x5BF9;&#x89D2;&#x7EBF;&#x6CD5;" class="plugin-anchor" href="#method-1-cantor-diagonalization-argument-&#x5EB7;&#x6258;&#x5C14;&#x5BF9;&#x89D2;&#x7EBF;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Method 1. Cantor Diagonalization Argument &#x5EB7;&#x6258;&#x5C14;&#x5BF9;&#x89D2;&#x7EBF;&#x6CD5;</h4>
+<h5 id="eg1-the-set-of-real-numbers-between-0-and-1-is-uncountable"><a name="eg1-the-set-of-real-numbers-between-0-and-1-is-uncountable" class="anchor-navigation-ex-anchor" href="#eg1-the-set-of-real-numbers-between-0-and-1-is-uncountable"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg1-the-set-of-real-numbers-between-0-and-1-is-uncountable" class="plugin-anchor" href="#eg1-the-set-of-real-numbers-between-0-and-1-is-uncountable"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.1 The set of real numbers between 0 and 1 is uncountable</h5>
+<p><script type="math/tex; ">A=\{x|x\in(0,1)\wedge x\in R\}</script></p>
+<h6 id="step-1-prove-zleqa"><a name="step-1-prove-zleqa" class="anchor-navigation-ex-anchor" href="#step-1-prove-zleqa"><i class="fa fa-link" aria-hidden="true"></i></a><a name="step-1-prove-zleqa" class="plugin-anchor" href="#step-1-prove-zleqa"><i class="fa fa-link" aria-hidden="true"></i></a>Step 1 Prove $|Z^+|\leq|A|$</h6>
+<p><script type="math/tex; ">B=\{\frac{1}{n+1}|n\in Z^+\}</script></p>
+<p><script type="math/tex; ">\because|B|=|Z^+|</script></p>
+<p>and <script type="math/tex; ">B\in A</script></p>
+<p><script type="math/tex; ">\therefore|Z^+|\leq|A|</script></p>
+<h6 id="step-2-prove-znea"><a name="step-2-prove-znea" class="anchor-navigation-ex-anchor" href="#step-2-prove-znea"><i class="fa fa-link" aria-hidden="true"></i></a><a name="step-2-prove-znea" class="plugin-anchor" href="#step-2-prove-znea"><i class="fa fa-link" aria-hidden="true"></i></a>Step 2 Prove $|Z^+|\ne|A|$</h6>
+<p>Assume A is countable, then let <script type="math/tex; ">A=\{r_1,r_2,r_3,...,r_n,...\}</script></p>
+<p>Represent each real number in the list using its <strong>decimal expansion</strong>&#xFF08;<strong>&#x5341;&#x8FDB;&#x5236;&#x8868;&#x793A;</strong>&#xFF09;</p>
+<blockquote>
+<p>List:</p>
+<ul>
+<li><script type="math/tex; ">r_1=0.d_{11}d_{12}d_{13}d_{14}d_{15}d_{16}...</script></li>
+<li><script type="math/tex; ">r_2=0.d_{21}d_{22}d_{23}d_{24}d_{25}d_{26}...</script></li>
+<li><p><script type="math/tex; ">r_3=0.d_{31}d_{32}d_{33}d_{34}d_{35}d_{36}...</script></p>
+</li>
+<li><p>&#x2026;</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>Now construct a new number x</strong></p>
+<p><script type="math/tex; ">x=0.x_{1}x_{2}x_{3}x_{4}x_{5}x_{6}x_{7}...</script></p>
+<p><script type="math/tex; ">x_i=
+\begin{cases}
+6& d_{ii}\ne6\\
+7& d_{ii}=6\\
+\end{cases}</script></p>
+<blockquote>
+<p> &#x660E;&#x767D;&#x201C;&#x5BF9;&#x89D2;&#x7EBF;&#x6CD5;&#x201D;&#x7684;&#x610F;&#x601D;&#x4E86;&#x5417;&#xFF1F;&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#x5C31;&#x662F;&#x5C06;&#x5BF9;&#x89D2;&#x7EBF;&#x4E0A;&#x7684;&#x5143;&#x7D20;<script type="math/tex; ">d_{ii}</script>&#x6362;&#x6389;</p>
+</blockquote>
+<p><strong>Then x is not equal to any number in the list</strong></p>
+<p>So whatever sequence we construct, there is always at least a new number that is not included!</p>
+<p>Hence, no such list can exist and hence the interval (0,1) is uncountable</p>
+<h5 id="eg2-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-or-9s-is-uncountable"><a name="eg2-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-or-9s-is-uncountable" class="anchor-navigation-ex-anchor" href="#eg2-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-or-9s-is-uncountable"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg2-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-or-9s-is-uncountable" class="plugin-anchor" href="#eg2-show-that-the-set-of-the-real-numbers-with-decimal-representations-consisting-of-all-1s-or-9s-is-uncountable"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.2 Show that the set of the real numbers with decimal representations consisting of all 1s or 9s is uncountable</h5>
+<p>Denote the set as A, assume A is countable, then let <script type="math/tex; ">A=\{r_1,r_2,r_3,...,r_n,...\}</script></p>
+<p>Represent each real number in the list using its <strong>decimal expansion</strong>&#xFF08;<strong>&#x5341;&#x8FDB;&#x5236;&#x8868;&#x793A;</strong>&#xFF09;</p>
+<blockquote>
+<p>List:</p>
+<ul>
+<li><script type="math/tex; ">r_1=0.d_{11}d_{12}d_{13}d_{14}d_{15}d_{16}...</script></li>
+<li><script type="math/tex; ">r_2=0.d_{21}d_{22}d_{23}d_{24}d_{25}d_{26}...</script></li>
+<li><p><script type="math/tex; ">r_3=0.d_{31}d_{32}d_{33}d_{34}d_{35}d_{36}...</script></p>
+</li>
+<li><p>&#x2026;</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>Now construct a new number x</strong></p>
+<p><script type="math/tex; ">x=0.x_{1}x_{2}x_{3}x_{4}x_{5}x_{6}x_{7}...</script></p>
+<p><script type="math/tex; ">x_i=
+\begin{cases}
+1& d_{ii}=9\\
+9& d_{ii}=1\or d_{ii}=0\\
+\end{cases}</script></p>
+<p>Then x is not equal to any number in the list</p>
+<p>So whatever sequence we construct, there is always at least a new number that is not included!</p>
+<p>Hence, no such list can exist and hence A is uncountable</p>
+<blockquote>
+<p>&#x8FD9;&#x9898;&#x4E0E;&#x53EF;&#x6570;&#x96C6;&#x7684;&#x4F8B;&#x9898;4&#x5F88;&#x50CF;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x6570;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x6570;&#xFF0C;&#x672C;&#x8D28;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#x4F8B;&#x9898;4&#x4E2D;&#x7684;&#x57FA;&#x6570;&#x4E3A;<script type="math/tex; ">\aleph_0</script>&#xFF0C;&#x800C;&#x8FD9;&#x91CC;&#x589E;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;9&#x540E;&#xFF0C;&#x57FA;&#x6570;&#x53D8;&#x4E3A;&#x4E86;<script type="math/tex; ">2^{\aleph_0}</script>&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x6570;&#x662F;&#x4E0D;&#x53EF;&#x6570;&#x7684;&#xFF0C;&#x540E;&#x9762;&#x4F1A;&#x7ED9;&#x5B83;&#x4E00;&#x4E2A;&#x8BB0;&#x53F7;c&#x6216;&#x8005;<script type="math/tex; ">\aleph_1</script></p>
+</blockquote>
+<h4 id="method-2-find-a-bijection-to-an-uncountable-set-&#x627E;&#x51FA;&#x5230;&#x5DF2;&#x77E5;&#x4E0D;&#x53EF;&#x6570;&#x96C6;&#x7684;&#x53CC;&#x5C04;"><a name="method-2-find-a-bijection-to-an-uncountable-set-&#x627E;&#x51FA;&#x5230;&#x5DF2;&#x77E5;&#x4E0D;&#x53EF;&#x6570;&#x96C6;&#x7684;&#x53CC;&#x5C04;" class="anchor-navigation-ex-anchor" href="#method-2-find-a-bijection-to-an-uncountable-set-&#x627E;&#x51FA;&#x5230;&#x5DF2;&#x77E5;&#x4E0D;&#x53EF;&#x6570;&#x96C6;&#x7684;&#x53CC;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-2-find-a-bijection-to-an-uncountable-set-&#x627E;&#x51FA;&#x5230;&#x5DF2;&#x77E5;&#x4E0D;&#x53EF;&#x6570;&#x96C6;&#x7684;&#x53CC;&#x5C04;" class="plugin-anchor" href="#method-2-find-a-bijection-to-an-uncountable-set-&#x627E;&#x51FA;&#x5230;&#x5DF2;&#x77E5;&#x4E0D;&#x53EF;&#x6570;&#x96C6;&#x7684;&#x53CC;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>Method 2. Find a bijection to an uncountable set &#x627E;&#x51FA;&#x5230;&#x5DF2;&#x77E5;&#x4E0D;&#x53EF;&#x6570;&#x96C6;&#x7684;&#x53CC;&#x5C04;</h4>
+<h5 id="eg3-the-set-of-real-numbers-has-the-same-cardinality-as-the-set-01"><a name="eg3-the-set-of-real-numbers-has-the-same-cardinality-as-the-set-01" class="anchor-navigation-ex-anchor" href="#eg3-the-set-of-real-numbers-has-the-same-cardinality-as-the-set-01"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg3-the-set-of-real-numbers-has-the-same-cardinality-as-the-set-01" class="plugin-anchor" href="#eg3-the-set-of-real-numbers-has-the-same-cardinality-as-the-set-01"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.3 The set of real numbers has the same cardinality as the set (0,1)</h5>
+<p> <script type="math/tex; ">f(x)=tan(x)</script></p>
+<p>f(x) is a bijection from <script type="math/tex; ">(-\frac{\pi}{2},\frac{\pi}{2})</script> to R</p>
+<p><script type="math/tex; ">∵|(-\frac{\pi}{2},\frac{\pi}{2})|=|(0,1)|</script></p>
+<p><script type="math/tex; ">∴|R|=|(0,1)|=c</script></p>
+<blockquote>
+<p><script type="math/tex; ">c=2^{\aleph_0}</script></p>
+</blockquote>
+<h4 id="method-3-schr&#x151;der-bernstein-theorem"><a name="method-3-schr&#x151;der-bernstein-theorem" class="anchor-navigation-ex-anchor" href="#method-3-schr&#x151;der-bernstein-theorem"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-3-schr&#x151;der-bernstein-theorem" class="plugin-anchor" href="#method-3-schr&#x151;der-bernstein-theorem"><i class="fa fa-link" aria-hidden="true"></i></a>Method 3. Schr&#x151;der-Bernstein Theorem</h4>
+<p><strong>Schr&#x151;der-Bernstein Theorem</strong> : If A and B are sets with <script type="math/tex; ">|A|\leq|B|​</script> and <script type="math/tex; ">|B|\leq|A|</script> then <script type="math/tex; ">|B|=|A|</script>. </p>
+<p>In other words, if there are one-to-one functions f from A to B and g from B to A, then there is a one to &#x2013;one correspondence between A and B.</p>
+<blockquote>
+<p>&#x6709;&#x70B9;&#x50CF;&#x5939;&#x903C;&#x5B9A;&#x7406;&#x2026;&#x2026;</p>
+</blockquote>
+<h5 id="eg4-show-that-the-cardinality-of-01-is-c"><a name="eg4-show-that-the-cardinality-of-01-is-c" class="anchor-navigation-ex-anchor" href="#eg4-show-that-the-cardinality-of-01-is-c"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg4-show-that-the-cardinality-of-01-is-c" class="plugin-anchor" href="#eg4-show-that-the-cardinality-of-01-is-c"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.4 Show that the cardinality of [0,1] is c</h5>
+<p><script type="math/tex; ">A=[0,1]=\{x|x\in R,0\leq x\leq 1\}</script></p>
+<p><script type="math/tex; ">B=(0,1)=\{x|x\in R,0<x<1\}</script></p>
+<p><script type="math/tex; ">B\subseteq A\Rightarrow|B|\leq|A|</script></p>
+<p>Let <script type="math/tex; ">g(x)=\frac{1}{2}x+\frac{1}{4},x\in[0,1]</script></p>
+<p>Hence, g(x) is a bijection from [0,1] to <script type="math/tex; ">[\frac{1}{4}, \frac{3}{4}]</script></p>
+<p>and <script type="math/tex; ">[\frac{1}{4}, \frac{3}{4}]\subset (0,1)</script></p>
+<p>Thus <script type="math/tex; ">|A|\leq|B|</script></p>
+<p><script type="math/tex; ">∴|A|=|B|=c</script></p>
+<h3 id="summary-&#x5C0F;&#x603B;&#x7ED3;-how-to-prove-aleqb"><a name="summary-&#x5C0F;&#x603B;&#x7ED3;-how-to-prove-aleqb" class="anchor-navigation-ex-anchor" href="#summary-&#x5C0F;&#x603B;&#x7ED3;-how-to-prove-aleqb"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. [Summary &#x5C0F;&#x603B;&#x7ED3;] How to Prove $|A|\leq|B|$</h3>
+<p>&#x901A;&#x8FC7;&#x4EE5;&#x4E0A;&#x51E0;&#x9053;&#x4F8B;&#x9898;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;<script type="math/tex; ">|A|\leq|B|</script>&#x7684;&#x8BC1;&#x660E;&#x7ECF;&#x5E38;&#x88AB;&#x7528;&#x5230;&#xFF0C;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x8BC1;&#x660E;&#x6B64;&#x5F0F;&#x5B50;&#x7684;&#x4E09;&#x5927;&#x65B9;&#x6CD5;</p>
+<h4 id="method-1-find-an-injective-&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x5C04;"><a name="method-1-find-an-injective-&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x5C04;" class="anchor-navigation-ex-anchor" href="#method-1-find-an-injective-&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-1-find-an-injective-&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x5C04;" class="plugin-anchor" href="#method-1-find-an-injective-&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>Method 1. Find an injective &#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x5C04;</h4>
+<blockquote>
+<p>in e.g.1 Step1</p>
+<p>Prove <script type="math/tex; ">|Z^+|\leq|A|</script></p>
+</blockquote>
+<h4 id="method-2-prove-asubseteq-b"><a name="method-2-prove-asubseteq-b" class="anchor-navigation-ex-anchor" href="#method-2-prove-asubseteq-b"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-2-prove-asubseteq-b" class="plugin-anchor" href="#method-2-prove-asubseteq-b"><i class="fa fa-link" aria-hidden="true"></i></a>Method 2. Prove $A\subseteq B$</h4>
+<blockquote>
+<p>in e.g.3</p>
+<p><script type="math/tex; ">A=[0,1]=\{x|x\in R,0\leq x\leq 1\}</script></p>
+<p><script type="math/tex; ">B=(0,1)=\{x|x\in R,0<x<1\}</script></p>
+<p><script type="math/tex; ">B\subseteq A\Rightarrow|B|\leq|A|</script></p>
+</blockquote>
+<h4 id="method-3-prove-accsubseteq-b-&#x5728;b&#x4E2D;&#x627E;&#x5230;&#x4E0E;a&#x57FA;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5B50;&#x96C6;"><a name="method-3-prove-accsubseteq-b-&#x5728;b&#x4E2D;&#x627E;&#x5230;&#x4E0E;a&#x57FA;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5B50;&#x96C6;" class="anchor-navigation-ex-anchor" href="#method-3-prove-accsubseteq-b-&#x5728;b&#x4E2D;&#x627E;&#x5230;&#x4E0E;a&#x57FA;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5B50;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-3-prove-accsubseteq-b-&#x5728;b&#x4E2D;&#x627E;&#x5230;&#x4E0E;a&#x57FA;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5B50;&#x96C6;" class="plugin-anchor" href="#method-3-prove-accsubseteq-b-&#x5728;b&#x4E2D;&#x627E;&#x5230;&#x4E0E;a&#x57FA;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5B50;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>Method 3. Prove $|A|=|C|,C\subseteq B$ &#x5728;B&#x4E2D;&#x627E;&#x5230;&#x4E0E;A&#x57FA;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5B50;&#x96C6;</h4>
+<blockquote>
+<p>in e.g.3</p>
+<p><script type="math/tex; ">|A|=[\frac{1}{4}, \frac{3}{4}]</script> and <script type="math/tex; ">[\frac{1}{4}, \frac{3}{4}]\subset (0,1)​</script></p>
+<p>Thus <script type="math/tex; ">|A|\leq|B|</script></p>
+</blockquote>
+<h2 id="applications-&#x7406;&#x8BBA;&#x5E94;&#x7528;"><a name="applications-&#x7406;&#x8BBA;&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#applications-&#x7406;&#x8BBA;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Applications &#x7406;&#x8BBA;&#x5E94;&#x7528;</h2>
+<h3 id="computability-&#x53EF;&#x8BA1;&#x7B97;&#x6027;"><a name="computability-&#x53EF;&#x8BA1;&#x7B97;&#x6027;" class="anchor-navigation-ex-anchor" href="#computability-&#x53EF;&#x8BA1;&#x7B97;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. Computability &#x53EF;&#x8BA1;&#x7B97;&#x6027;</h3>
+<p>We say that a function is <strong>computable</strong>&#xFF08;<strong>&#x53EF;&#x8BA1;&#x7B97;&#x7684;</strong>&#xFF09; if there is a computer program in some programming language that finds the values of this function. If a function is not computable we say it is <strong>uncomputable</strong> &#xFF08;<strong>&#x4E0D;&#x53EF;&#x8BA1;&#x7B97;&#x7684;</strong>&#xFF09;</p>
+<p>To show that there are uncomputable functions, we need to establish two results. </p>
+<p>First, we need to show that the set of all computer programs in any particular programming language is countable. (Proved before)</p>
+<p>Next, we show that there are uncountably many different functions from a particular countably infinite set to itself.</p>
+<p><strong>So now, there are only a countable number of computer programs. Consequently, there are only a countable number of computable functions. However, there are an uncountable number of functions, so not all functions are computable.</strong></p>
+<h3 id="the-continuum-hypothesis-&#x8FDE;&#x7EED;&#x7EDF;&#x5047;&#x8BBE;"><a name="the-continuum-hypothesis-&#x8FDE;&#x7EED;&#x7EDF;&#x5047;&#x8BBE;" class="anchor-navigation-ex-anchor" href="#the-continuum-hypothesis-&#x8FDE;&#x7EED;&#x7EDF;&#x5047;&#x8BBE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. The Continuum Hypothesis &#x8FDE;&#x7EED;&#x7EDF;&#x5047;&#x8BBE;</h3>
+<blockquote>
+<p>In brief, <script type="math/tex; ">\aleph_0=|Z^+|<|P(Z^+)|=|R|=\aleph_1</script></p>
+</blockquote>
+<h4 id="1-show-that-pzr"><a name="1-show-that-pzr" class="anchor-navigation-ex-anchor" href="#1-show-that-pzr"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1-show-that-pzr" class="plugin-anchor" href="#1-show-that-pzr"><i class="fa fa-link" aria-hidden="true"></i></a>1. Show that $|P(Z^+)|=|R|$</h4>
+<ul>
+<li><p>First, for any <script type="math/tex; ">S\in P(Z^+)</script>, there is a real number r in (0,1) whose <strong>decimal</strong> expansion is</p>
+<p><script type="math/tex; ">r=0.d_1d_2d_3...</script></p>
+<p><script type="math/tex; ">d_i=
+  \begin{cases}
+  6& i\in S\\
+  7& i \notin S\\
+  \end{cases}</script></p>
+<p>Then we have constructed a one-to-one function from <script type="math/tex; ">P(Z^+)​</script> to (0, 1)</p>
+</li>
+<li><p>Second, for any r in (0,1), it has a <strong>binary</strong> expansion <script type="math/tex; ">r=0.d_1d_2d_3...​</script> </p>
+<p>Then there is a set <script type="math/tex; ">\{i|d_i=1\}</script></p>
+<p>So we constructed a one-to-one function from (0, 1) to <script type="math/tex; ">P(Z^+)</script></p>
+<blockquote>
+<p><strong>P.S.</strong></p>
+<p>In order that our function from (0, 1) to <script type="math/tex; ">P(Z^+)</script> to be well-defined, we must choose which of two equivalent expressions to represent numbers thath ave terminating binary expansions to use (for example, <script type="math/tex; ">0.10010\overline1</script> versus <script type="math/tex; ">0.10011\overline0​</script>); we can decide to always use the terminating form, the one ending in all 0&#x2019;s.)</p>
+</blockquote>
+</li>
+<li><p>By the Schr&#x151;der-Bernstein theorem we have <script type="math/tex; ">|P(Z^+)|=|(0,1)|=|R|=c​</script></p>
+</li>
+<li>Hence, <script type="math/tex; ">c=2^{\aleph_0}</script></li>
+</ul>
+<h4 id="2-show-that-zpz"><a name="2-show-that-zpz" class="anchor-navigation-ex-anchor" href="#2-show-that-zpz"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2-show-that-zpz" class="plugin-anchor" href="#2-show-that-zpz"><i class="fa fa-link" aria-hidden="true"></i></a>2. Show that $|Z^+|&lt;|P(Z^+)|$</h4>
+<blockquote>
+<p><strong>Cantor&#x2019;s theorem</strong></p>
+<p>The cardinality of the power set of an arbitrary set has a greater cardinality than the original arbitrary set</p>
+<blockquote>
+<p><strong>Proof</strong>:</p>
+<p><strong><em>Step 1</em></strong></p>
+<blockquote>
+<p> We convert this problem into showing that <strong><em>there does not exist an onto function f from S to P(S)</em></strong></p>
+</blockquote>
+<p>Suppose that f is a function from S to P(S). We must show that f is not onto.</p>
+<p>Let <script type="math/tex; ">T=\{s\in S|s\notin f(s)\}</script>. Although T is in the codomian of f, which is P(S), we will show that T is not in the range of f.</p>
+<p>If it were, then we would have f(t) = T for some <script type="math/tex; ">t\in S</script></p>
+<ol>
+<li>Suppose that <script type="math/tex; ">t\in T</script>, then according to the definition of T, <script type="math/tex; ">t\notin f(t)</script>, thus, <script type="math/tex; ">t\notin T</script>, which is a contradiction</li>
+<li>Suppose that <script type="math/tex; ">t\notin T</script>, then <script type="math/tex; ">t\notin f(t)</script>, then t follows the definition of T, so <script type="math/tex; ">t\in T</script>, which is again a contradiction</li>
+</ol>
+<p>Hence, f is not onto. </p>
+<p>In other words, <strong><em>there does not exist an onto function f from S to P(S)</em></strong></p>
+<p><strong><em>Step 2</em></strong></p>
+<p>The function sending x to {x} for each <script type="math/tex; ">x\in S</script> is a one-to-one function from S to P(S), hence <script type="math/tex; ">|S|\leq|P(S)|</script></p>
+<p><strong><em>Step 3</em></strong></p>
+<p>Since there is no onto from S to P(S), then there is no one-to-one correspondence, which implies that <script type="math/tex; ">|S|\neq|P(S)|</script></p>
+<p><strong><em>All in All</em></strong></p>
+<p><script type="math/tex; ">|S|<|P(S)|</script></p>
+</blockquote>
+</blockquote>
+<p>Hence, by the Cantor&#x2019;s theorem, <script type="math/tex; ">|Z^+|<|P(Z^+)|</script>, which can be expressed as <script type="math/tex; ">\aleph_0<2^{\aleph_0}=c</script></p>
+<h4 id="3-the-hypothesis"><a name="3-the-hypothesis" class="anchor-navigation-ex-anchor" href="#3-the-hypothesis"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3-the-hypothesis" class="plugin-anchor" href="#3-the-hypothesis"><i class="fa fa-link" aria-hidden="true"></i></a>3. The Hypothesis</h4>
+<p>The famous continuum hypothesis asserts that there is no cardinal number X between <script type="math/tex; ">\aleph_0</script> and c</p>
+<p>It tells us that the smallest infinite cardinal numbers forms an infinite sequence <script type="math/tex; ">\aleph_0,\aleph_1,\aleph_2,\aleph_3,...</script></p>
+<p>There are no other cardinal numbers between <script type="math/tex; ">\aleph_n</script> and <script type="math/tex; ">\aleph_{n+1}</script>, also <script type="math/tex; ">\aleph_ {n+1}</script>is the cardinal number of the power set of a set S, whose own cardinal is <script type="math/tex; ">\aleph_n</script></p>
+<p>When we talk about <script type="math/tex; ">\aleph_0</script> and <script type="math/tex; ">\aleph_1</script>, the continuum hypothesis (CH) asserts that there is no cardinal number &#xFF08;&#x57FA;&#x6570;&#xFF09; <em>a</em> such that <script type="math/tex; ">\aleph_0<a<\aleph_1</script></p>
+<p>Hence, <script type="math/tex; ">c=2^{\aleph_0}=\aleph_1</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CH02_02_Function_and_Sequence.html" class="navigation navigation-prev " aria-label="Previous page: 02 Function and Sequence">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../CH03_Algorithms/CH03_01_Algorithms.html" class="navigation navigation-next " aria-label="Next page: 01 Algorithms">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"03 Cardinality of Sets","level":"3.3","depth":1,"next":{"title":"01 Algorithms","level":"4.1","depth":1,"path":"CH03_Algorithms/CH03_01_Algorithms.md","ref":"CH03_Algorithms/CH03_01_Algorithms.md","articles":[]},"previous":{"title":"02 Function and Sequence","level":"3.2","depth":1,"path":"CH02_Basic_Structures/CH02_02_Function_and_Sequence.md","ref":"CH02_Basic_Structures/CH02_02_Function_and_Sequence.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","mathjax","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/iamncj"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"Donate","title":"","wechat":"https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG","wechatText":""},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"NCJ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Discrete Mathematics Explained in Detail","language":"en","links":{"sidebar":{"DM Explained in Detail":"https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail","Personal Blog":"https://iamncj.github.io"}},"gitbook":"3.2.3","description":"Explained discrete mathematics in detail!"},"file":{"path":"CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.md","mtime":"2019-03-26T12:27:54.362Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-28T00:10:25.255Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
