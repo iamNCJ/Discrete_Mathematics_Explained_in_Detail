@@ -22,7 +22,7 @@ If f is a function from A to B, we write f : A → B.
 
 $$f:A\to B$$
 
-$$\forall a(a\in A\to\exist!b(b\in B\wedge f(a)=b))$$
+$$\forall a(a\in A\to\exists!b(b\in B\wedge f(a)=b))$$
 
 - A : **domain**（**定义域**）
 
@@ -75,7 +75,7 @@ $$\forall a\forall b(f(a)=f(b)\to a=b)$$
 
 A function f from A to B is called **onto**（**映上**）, or **surjective**（**满射**） if
 
-$$\forall b\in B\exist a\in A(f(a)=b)$$
+$$\forall b\in B\exists a\in A(f(a)=b)$$
 
 > In short, **every b in B has a preimage**.
 

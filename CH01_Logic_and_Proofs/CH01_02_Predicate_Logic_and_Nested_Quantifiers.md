@@ -45,7 +45,7 @@ We need quantifiersto express the meaning of English words including all and som
 |          **Statement**          | **When true?** | **When false?** |
 | :-----------------------------: | :------------: | :-------------: |
 | $$\forall x P(x)$$ | P(x) is true for every x. | There is an x for which P(x) is false. |
-| $$\exist x P(x)$$ | There is an x for which P(x) is true. | P(x) is false for every x. |
+| $$\exists x P(x)$$ | There is an x for which P(x) is true. | P(x) is false for every x. |
 
 #### Thinking about Quantifiers 深入理解量词
 
@@ -73,7 +73,7 @@ If U consists of the integers 1,2, and 3
 
 $$\forall x P(x)\equiv P(1)\wedge P(2)\wedge P(3)$$
 
-$$\exist x P(x)\equiv P(1)\vee P(2)\vee P(3)$$
+$$\exists x P(x)\equiv P(1)\vee P(2)\vee P(3)$$
 
 > Even if the domains are infinite, you can still think of the quantifiers in this fashion, but the equivalent expressions without quantifiers will be infinitely long.
 
@@ -81,7 +81,7 @@ $$\exist x P(x)\equiv P(1)\vee P(2)\vee P(3)$$
 
  Uniqueness quantifier 唯一性量词
 
-$$\exist!$$ or $$\exist_1$$
+$$\exists!$$ or $$\exists_1$$
 
 ∃!x P(x) means that P(x) is true for **one and only one x** in the universe of discourse.
 
@@ -116,34 +116,34 @@ $$\forall xP(x)\vee A\equiv\forall x(P(x)\vee A)$$
 
 $$\forall xP(x)\wedge A\equiv\forall x(P(x)\wedge A)$$
 
-$$\exist xP(x)\vee A\equiv\exist x(P(x)\vee A)$$
+$$\exists xP(x)\vee A\equiv\exists x(P(x)\vee A)$$
 
-$$\exist xP(x)\wedge A\equiv\exist x(P(x)\wedge A)$$
+$$\exists xP(x)\wedge A\equiv\exists x(P(x)\wedge A)$$
 
 - 量词辖域的收缩
 
 $$\forall x(A\to P(x))\equiv A\to\forall xP(x)$$
 
-$$\exist x(A\to P(x))\equiv A\to\exist xP(x)$$
+$$\exists x(A\to P(x))\equiv A\to\exists xP(x)$$
 
 （下面的两个式子很重要）
 
-$$\forall x(P(x)\to A)\equiv\exist xP(x)\to A$$
+$$\forall x(P(x)\to A)\equiv\exists xP(x)\to A$$
 
-$$\exist x(P(x)\to A)\equiv\forall xP(x)\to A$$
+$$\exists x(P(x)\to A)\equiv\forall xP(x)\to A$$
 
 ## Negating Quantified Expressions 量化表达式的否定
 
 ### De Morgan’s Laws for Quantifiers 量词的德·摩根律
 
-$$\neg\forall xP(x)\equiv\exist x\neg P(x)$$
+$$\neg\forall xP(x)\equiv\exists x\neg P(x)$$
 
-$$\neg\exist xP(x)\exist\forall x\neg P(x)$$
+$$\neg\exists xP(x)\exists\forall x\neg P(x)$$
 
 | **Negation** | **Equivalent Statement** |      **When is Negation True?**       |           **When False?**            |
 | :----------: | :----------------------: | :-----------------------------------: | :----------------------------------: |
-|  $$\neg\exist x P(x)$$  |        $$\forall x\neg P(x)$$        |       P(x) is false for every x       | There is an x for which P(x) is true |
-|  $$\neg\forall x P(x)$$  |        $$\exist x\neg P(x)$$        | There is an x for which P(x) is false |       P(x) is true for every x       |
+|  $$\neg\exists x P(x)$$  |        $$\forall x\neg P(x)$$        |       P(x) is false for every x       | There is an x for which P(x) is true |
+|  $$\neg\forall x P(x)$$  |        $$\exists x\neg P(x)$$        | There is an x for which P(x) is false |       P(x) is true for every x       |
 
 ![](../img/CH01/007.png)
 
@@ -176,7 +176,7 @@ The very first step is to decide on the domain U.
 
    if U is all people
 
-   $$\exist x(S(x)\to J(x))$$ is **not** correct!!!
+   $$\exists x(S(x)\to J(x))$$ is **not** correct!!!
 
    if there is **one** x that does not brlong to this class, the **the whole statement is true**!
 
@@ -207,11 +207,11 @@ Later we will see how to prove that the conclusion follows from the premises.
 
 Two quantifiers are nested if one is within the scope of the other.
 
-e.g. $$\forall x\exist yC(x,y)$$
+e.g. $$\forall x\exists yC(x,y)$$
 
 ## Translating from Nested Quantifiers into English 
 
-> Translate the statement $$\forall x(C(x)\wedge \exist y(C(y)\wedge F(x,y)))$$ into English, where C(x) is "x has a computer," F(x,y) is "x and y are friends," and the domain for both x and y consists of all students at ZJU. 
+> Translate the statement $$\forall x(C(x)\wedge \exists y(C(y)\wedge F(x,y)))$$ into English, where C(x) is "x has a computer," F(x,y) is "x and y are friends," and the domain for both x and y consists of all students at ZJU. 
 >
 > *Solution*
 >
@@ -235,7 +235,7 @@ e.g. $$\forall x\exist yC(x,y)$$
 >
 > Let *B*(*x, y*) be the statement *y* is the best friend of *x*.
 >
-> $$\forall x\exist y\forall z(B(x,y)\wedge((z≠y)\to\neg B(x,z)))$$
+> $$\forall x\exists y\forall z(B(x,y)\wedge((z≠y)\to\neg B(x,z)))$$
 
 ## The Order of Quantifiers 量词顺序
 
@@ -247,15 +247,15 @@ $$\forall x\forall yP(x,y)\equiv\forall y\forall xP(x,y)$$
 
 However
 
-$$\exist x\forall yP(x,y)$$ is not the same as $$\forall y\exist xP(x,y)$$
+$$\exists x\forall yP(x,y)$$ is not the same as $$\forall y\exists xP(x,y)$$
 
 > **Explanation**
 >
 > Assume P(*x*,*y*) denote "*x* loves *y*", where the domain for variables *x* and *y* consists of all people
 >
-> $$\exist x\forall yP(x,y)$$ --> There is someone who loves everyone.
+> $$\exists x\forall yP(x,y)$$ --> There is someone who loves everyone.
 >
-> $$\forall y\exist xP(x,y)$$ --> Everybodyi s loved by somebody.
+> $$\forall y\exists xP(x,y)$$ --> Everybodyi s loved by somebody.
 
 ## Negating Nested Quantifiers 嵌套量词的否定
 
@@ -272,7 +272,7 @@ e.g.
 |         Statement          |                      When True?                      |                      When False?                      |
 | :------------------------: | :--------------------------------------------------: | :---------------------------------------------------: |
 | $$\forall x\forall yP(x, y)\\\forall y\forall xP(x, y)$$ |         P(x, y) is true for every pair x, y.         |   There is a pair x, y for which P(x, y) is false.    |
-|       $$\forall x\exist yP(x, y)$$       | For every x there is a y for which P(x, y) is true.  | There is an x such that P(x, y) is false for every y. |
-|       $$\exist x\forall yP(x, y)$$       | There is an x for which P(x, y) is true for every y. | For every x there is a y for which P(x, y) is false.  |
-| $$\exist x\exist yP(x, y)\\\exist y\exist xP(x, y)$$ |   There is a pair x, y for which P(x, y) is true.    |         P(x, y) is false for every pair x, y.         |
+|       $$\forall x\exists yP(x, y)$$       | For every x there is a y for which P(x, y) is true.  | There is an x such that P(x, y) is false for every y. |
+|       $$\exists x\forall yP(x, y)$$       | There is an x for which P(x, y) is true for every y. | For every x there is a y for which P(x, y) is false.  |
+| $$\exists x\exists yP(x, y)\\\exists y\exists xP(x, y)$$ |   There is a pair x, y for which P(x, y) is true.    |         P(x, y) is false for every pair x, y.         |
 

@@ -68,8 +68,8 @@ The final disjunction in the resolution rule, $$q\vee r$$, is called the **resol
 | :----------------------------------------------------------: | :---------------------------------: |
 |           $$\forall xP(x)\\---\\\therefore P(c)$$            |  Universal instantiation 全称实例   |
 | $$P(c) for\ an\ arbitrary\ c\\----------\\\therefore\forall xP(x)$$ |  Universal generalization 全称引入  |
-| $$\exist xP(x)\\------------\\\therefore P(c)\ for\ some\ element\ c$$ | Existential instantiation 存在实例  |
-| $$P(c)\ for\ some\ element\ c\\-----------\\\therefore\exist xP(x)$$ | Existential generalization 存在引入 |
+| $$\exists xP(x)\\------------\\\therefore P(c)\ for\ some\ element\ c$$ | Existential instantiation 存在实例  |
+| $$P(c)\ for\ some\ element\ c\\-----------\\\therefore\exists xP(x)$$ | Existential generalization 存在引入 |
 
 ### Combining Rules of Inference for Propositions and Quantified Statements 命题和量化命题的组合使用
 
@@ -330,7 +330,7 @@ An ***exhaustive proof*** is a special type of proof by cases where each case in
 >
 > **Explanation**:
 >
-> $$\forall n\exist x((x+i)\ is\ composite\ for\ i\ = 1,2,...,n)$$
+> $$\forall n\exists x((x+i)\ is\ composite\ for\ i\ = 1,2,...,n)$$
 >
 > **Proof**:
 >
