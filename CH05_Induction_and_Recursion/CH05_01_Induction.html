@@ -1,0 +1,629 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01 Induction · Discrete Mathematics Explained in Detail</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="NCJ">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CH05_02_Recursive.html" />
+    
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail" target="_blank" class="custom-link">DM Explained in Detail</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://iamncj.github.io" target="_blank" class="custom-link">Personal Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 01 Logic and Proofs</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                    
+                    01 Proposition Logic and Propositional Equivalences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                    
+                    02 Predicate Logic and Nested Quantifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                    
+                    03 Normal Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                    
+                    04 Rules of Inference and Proofs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 02 Basic Structures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                    
+                    01 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                    
+                    02 Function and Sequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                    
+                    03 Cardinality of Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 03 Algorithms</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                <a href="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                    
+                    01 Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 04 Number Theory</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    To be added…
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 05 Induction and Recursion</li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="CH05_01_Induction.html">
+            
+                <a href="CH05_01_Induction.html">
+            
+                    
+                    01 Induction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="CH05_02_Recursive.html">
+            
+                <a href="CH05_02_Recursive.html">
+            
+                    
+                    02 Recursive
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >01 Induction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;"><b>1. </b>Mathematical Induction &#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#framework-&#x57FA;&#x672C;&#x6846;&#x67B6;"><b>1.1. </b>Framework &#x57FA;&#x672C;&#x6846;&#x67B6;</a></li><li><span class="title-icon "></span><a href="#the-validity-of-mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x6709;&#x6548;&#x6027;"><b>1.2. </b>The Validity of Mathematical Induction &#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x6709;&#x6548;&#x6027;</a></li><li><span class="title-icon "></span><a href="#the-well-ordering-property-&#x826F;&#x5E8F;&#x6027;&#x516C;&#x7406;"><b>1.3. </b>the Well-Ordering Property &#x826F;&#x5E8F;&#x6027;&#x516C;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#proofs-using-the-well-ordering-property"><b>1.3.1. </b>Proofs Using the Well-ordering property</a></li></ul><li><span class="title-icon "></span><a href="#why-mathematical-induction-is-valid"><b>1.4. </b>Why Mathematical Induction is Valid</a></li><li><span class="title-icon "></span><a href="#the-good-and-bad-of-mathematical-induction"><b>1.5. </b>The Good and Bad of Mathematical Induction</a></li><ul><li><span class="title-icon "></span><a href="#the-good"><b>1.5.1. </b>The Good</a></li><li><span class="title-icon "></span><a href="#the-bad"><b>1.5.2. </b>The Bad</a></li></ul><li><span class="title-icon "></span><a href="#more-general-form-&#x5E7F;&#x4E49;&#x5F62;&#x5F0F;"><b>1.6. </b>More General Form &#x5E7F;&#x4E49;&#x5F62;&#x5F0F;</a></li></ul><li><span class="title-icon "></span><a href="#strong-induction-&#x5F3A;&#x5F52;&#x7EB3;&#x6CD5;"><b>2. </b>Strong Induction &#x5F3A;&#x5F52;&#x7EB3;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#framework-&#x57FA;&#x672C;&#x6846;&#x67B6;_1"><b>2.1. </b>Framework &#x57FA;&#x672C;&#x6846;&#x67B6;</a></li></ul><li><span class="title-icon "></span><a href="#comparison-between-mi-and-si-&#x4E24;&#x79CD;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x5BF9;&#x6BD4;"><b>3. </b>Comparison Between M.I and S.I &#x4E24;&#x79CD;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x5BF9;&#x6BD4;</a></li><li><span class="title-icon "></span><a href="#connection-between-the-three-things-&#x4E09;&#x8005;&#x5173;&#x7CFB;"><b>4. </b>Connection Between the Three Things &#x4E09;&#x8005;&#x5173;&#x7CFB;</a></li><ul><li><span class="title-icon "></span><a href="#1-from-wp-to-mi"><b>4.1. </b>1. From W.P to M.I</a></li><li><span class="title-icon "></span><a href="#2-from-wp-to-si"><b>4.2. </b>2. From W.P to S.I</a></li><li><span class="title-icon "></span><a href="#3-from-mi-to-wp"><b>4.3. </b>3. From M.I to W.P</a></li></ul></ul></div><a href="#mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><font size="6"> Chaptcer 05 Induction and Recursion &#x5F52;&#x7EB3;&#x4E0E;&#x9012;&#x5F52;</font>
+
+<p>Part 01 Induction</p>
+<p>covering 5.1~5.2</p>
+<hr>
+<h1 id="mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;"><a name="mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Mathematical Induction &#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;</h1>
+<h2 id="framework-&#x57FA;&#x672C;&#x6846;&#x67B6;"><a name="framework-&#x57FA;&#x672C;&#x6846;&#x67B6;" class="anchor-navigation-ex-anchor" href="#framework-&#x57FA;&#x672C;&#x6846;&#x67B6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Framework &#x57FA;&#x672C;&#x6846;&#x67B6;</h2>
+<p>Prove <script type="math/tex; ">\forall nP(n)</script> by mathematical induction:</p>
+<ol>
+<li><p><strong>Basis step</strong> : Establish P(1)</p>
+</li>
+<li><p><strong>Inductive step</strong> : Prove that <script type="math/tex; ">P(k)\to P(k+1) \text{for}\ k\geq1</script></p>
+</li>
+<li><p><strong>Conclusion</strong>:  <script type="math/tex; ">\forall nP(n)</script>, where the domain is the set of positive integers </p>
+</li>
+</ol>
+<p>Express this in the proposition form:</p>
+<p><script type="math/tex; ">P(1)\wedge\forall k(P(k)\to P(k+1))\to\forall nP(n)</script></p>
+<p>This is the (first) principle of Mathematical Induction, and it also has the following form
+<script type="math/tex; ">P(1)\\\underline{\forall k(P(k)\to P(k+1))}\\\therefore\forall nP(n)</script></p>
+<h2 id="the-validity-of-mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x6709;&#x6548;&#x6027;"><a name="the-validity-of-mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x6709;&#x6548;&#x6027;" class="anchor-navigation-ex-anchor" href="#the-validity-of-mathematical-induction-&#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x6709;&#x6548;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. The Validity of Mathematical Induction &#x6570;&#x5B66;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x6709;&#x6548;&#x6027;</h2>
+<p>The validity of mathematical induction follows from <strong>the well-ordering property</strong>&#xFF08;<strong>&#x826F;&#x5E8F;&#x6027;&#x516C;&#x7406;</strong>&#xFF09; for the set of positive integers.</p>
+<h2 id="the-well-ordering-property-&#x826F;&#x5E8F;&#x6027;&#x516C;&#x7406;"><a name="the-well-ordering-property-&#x826F;&#x5E8F;&#x6027;&#x516C;&#x7406;" class="anchor-navigation-ex-anchor" href="#the-well-ordering-property-&#x826F;&#x5E8F;&#x6027;&#x516C;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. the Well-Ordering Property &#x826F;&#x5E8F;&#x6027;&#x516C;&#x7406;</h2>
+<p>A set S is well ordered  if every nonempty subset of S has a least element.</p>
+<p>For example, </p>
+<ol>
+<li><p>N is well ordered</p>
+</li>
+<li><p>Z is not well ordered under the <script type="math/tex; ">\leq</script> relation (Z has no smallest element).</p>
+</li>
+<li><p>(0, 1) is not well ordered since (0,1) does not have a least element. </p>
+</li>
+</ol>
+<p><strong>The well-ordering property</strong> : Every nonempty set of nonnegative integers has a least element. </p>
+<h3 id="proofs-using-the-well-ordering-property"><a name="proofs-using-the-well-ordering-property" class="anchor-navigation-ex-anchor" href="#proofs-using-the-well-ordering-property"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. Proofs Using the Well-ordering property</h3>
+<h4 id="eg1"><a name="eg1" class="anchor-navigation-ex-anchor" href="#eg1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg1" class="plugin-anchor" href="#eg1"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.1</h4>
+<p>Use the well-ordering property to prove the division algorithm. The division algorithm states that if a is an integer and d  is a positive integer, then there are unique integers q and r, with <script type="math/tex; ">0\leq r<d</script> such that <script type="math/tex; ">a=dq+r</script>.</p>
+<blockquote>
+<p><strong>The existence part</strong></p>
+<p>Let S be the set of nonnegative integers of the form a-dq, where q is an integer. This set is nonempty.</p>
+<p>By the well-ordering property, S has a least element r=a-dq0.</p>
+<p>The integer r is nonnegative. It is also the case that r&lt;d. If it were not, then there would be a smaller nonnegative element in S, namely, <script type="math/tex; ">s=a-d(q_0+1)</script>.</p>
+<p>Consequently, there exist integers q and r with 0&#x2264;r&lt;d.</p>
+</blockquote>
+<h4 id="eg2"><a name="eg2" class="anchor-navigation-ex-anchor" href="#eg2"><i class="fa fa-link" aria-hidden="true"></i></a><a name="eg2" class="plugin-anchor" href="#eg2"><i class="fa fa-link" aria-hidden="true"></i></a>e.g.2</h4>
+<p>In a round-robin tournament every player plays every other player exactly once and each match has a winner and loser. We say that the players <script type="math/tex; ">p_1,p_2,…,p_m</script> form a cycle if <script type="math/tex; ">p_1</script> beats <script type="math/tex; ">p_2</script>, <script type="math/tex; ">p_2</script> beats <script type="math/tex; ">p_3</script>, &#x2026;, <script type="math/tex; ">p_{m-1}</script> beats <script type="math/tex; ">p_m</script>, and <script type="math/tex; ">p_m</script> beats <script type="math/tex; ">p_1</script>.
+Using the well-ordering principle to show that if there is a cycle of length m (<script type="math/tex; ">m\geq 3</script>) among the players in a round-robin tournament, there must be a cycle of three of these players</p>
+<blockquote>
+<p><strong>Solution</strong></p>
+<p>We assume that there is no cycle of three players. Because there is at least one cycle in the round-robin tournament, the set of all positive integers n for which there is a cycle of length n is nonempty. By the well-ordering property, this set of positive integers has a least element k, which by assumption must be greater than three. Consequently, there exists a cycle of players <script type="math/tex; ">p_1,p_2,…,p_k</script> and no shorter cycle exists.</p>
+<p>Because there is no cycle of three players, we know that k &gt; 3. Consider the first three elements of this cycle, <script type="math/tex; ">p_1</script>, <script type="math/tex; ">p_2</script>, and <script type="math/tex; ">p_3</script>. There are two possible outcomes of the match between <script type="math/tex; ">p_1</script> and <script type="math/tex; ">p_3</script>. </p>
+<ol>
+<li>If <script type="math/tex; ">p_3</script> beats <script type="math/tex; ">p_1</script>, it follows that <script type="math/tex; ">p_1</script>, <script type="math/tex; ">p_2</script>, <script type="math/tex; ">p_3</script> is a cycle of length three, contradicting our assumption that there is no cycle of three players. </li>
+<li><p>If it is the case that <script type="math/tex; ">p_1</script> beats <script type="math/tex; ">p_3</script>, this means that we can omit <script type="math/tex; ">p_2</script> from the cycle <script type="math/tex; ">p_1</script>, <script type="math/tex; ">p_2</script>, <script type="math/tex; ">p_3</script>, . . . , <script type="math/tex; ">p_k</script> to obtain the cycle <script type="math/tex; ">p_1,p_3,p_4,...,p_k</script> of length k &#x2212; 1, contradicting the assumption that the smallest cycle has length k. </p>
+</li>
+<li><p>We conclude that there must be a cycle of length three.</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="why-mathematical-induction-is-valid"><a name="why-mathematical-induction-is-valid" class="anchor-navigation-ex-anchor" href="#why-mathematical-induction-is-valid"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Why Mathematical Induction is Valid</h2>
+<p>Proof:</p>
+<p>Assume that there is at least one positive integer for which <em>P</em>(<em>n</em>) is false.</p>
+<p><em>S</em>: the set of positive integers for which <em>P</em>(<em>n</em>) is false.</p>
+<p>Then <em>S</em> is nonempty.</p>
+<p>By the well-ordering property, <em>S</em> has a least element, which will be denoted by <em>m</em>.</p>
+<p>Then <script type="math/tex; ">m\ne1</script>, <em>m</em>-1 is a positive integer. <em>m-1</em> is not in <em>S.</em> So <em>P</em>(<em>m</em> -1) is true.</p>
+<p>Since the implication <script type="math/tex; ">P(m-1)\to P(m)</script> is also true, <em>P</em>(<em>m</em>) must be true. </p>
+<p>By contradiction, <script type="math/tex; ">\forall nP(n)</script> </p>
+<h2 id="the-good-and-bad-of-mathematical-induction"><a name="the-good-and-bad-of-mathematical-induction" class="anchor-navigation-ex-anchor" href="#the-good-and-bad-of-mathematical-induction"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. The Good and Bad of Mathematical Induction</h2>
+<h3 id="the-good"><a name="the-good" class="anchor-navigation-ex-anchor" href="#the-good"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. The Good</h3>
+<ul>
+<li>can be used to prove a conjecture once it is has been made and is true</li>
+</ul>
+<h3 id="the-bad"><a name="the-bad" class="anchor-navigation-ex-anchor" href="#the-bad"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. The Bad</h3>
+<ul>
+<li><p>Proofs do not provide insights as to why theorems are true</p>
+<blockquote>
+<p>You can prove a theorem by M.I. even if you do not have the slightest idea why it is true!</p>
+</blockquote>
+</li>
+<li><p>Cannot be used to find new theorems</p>
+</li>
+</ul>
+<h2 id="more-general-form-&#x5E7F;&#x4E49;&#x5F62;&#x5F0F;"><a name="more-general-form-&#x5E7F;&#x4E49;&#x5F62;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#more-general-form-&#x5E7F;&#x4E49;&#x5F62;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. More General Form &#x5E7F;&#x4E49;&#x5F62;&#x5F0F;</h2>
+<p><script type="math/tex; ">\forall n\geq b(P(n))</script></p>
+<blockquote>
+<p>The usage only differs at the basic step, we need to establish <strong>P(b)</strong> here!</p>
+</blockquote>
+<h1 id="strong-induction-&#x5F3A;&#x5F52;&#x7EB3;&#x6CD5;"><a name="strong-induction-&#x5F3A;&#x5F52;&#x7EB3;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#strong-induction-&#x5F3A;&#x5F52;&#x7EB3;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Strong Induction &#x5F3A;&#x5F52;&#x7EB3;&#x6CD5;</h1>
+<h2 id="framework-&#x57FA;&#x672C;&#x6846;&#x67B6;_1"><a name="framework-&#x57FA;&#x672C;&#x6846;&#x67B6;_1" class="anchor-navigation-ex-anchor" href="#framework-&#x57FA;&#x672C;&#x6846;&#x67B6;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Framework &#x57FA;&#x672C;&#x6846;&#x67B6;</h2>
+<ol>
+<li><strong>Basis Step</strong>: We verify that the proposition P(1) is true.</li>
+<li><p><strong>Inductive Step</strong>: We show that the conditional statement <script type="math/tex; ">[P(1)\wedge P(2)\wedge...\wedge P(k)]\to P(k+1)</script> is true for all positive integers k.</p>
+</li>
+<li><p><strong>Conclusion</strong>: <script type="math/tex; ">\forall n\geq n_0P(n)</script></p>
+</li>
+</ol>
+<p>This is also the second principle of Mathematical Induction</p>
+<p><script type="math/tex; ">(P(n_0)\wedge\forall k\geq n_0(P(n_0)\wedge P(n_0+1)\wedge...\wedge P(k)\to P(k+1)))\to\forall n\geq n_0(P(n))</script></p>
+<h1 id="comparison-between-mi-and-si-&#x4E24;&#x79CD;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x5BF9;&#x6BD4;"><a name="comparison-between-mi-and-si-&#x4E24;&#x79CD;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x5BF9;&#x6BD4;" class="anchor-navigation-ex-anchor" href="#comparison-between-mi-and-si-&#x4E24;&#x79CD;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x5BF9;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Comparison Between M.I and S.I &#x4E24;&#x79CD;&#x5F52;&#x7EB3;&#x6CD5;&#x7684;&#x5BF9;&#x6BD4;</h1>
+<p>Take a problem as an example.</p>
+<p>Prove that every amount of postage of 12 cents or more can be formed using just 4-cent and 5-cent stamps</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Mathematical Induction</th>
+<th style="text-align:center">Strong Induction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Basis Step</td>
+<td style="text-align:center">P(12) is true because postage of 12 cents can be formed using three 4-cent stamps</td>
+<td style="text-align:center">P(12), P(13), P(14), and P(15) hold</td>
+</tr>
+<tr>
+<td style="text-align:center">Inductive Step</td>
+<td style="text-align:center">The inductive hypothesis P(k) for any positive integer k.Then to show P(k + 1) where k &#x2265; 12, we consider two cases a) <br>a) If at least one 4-cent stamp has been used, then a 4-cent stamp can be replaced with a 5-cent stamp to yield a total of k + 1 cents.<br>b)Otherwise, no  4-cent stamp have been used and at least three 5-cent stamps were used. Three 5-cent stamps can be replaced by four 4-cent stamps to yield a total of k + 1 cents.</td>
+<td style="text-align:center">Assume that P(j) is true for all positive integers j with 12 &#x2264; j &#x2264; k, where k &#x2265; 15. Show that P(k+1) is true under the assumption.<br>Using the inductive hypothesis, <script type="math/tex; ">P(k-3)</script> holds since k &#x2212; 3 &#x2265; 12.  To form postage of  k + 1 cents, add a 4-cent stamp to the postage for k &#x2212; 3 cents</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note</strong>:</p>
+<ol>
+<li><p>The validities of both mathematical induction and strong induction follow from the well-ordering property.</p>
+</li>
+<li><p>In fact, mathematical induction, strong induction, and  well-ordering are all equivalent principles.</p>
+</li>
+</ol>
+</blockquote>
+<h1 id="connection-between-the-three-things-&#x4E09;&#x8005;&#x5173;&#x7CFB;"><a name="connection-between-the-three-things-&#x4E09;&#x8005;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#connection-between-the-three-things-&#x4E09;&#x8005;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>4. Connection Between the Three Things &#x4E09;&#x8005;&#x5173;&#x7CFB;</h1>
+<p>The Mathematical Induction, the Strong Induction, and the well-ordering property is actually the same thing!</p>
+<h2 id="1-from-wp-to-mi"><a name="1-from-wp-to-mi" class="anchor-navigation-ex-anchor" href="#1-from-wp-to-mi"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. 1. From W.P to M.I</h2>
+<p>See the validity of M.I, where the proof from W.P to M.I is given. We will omit the proof here.</p>
+<h2 id="2-from-wp-to-si"><a name="2-from-wp-to-si" class="anchor-navigation-ex-anchor" href="#2-from-wp-to-si"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. 2. From W.P to S.I</h2>
+<blockquote>
+<p>Show that strong induction is a valid method of proof by showing that it follows from the well-ordering property</p>
+</blockquote>
+<p>Assume that the well-ordering property holds. Suppose that P(1) is true and that the conditional statement <script type="math/tex; ">[P(1)\wedge P(2)\wedge· · ·\wedge P(n)]\to P(n+1)</script> is true fore very positive integer n. Let S be the set of positive integers n for which P(n) is false.We will show S = &#x2205;. Assume that <script type="math/tex; ">S\neq \emptyset</script>. Then by the well-ordering property there is a least integer m in S.We know that m cannot be 1 because P(1) is true. Because n = m is the least integer such that P(n) is false, P(1), P(2), . . . , P (m&#x2212;1) are true, and m&#x2212;1 &#x2265; 1. Because <script type="math/tex; ">[P(1)\wedge P(2)\wedge· · ·\wedge P(m-1)]\to P(m)</script> is true, it follows that P(m) must also be true, which is a contradiction. Hence, S = &#x2205;.</p>
+<h2 id="3-from-mi-to-wp"><a name="3-from-mi-to-wp" class="anchor-navigation-ex-anchor" href="#3-from-mi-to-wp"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. 3. From M.I to W.P</h2>
+<blockquote>
+<p> Show that the well-ordering property can be proved when the principle of mathematical induction is taken as an axiom.</p>
+</blockquote>
+<p>Suppose that the well-ordering property were false. Let S be a nonempty set of nonnegative integers that has no least element. Let P(n) be the statement &#x201C;<script type="math/tex; ">i\notin S\ for\ i=0,1,...,n</script>&#x201D; P(0) is true because if 0 &#x2208; S then S has a least element, namely, 0. Now suppose that P(n) is true. Thus, <script type="math/tex; ">0\notin S,1\notin S,...,n\notin S</script>. Clearly, n+1 cannot be in S, for if it were, it would be its least element. Thus P(n+1) is true. So by the principle of mathematical induction, <script type="math/tex; ">n\notin S</script> for all nonnegative integers n. Thus, S = &#x2205;, a contradiction.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="CH05_02_Recursive.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 02 Recursive">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01 Induction","level":"6.1","depth":1,"next":{"title":"02 Recursive","level":"6.2","depth":1,"path":"CH05_Induction_and_Recursion/CH05_02_Recursive.md","ref":"CH05_Induction_and_Recursion/CH05_02_Recursive.md","articles":[]},"previous":{"title":"To be added…","level":"5.1","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","mathjax"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/iamncj"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"Donate","title":"","wechat":"https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG","wechatText":""},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"NCJ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Discrete Mathematics Explained in Detail","language":"en","links":{"sidebar":{"DM Explained in Detail":"https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail","Personal Blog":"https://iamncj.github.io"}},"gitbook":"3.2.3","description":"Explained discrete mathematics in detail!"},"file":{"path":"CH05_Induction_and_Recursion/CH05_01_Induction.md","mtime":"2019-04-02T08:11:39.984Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-02T09:09:07.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

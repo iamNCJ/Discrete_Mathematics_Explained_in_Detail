@@ -1,0 +1,580 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>02 Recursive · Discrete Mathematics Explained in Detail</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="NCJ">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="CH05_01_Induction.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail" target="_blank" class="custom-link">DM Explained in Detail</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://iamncj.github.io" target="_blank" class="custom-link">Personal Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 01 Logic and Proofs</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                    
+                    01 Proposition Logic and Propositional Equivalences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                    
+                    02 Predicate Logic and Nested Quantifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                    
+                    03 Normal Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                    
+                    04 Rules of Inference and Proofs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 02 Basic Structures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                    
+                    01 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                    
+                    02 Function and Sequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                    
+                    03 Cardinality of Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 03 Algorithms</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                <a href="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                    
+                    01 Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 04 Number Theory</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    To be added…
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 05 Induction and Recursion</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="CH05_01_Induction.html">
+            
+                <a href="CH05_01_Induction.html">
+            
+                    
+                    01 Induction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2" data-path="CH05_02_Recursive.html">
+            
+                <a href="CH05_02_Recursive.html">
+            
+                    
+                    02 Recursive
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >02 Recursive</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#recursion-&#x9012;&#x5F52;"><b>1. </b>Recursion &#x9012;&#x5F52;</a></li><ul><li><span class="title-icon "></span><a href="#definition-&#x5B9A;&#x4E49;"><b>1.1. </b>Definition &#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#use-recursion-to-define-things-&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;"><b>1.2. </b>Use recursion to define things &#x4F7F;&#x7528;&#x9012;&#x5F52;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;</a></li><ul><li><span class="title-icon "></span><a href="#recursively-defined-functions-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;"><b>1.2.1. </b>Recursively defined functions &#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#recursively-defined-sets-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x96C6;&#x5408;"><b>1.2.2. </b>Recursively defined sets &#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x96C6;&#x5408;</a></li></ul></ul><li><span class="title-icon "></span><a href="#structural-induction-&#x7ED3;&#x6784;&#x5F52;&#x7EB3;&#x6CD5;"><b>2. </b>Structural Induction &#x7ED3;&#x6784;&#x5F52;&#x7EB3;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#the-validity-of-structural-induction"><b>2.1. </b>The validity of structural induction</a></li></ul><li><span class="title-icon "></span><a href="#generalized-induction-&#x5E7F;&#x4E49;&#x5F52;&#x7EB3;&#x6CD5;"><b>3. </b>Generalized Induction &#x5E7F;&#x4E49;&#x5F52;&#x7EB3;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#summary-for-inductions-&#x5F52;&#x7EB3;&#x6CD5;&#x603B;&#x7ED3;"><b>4. </b>Summary for Inductions &#x5F52;&#x7EB3;&#x6CD5;&#x603B;&#x7ED3;</a></li><li><span class="title-icon "></span><a href="#recursive-algorithms-&#x9012;&#x5F52;&#x7B97;&#x6CD5;"><b>5. </b>Recursive Algorithms &#x9012;&#x5F52;&#x7B97;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#recursive-algorithm-vs-iterative-algorithm-&#x9012;&#x5F52;&#x4E0E;&#x8FED;&#x4EE3;"><b>5.1. </b>Recursive Algorithm vs. Iterative Algorithm &#x9012;&#x5F52;&#x4E0E;&#x8FED;&#x4EE3;</a></li></ul></ul></div><a href="#recursion-&#x9012;&#x5F52;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><font size="6"> Chaptcer 05 Induction and Recursion &#x5F52;&#x7EB3;&#x4E0E;&#x9012;&#x5F52;</font>
+
+<p>Part 02 Recursion &#x9012;&#x5F52;</p>
+<p>covering 5.3 ~ 5.4</p>
+<hr>
+<h1 id="recursion-&#x9012;&#x5F52;"><a name="recursion-&#x9012;&#x5F52;" class="anchor-navigation-ex-anchor" href="#recursion-&#x9012;&#x5F52;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Recursion &#x9012;&#x5F52;</h1>
+<h2 id="definition-&#x5B9A;&#x4E49;"><a name="definition-&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#definition-&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Definition &#x5B9A;&#x4E49;</h2>
+<p>Recursion is a principle closely related to mathematical induction.</p>
+<p>In a recursive definition, an object is defined <strong>in terms of itself</strong>.</p>
+<p>We can recursively define sequences, functions and sets.</p>
+<h2 id="use-recursion-to-define-things-&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;"><a name="use-recursion-to-define-things-&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#use-recursion-to-define-things-&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Use recursion to define things &#x4F7F;&#x7528;&#x9012;&#x5F52;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;</h2>
+<h3 id="recursively-defined-functions-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;"><a name="recursively-defined-functions-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#recursively-defined-functions-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Recursively defined functions &#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;</h3>
+<p>Like The Fibonacci numbers</p>
+<h4 id="well-defined-&#x826F;&#x5B9A;&#x4E49;"><a name="well-defined-&#x826F;&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#well-defined-&#x826F;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="well-defined-&#x826F;&#x5B9A;&#x4E49;" class="plugin-anchor" href="#well-defined-&#x826F;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>Well-defined &#x826F;&#x5B9A;&#x4E49;</h4>
+<blockquote>
+<p><strong><em>Recursively defined functions are well-defined.</em></strong></p>
+<p>Let P(n) be the statement &#x201C;f is well-defined at n&#x201C;.</p>
+<ul>
+<li>P(0) is true.</li>
+<li>Assume that P(n-1) is true. Then fis well-defined at n. Since f(n) is given in terms of some f(n-1).</li>
+</ul>
+</blockquote>
+<h3 id="recursively-defined-sets-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x96C6;&#x5408;"><a name="recursively-defined-sets-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x96C6;&#x5408;" class="anchor-navigation-ex-anchor" href="#recursively-defined-sets-&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x96C6;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Recursively defined sets &#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x7684;&#x96C6;&#x5408;</h3>
+<p>Sets can be defined recursively.</p>
+<ul>
+<li><p>Basis Step: specifies an initial collection of elements.</p>
+</li>
+<li><p>Recursive Step: gives rules for forming new elements of the set from those elements already known to be in the set.</p>
+</li>
+</ul>
+<p>Sets described in this way are well-defined.</p>
+<h1 id="structural-induction-&#x7ED3;&#x6784;&#x5F52;&#x7EB3;&#x6CD5;"><a name="structural-induction-&#x7ED3;&#x6784;&#x5F52;&#x7EB3;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#structural-induction-&#x7ED3;&#x6784;&#x5F52;&#x7EB3;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Structural Induction &#x7ED3;&#x6784;&#x5F52;&#x7EB3;&#x6CD5;</h1>
+<p>To prove results about recursively defined sets, we can use <strong>Structural Induction</strong></p>
+<ul>
+<li>Basis Step: Show that the result holds for all elements specified in the basis step of the recursive definition to be in the set.</li>
+<li>Recursive Step: Show that if the statement is true for each of the elements used to construct new elements in the recursive step of the definition, the result holds for these new elements.</li>
+</ul>
+<h2 id="the-validity-of-structural-induction"><a name="the-validity-of-structural-induction" class="anchor-navigation-ex-anchor" href="#the-validity-of-structural-induction"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. The validity of structural induction</h2>
+<p>The validity of structural induction follows from the principle of mathematical induction for the nonnegative integers.</p>
+<p>p(n): the result is true for all elements of the set that are generated by <strong>n or fewer applications of the rules</strong> in the recursive step of a recursive definition.</p>
+<ul>
+<li><p>Basis Step:Show that p(0) is true.</p>
+</li>
+<li><p>Recursive Step: if we assume p(k) is true, it follows that p(k+1) is true.</p>
+</li>
+</ul>
+<h1 id="generalized-induction-&#x5E7F;&#x4E49;&#x5F52;&#x7EB3;&#x6CD5;"><a name="generalized-induction-&#x5E7F;&#x4E49;&#x5F52;&#x7EB3;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#generalized-induction-&#x5E7F;&#x4E49;&#x5F52;&#x7EB3;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Generalized Induction &#x5E7F;&#x4E49;&#x5F52;&#x7EB3;&#x6CD5;</h1>
+<p>Extend M.I&#x2019;s discourse from the set of positive (or nonnegative) integers to other sets that have the well-ordering property</p>
+<h1 id="summary-for-inductions-&#x5F52;&#x7EB3;&#x6CD5;&#x603B;&#x7ED3;"><a name="summary-for-inductions-&#x5F52;&#x7EB3;&#x6CD5;&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#summary-for-inductions-&#x5F52;&#x7EB3;&#x6CD5;&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>4. Summary for Inductions &#x5F52;&#x7EB3;&#x6CD5;&#x603B;&#x7ED3;</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>Weak Mathematical Induction</strong></th>
+<th style="text-align:center"><strong>Strong Mathematical Induction</strong></th>
+<th style="text-align:center"><strong>Structural Induction</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Used for</strong></td>
+<td style="text-align:center">Usually formulae</td>
+<td style="text-align:center">Usually formulae not provable via mathematical induction</td>
+<td style="text-align:center">Only things defined via recursion</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Assumption</strong></td>
+<td style="text-align:center">Assume P(k)</td>
+<td style="text-align:center">Assume P(1), P(2), &#x2026;, P(k)</td>
+<td style="text-align:center">Assume statements is true for some &#x201C;old elements&#x201D;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>What to prove</strong></td>
+<td style="text-align:center">True for P(k+1)</td>
+<td style="text-align:center">True for P(k+1)</td>
+<td style="text-align:center">Statement is true for some &#x201C;new&#x201D; elements created with &#x201C;old&#x201D; elements</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Step 1</strong></td>
+<td style="text-align:center">Base case</td>
+<td style="text-align:center">Base case</td>
+<td style="text-align:center">Basis step</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Step 2</strong></td>
+<td style="text-align:center">Inductive step</td>
+<td style="text-align:center">Inductive step</td>
+<td style="text-align:center">Recursive step</td>
+</tr>
+</tbody>
+</table>
+<h1 id="recursive-algorithms-&#x9012;&#x5F52;&#x7B97;&#x6CD5;"><a name="recursive-algorithms-&#x9012;&#x5F52;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#recursive-algorithms-&#x9012;&#x5F52;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>5. Recursive Algorithms &#x9012;&#x5F52;&#x7B97;&#x6CD5;</h1>
+<p>An algorithm is called <strong>recursive</strong> if it solves a problem by reducing it to an instance of the same problem with <strong>smaller</strong> input.</p>
+<h2 id="recursive-algorithm-vs-iterative-algorithm-&#x9012;&#x5F52;&#x4E0E;&#x8FED;&#x4EE3;"><a name="recursive-algorithm-vs-iterative-algorithm-&#x9012;&#x5F52;&#x4E0E;&#x8FED;&#x4EE3;" class="anchor-navigation-ex-anchor" href="#recursive-algorithm-vs-iterative-algorithm-&#x9012;&#x5F52;&#x4E0E;&#x8FED;&#x4EE3;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. Recursive Algorithm vs. Iterative Algorithm &#x9012;&#x5F52;&#x4E0E;&#x8FED;&#x4EE3;</h2>
+<p><strong><em>For every recursive algorithm, there is an equivalent iterative algorithm!</em></strong></p>
+<p>Recursive algorithms are often <strong>shorter, more elegant, and easier to understand</strong> than their iterative counterparts.</p>
+<p>However, iterative algorithms are usually <strong>more efficient</strong> in their use of space and time.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CH05_01_Induction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 01 Induction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"02 Recursive","level":"6.2","depth":1,"previous":{"title":"01 Induction","level":"6.1","depth":1,"path":"CH05_Induction_and_Recursion/CH05_01_Induction.md","ref":"CH05_Induction_and_Recursion/CH05_01_Induction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","mathjax"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/iamncj"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"Donate","title":"","wechat":"https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG","wechatText":""},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"NCJ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Discrete Mathematics Explained in Detail","language":"en","links":{"sidebar":{"DM Explained in Detail":"https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail","Personal Blog":"https://iamncj.github.io"}},"gitbook":"3.2.3","description":"Explained discrete mathematics in detail!"},"file":{"path":"CH05_Induction_and_Recursion/CH05_02_Recursive.md","mtime":"2019-04-02T08:45:08.972Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-02T09:09:07.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
