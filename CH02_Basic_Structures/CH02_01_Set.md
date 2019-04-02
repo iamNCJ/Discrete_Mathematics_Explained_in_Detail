@@ -90,7 +90,7 @@ $$\begin{aligned}&A=B\\\Leftrightarrow&\forall x[(x\in A\to x\in B)\wedge(x\in B
 
 #### Proper subset 真子集
 
-$$\begin{aligned}&A\subset B\\\Leftrightarrow&\forall x(x\in A\to x\in B)\wedge\exist x(x\in B\wedge x\notin A)\\\Leftrightarrow&(A\subseteq B)\wedge(A\ne B)\end{aligned}$$
+$$\begin{aligned}&A\subset B\\\Leftrightarrow&\forall x(x\in A\to x\in B)\wedge\exists x(x\in B\wedge x\notin A)\\\Leftrightarrow&(A\subseteq B)\wedge(A\ne B)\end{aligned}$$
 
 ### The Size of a Set 集合的大小
 

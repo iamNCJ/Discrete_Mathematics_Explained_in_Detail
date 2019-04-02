@@ -84,6 +84,8 @@ A rough measurement of the running  time of an algorithm based on the **input si
 
 “f(x) is O(g(x))” if there are constants *C* and *k* such that |*f*(*x*)| ≤ *C| g*(*x*)| whenever *x* > *k*.
 
+The constants C and k in the definition of big-O notation are called **witnesses**（**凭证**） to the relationship f (x) is O(g(x)).
+
 ![](../img/CH03/2.png)
 
 > 1. Equivalent expressions: $$f(x)=O(g(x))$$ $$f(x)\in O(g(x))$$

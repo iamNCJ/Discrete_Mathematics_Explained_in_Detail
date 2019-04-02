@@ -1,7 +1,6 @@
 # Gitbook
-# _book 
+_book 
 node_modules
-book.json
 SUMMARY.md
 others
 *.json
