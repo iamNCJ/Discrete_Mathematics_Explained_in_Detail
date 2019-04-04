@@ -6,7 +6,7 @@
 [![Forks](https://img.shields.io/github/forks/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg?label=Fork&style=social)](https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail/network/members)
 [![repo-size](https://img.shields.io/github/repo-size/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg)]()
 [![Contributors](https://img.shields.io/github/contributors/iamNCJ/Discrete_Mathematics_Explained_in_Detail.svg)](https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail/graphs/contributors)
-[![License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/cc-by-nc-nd/3.0/)
+[![License](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/cc-by-nc-nd/3.0/)
 
 本项目由浙大计院的NCJ创建和维护，算是第一次在GitHub上面建立大型公开仓库的尝试吧
 
