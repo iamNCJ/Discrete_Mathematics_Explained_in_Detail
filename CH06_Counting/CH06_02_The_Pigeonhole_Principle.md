@@ -84,7 +84,7 @@ During 11 weeks football games will be held at least 1 game a day, but at most 1
 >
 > $$a_{i}=a_{j}+21$$
 >
-> $$a_{i}-a_{j}=x_{i}+x_{i-1}+\ldots+x_{j+1}=21​$$
+> $$a_{i}-a_{j}=x_{i}+x_{i-1}+\ldots+x_{j+1}=21$$
 
 ### Deeper Thinking 深入思考
 
@@ -94,7 +94,7 @@ During 11 weeks football games will be held at least 1 game a day, but at most 1
 
 $$c_{i}=a_{i}+22 \quad 23 \leq c_{1}<c_{2}<\ldots<c_{77} \leq 132+22=154$$
 
-$$A=\left\{a_{1}, a_{2}, \ldots a_{77}, c_{1}, c_{2}, \ldots c_{77}\right\} \quad B=\{1,2, \ldots, 154\}​$$
+$$A=\left\{a_{1}, a_{2}, \ldots a_{77}, c_{1}, c_{2}, \ldots c_{77}\right\} \quad B=\{1,2, \ldots, 154\}$$
 
 此时有154个物品和154个抽屉，貌似抽屉原理又不能用了……
 
@@ -111,23 +111,23 @@ In $$a_1\sim a_{24}$$, we must have $$a_i\equiv a_j(mod\ 23)$$
 
 > 1. If $$a_i-a_j=23$$, proof finish
 >
-> 2. Else if we have  $$a_i-a_j=46​$$, which means $$a_{24}\geq a_i\geq47​$$
+> 2. Else if we have  $$a_i-a_j=46$$, which means $$a_{24}\geq a_i\geq47$$
 >
 > > Then in $$a_{24}\sim a_{47}$$, we must have $$a_i\equiv a_j(mod\ 23)$$
 > >
-> > > 2.1 If $$a_i-a_j=23​$$, proof finish
+> > > 2.1 If $$a_i-a_j=23$$, proof finish
 > > >
-> > > 2.2 Else if we have  $$a_i-a_j=46​$$, which means $$a_{47}\geq a_i\geq93​$$
+> > > 2.2 Else if we have  $$a_i-a_j=46$$, which means $$a_{47}\geq a_i\geq93$$
 > > >
 > > > > Then in $$a_{47}\sim a_{70}$$, we must have $$a_i\equiv a_j(mod\ 23)$$
 > > > >
-> > > > 2.2.1 If $$a_i-a_j=23​$$, proof finish
+> > > > 2.2.1 If $$a_i-a_j=23$$, proof finish
 > > > >
 > > > > 2.2.2 Else if we have  $$a_i-a_j=46$$, which means $$a_{70}\geq a_i\geq139$$
 > > > >
 > > > > ​          However, since $$a_i\leq 132$$, there is a contradiction, so it must be the other situations
 > > >
-> > > 2.3 Else if we have  $$a_i-a_j=69​$$, which means $$a_{47}\geq a_i\geq116​$$
+> > > 2.3 Else if we have  $$a_i-a_j=69$$, which means $$a_{47}\geq a_i\geq116$$
 > > >
 > > > ​       However, since $$a_{47}\leq 102$$, there is a contradiction, so it must be the other situations
 >
@@ -137,7 +137,7 @@ In $$a_1\sim a_{24}$$, we must have $$a_i\equiv a_j(mod\ 23)$$
 > >
 > > > 3.1 If $$a_i-a_j=23$$, proof finish
 > > >
-> > > 3.2 Else if we have  $$a_i-a_j=46​$$, which means $$a_{47}\geq a_i\geq116​$$
+> > > 3.2 Else if we have  $$a_i-a_j=46$$, which means $$a_{47}\geq a_i\geq116$$
 > > >
 > > > ​       However, since $$a_{47}\leq 102$$, there is a contradiction, so it must be the other situations
 >
@@ -227,7 +227,7 @@ In addition, we also have that $$R(3,3)>5$$ due to a counterexample given below
 >
 > ![](../img/CH06/05.png)
 
-So, we have $$R(3,3)=6​$$
+So, we have $$R(3,3)=6$$
 
 ## Summary 小总结
 
