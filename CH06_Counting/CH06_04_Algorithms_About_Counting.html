@@ -1,0 +1,719 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04 Algorithms About Counting · Discrete Mathematics Explained in Detail</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="NCJ">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="CH06_03_Generalized_Permutations_and_Combinations" />
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail" target="_blank" class="custom-link">DM Explained in Detail</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://iamncj.github.io" target="_blank" class="custom-link">Personal Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 01 Logic and Proofs</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                    
+                    01 Proposition Logic and Propositional Equivalences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                    
+                    02 Predicate Logic and Nested Quantifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                    
+                    03 Normal Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                    
+                    04 Rules of Inference and Proofs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 02 Basic Structures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                    
+                    01 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                    
+                    02 Function and Sequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                    
+                    03 Cardinality of Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 03 Algorithms</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                <a href="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                    
+                    01 Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 04 Number Theory</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    To be added…
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 05 Induction and Recursion</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../CH05_Induction_and_Recursion/CH05_01_Induction.html">
+            
+                <a href="../CH05_Induction_and_Recursion/CH05_01_Induction.html">
+            
+                    
+                    01 Induction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../CH05_Induction_and_Recursion/CH05_02_Recursive.html">
+            
+                <a href="../CH05_Induction_and_Recursion/CH05_02_Recursive.html">
+            
+                    
+                    02 Recursive
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 06 Counting</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="CH06_01_The_Basic_of_Counting.html">
+            
+                <a href="CH06_01_The_Basic_of_Counting.html">
+            
+                    
+                    01 The Basic of Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="CH06_02_The_Pigeonhole_Principle.html">
+            
+                <a href="CH06_02_The_Pigeonhole_Principle.html">
+            
+                    
+                    02 The Pigeonhole Principal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="CH06_03_Generalized_Permutations_and_Combinations">
+            
+                <span>
+            
+                    
+                    03 Generalized Permutations and Combinations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.4" data-path="CH06_04_Algorithms_About_Counting.html">
+            
+                <a href="CH06_04_Algorithms_About_Counting.html">
+            
+                    
+                    04 Algorithms About Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 07 Discrete Possibility</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    To be added...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 08 Advcanced Counting Techniques</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../CH08_Advanced_Counting_Techniques/CH08_01_Deeper_Discussion_About_Recurrence_Relations.html">
+            
+                <a href="../CH08_Advanced_Counting_Techniques/CH08_01_Deeper_Discussion_About_Recurrence_Relations.html">
+            
+                    
+                    01 Deeper Discussion About Recurrence Relations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >04 Algorithms About Counting</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#generating-permutations-&#x751F;&#x6210;&#x6392;&#x5217;"><b>1. </b>Generating Permutations &#x751F;&#x6210;&#x6392;&#x5217;</a></li><li><span class="title-icon "></span><a href="#find-the-ordinal-number-for-the-given-permutation-&#x7ED9;&#x5B9A;&#x6392;&#x5217;&#x6C42;&#x5E8F;&#x53F7;"><b>2. </b>Find the ordinal number for the given permutation &#x7ED9;&#x5B9A;&#x6392;&#x5217;&#x6C42;&#x5E8F;&#x53F7;</a></li><li><span class="title-icon "></span><a href="#find-the-permutation-given-the-ordinal-number-&#x7ED9;&#x5B9A;&#x5E8F;&#x53F7;&#x6C42;&#x6392;&#x5217;"><b>3. </b>Find the permutation given the ordinal number &#x7ED9;&#x5B9A;&#x5E8F;&#x53F7;&#x6C42;&#x6392;&#x5217;</a></li><li><span class="title-icon "></span><a href="#generating-combinations-&#x751F;&#x6210;&#x7EC4;&#x5408;"><b>4. </b>Generating Combinations &#x751F;&#x6210;&#x7EC4;&#x5408;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F4D;&#x4E32;&#x8868;&#x793A;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;"><b>4.1. </b>&#x4F4D;&#x4E32;&#x8868;&#x793A;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C4;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;"><b>4.2. </b>&#x5E38;&#x89C4;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;</a></li></ul></ul></div><a href="#generating-permutations-&#x751F;&#x6210;&#x6392;&#x5217;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><font size="6">Chaptcer 06 Counting &#x8BA1;&#x6570;</font>
+
+<p>Part 04 Algorithms About Counting &#x6392;&#x5217;&#x7EC4;&#x5408;&#x7B97;&#x6CD5;</p>
+<p>covering 6.6 and more</p>
+<hr>
+<blockquote>
+<p>Disclaim: the codes in this section are not tested, it just wants to show you the thoughts behind the algorithms</p>
+</blockquote>
+<h1 id="generating-permutations-&#x751F;&#x6210;&#x6392;&#x5217;"><a name="generating-permutations-&#x751F;&#x6210;&#x6392;&#x5217;" class="anchor-navigation-ex-anchor" href="#generating-permutations-&#x751F;&#x6210;&#x6392;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Generating Permutations &#x751F;&#x6210;&#x6392;&#x5217;</h1>
+<blockquote>
+<p>&#x7ED9;&#x5B9A;&#x67D0;&#x4E00;&#x4E2A;&#x6392;&#x5217;&#xFF0C;&#x751F;&#x6210;&#x6309;&#x7167;&#x5B57;&#x5178;&#x5E8F;&#x5347;&#x5E8F;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x6392;&#x5217;</p>
+</blockquote>
+<p>&#x5148;&#x4ECE;&#x540E;&#x5F80;&#x524D;&#x904D;&#x5386;&#xFF0C;&#x76F4;&#x5230;&#x9047;&#x5230;&#x4E0D;&#x662F;&#x964D;&#x5E8F;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x3002;&#x7136;&#x540E;&#x7528;&#x8BE5;&#x6570;&#x53F3;&#x8FB9;&#x5927;&#x4E8E;&#x8BE5;&#x6570;&#x7684;&#x6570;&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x6570;&#x66FF;&#x6362;&#x8BE5;&#x6570;&#xFF0C;&#x53F3;&#x8FB9;&#x5269;&#x4E0B;&#x7684;&#x6570;&#xFF08;&#x542B;&#x521A;&#x521A;&#x6362;&#x4E0B;&#x6765;&#x7684;&#x6570;&#xFF09;&#x5347;&#x5E8F;&#x91CD;&#x6392;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">next_permutation</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* a, <span class="hljs-keyword">int</span> n)</span> <span class="hljs-comment">// &#x4E0A;&#x4E00;&#x4E2A;&#x6392;&#x5217;&#x4E3A;a&#xFF0C;a&#x4E2D;&#x6709;n&#x4E2A;&#x6570;&#xFF0C;&#x5C06;a&#x8F6C;&#x5316;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;&#x6392;&#x5217;</span>
+</span>{
+    <span class="hljs-comment">// STEP 1 &#x627E;&#x5230;&#x6253;&#x7834;&#x964D;&#x5E8F;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;</span>
+    <span class="hljs-keyword">int</span> i = n - <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">for</span> ( ; i &gt;= <span class="hljs-number">0</span>; i--)
+    {
+        <span class="hljs-keyword">if</span> (a[i] &lt; a[i + <span class="hljs-number">1</span>])
+            <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-comment">// STEP 2 &#x627E;&#x5230;&#x8BE5;&#x6570;&#x53F3;&#x8FB9;&#x6700;&#x5927;&#x7684;&#x6570;</span>
+    <span class="hljs-keyword">int</span> k = n - <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span> ( ; k &gt; i; k--)
+    {
+        <span class="hljs-keyword">if</span> (a[k] &gt; a[i])
+            <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-comment">// STEP 3 &#x4EA4;&#x6362;&#x8FD9;&#x4E24;&#x4E2A;&#x6570;</span>
+    <span class="hljs-keyword">int</span> temp = a[i];
+    a[i] = a[k];
+    a[k] = temp;
+    <span class="hljs-comment">// STEP 4 &#x53F3;&#x8FB9;&#x4F59;&#x4E0B;&#x7684;&#x6570;&#x5347;&#x5E8F;&#x91CD;&#x6392;</span>
+    sort(a + i, a + n);
+}
+</code></pre>
+<h1 id="find-the-ordinal-number-for-the-given-permutation-&#x7ED9;&#x5B9A;&#x6392;&#x5217;&#x6C42;&#x5E8F;&#x53F7;"><a name="find-the-ordinal-number-for-the-given-permutation-&#x7ED9;&#x5B9A;&#x6392;&#x5217;&#x6C42;&#x5E8F;&#x53F7;" class="anchor-navigation-ex-anchor" href="#find-the-ordinal-number-for-the-given-permutation-&#x7ED9;&#x5B9A;&#x6392;&#x5217;&#x6C42;&#x5E8F;&#x53F7;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Find the ordinal number for the given permutation &#x7ED9;&#x5B9A;&#x6392;&#x5217;&#x6C42;&#x5E8F;&#x53F7;</h1>
+<blockquote>
+<p>&#x57FA;&#x672C;&#x601D;&#x60F3;&#xFF1A;&#x7B97;&#x51FA;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x6392;&#x5217;&#x6BD4;&#x7ED9;&#x5B9A;&#x6392;&#x5217;&#x5C0F;</p>
+</blockquote>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x6574;&#x6570;1~k&#x7684;&#x4E00;&#x4E2A;&#x6392;&#x5217;<script type="math/tex; ">a_1,a_2,…,a_k</script>&#xFF0C;&#x6C42;&#x5176;&#x5E8F;&#x53F7;</p>
+<p>&#x9996;&#x5148;&#xFF0C;1&#x5230;<script type="math/tex; ">a_1-1</script>&#x653E;&#x5728;&#x7B2C;&#x4E00;&#x4F4D;&#xFF0C;&#x4F1A;&#x6709;<script type="math/tex; ">(a_1-1)\times((k-1)!)</script>&#x4E2A;&#x6392;&#x5217;</p>
+<p>&#x5176;&#x6B21;&#xFF0C;1&#x5230;<script type="math/tex; ">a_2-1</script>&#x653E;&#x5728;&#x7B2C;&#x4E8C;&#x4F4D;&#xFF0C;&#x4F1A;&#x6709;<script type="math/tex; ">(a_2-1)\times((k-2)!)</script>&#x4E2A;&#x6392;&#x5217;</p>
+<p>&#x4E4B;&#x540E;&#xFF0C;1&#x5230;<script type="math/tex; ">a_3-1</script>&#x653E;&#x5728;&#x7B2C;&#x4E09;&#x4F4D;&#xFF0C;&#x4F1A;&#x6709;<script type="math/tex; ">(a_3-1)\times((k-3)!)</script>&#x4E2A;&#x6392;&#x5217;</p>
+<p>&#x2026;&#x2026;</p>
+<p>&#x5168;&#x90E8;&#x52A0;&#x8D77;&#x6765;&#xFF0C;&#x5373;&#x5F97;&#x5230;&#x5E8F;&#x53F7;</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">index_of_permutation</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* a, <span class="hljs-keyword">int</span> n)</span>
+</span>{
+    <span class="hljs-comment">// &#x9012;&#x63A8;&#x7B97;&#x597D;1~(n-1)&#x7684;&#x9636;&#x4E58;&#xFF0C;&#x505A;&#x597D;&#x51C6;&#x5907;</span>
+    <span class="hljs-keyword">int</span> factorial[n];
+    factorial[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; n; i++)
+        factorial[i] = factorial[i - <span class="hljs-number">1</span>] * i;
+    <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x7B54;&#x6848;</span>
+    <span class="hljs-keyword">int</span> res = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)
+        res += (a[i] - <span class="hljs-number">1</span>) * factorial[n - i - <span class="hljs-number">1</span>];
+    <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<h1 id="find-the-permutation-given-the-ordinal-number-&#x7ED9;&#x5B9A;&#x5E8F;&#x53F7;&#x6C42;&#x6392;&#x5217;"><a name="find-the-permutation-given-the-ordinal-number-&#x7ED9;&#x5B9A;&#x5E8F;&#x53F7;&#x6C42;&#x6392;&#x5217;" class="anchor-navigation-ex-anchor" href="#find-the-permutation-given-the-ordinal-number-&#x7ED9;&#x5B9A;&#x5E8F;&#x53F7;&#x6C42;&#x6392;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Find the permutation given the ordinal number &#x7ED9;&#x5B9A;&#x5E8F;&#x53F7;&#x6C42;&#x6392;&#x5217;</h1>
+<blockquote>
+<p>&#x57FA;&#x672C;&#x601D;&#x60F3;&#xFF1A;&#x9010;&#x4F4D;&#x786E;&#x5B9A;</p>
+</blockquote>
+<p>&#x4F8B;&#x5982;&#xFF1A;1234&#x6392;&#x5217;&#x7684;&#x7B2C;9&#x53F7;</p>
+<p>&#x5047;&#x8BBE;&#x7B2C;&#x4E00;&#x4F4D;&#x662F;1&#xFF0C;<code>1___</code>&#xFF0C;&#x80FD;&#x6570;&#x5230;<script type="math/tex; ">3!</script>&#x4E2A;&#xFF0C;&#x6CA1;&#x6709;&#x8FBE;&#x5230;9&#xFF0C;&#x6545;&#x7B2C;&#x4E00;&#x4F4D;&#x81F3;&#x5C11;&#x4E3A;2</p>
+<p>&#x5047;&#x8BBE;&#x7B2C;&#x4E00;&#x4F4D;&#x662F;2&#xFF0C;<code>2___</code>&#xFF0C;&#x80FD;&#x6570;&#x5230;<script type="math/tex; ">2\times 3!</script>&#x4E2A;&#xFF0C;&#x5230;&#x8FBE;&#x4E86;9&#xFF0C;&#x6545;&#x7B2C;&#x4E8C;&#x4F4D;&#x4E3A;2</p>
+<p>&#x5047;&#x8BBE;&#x7B2C;&#x4E8C;&#x4F4D;&#x662F;1&#xFF0C;<code>21__</code>&#xFF0C;&#x80FD;&#x6570;&#x5230;<script type="math/tex; ">3!+2!=8</script>&#x4E2A;&#xFF0C;&#x6CA1;&#x8FBE;&#x5230;9&#xFF0C;&#x6545;&#x7B2C;&#x4E8C;&#x4F4D;&#x81F3;&#x5C11;&#x4E3A;3</p>
+<p>&#x5047;&#x8BBE;&#x7B2C;&#x4E8C;&#x4F4D;&#x4E3A;3&#xFF0C;<code>23__</code>&#xFF0C;&#x80FD;&#x6570;&#x5230;<script type="math/tex; ">3!+2\times 2!=10</script>&#x4E2A;&#xFF0C;&#x8FBE;&#x5230;&#x4E86;9&#xFF0C;&#x6545;&#x7B2C;&#x4E8C;&#x4F4D;&#x4E3A;3</p>
+<p>&#x5047;&#x8BBE;&#x7B2C;&#x4E09;&#x4F4D;&#x4E3A;1&#xFF0C;<code>2314</code>&#xFF0C;&#x80FD;&#x6570;&#x5230;<script type="math/tex; ">3!+2!+1=9</script>&#x4E2A;&#xFF0C;&#x56E0;&#x6B64;&#x627E;&#x5230;&#x6240;&#x9700;&#x6570;&#x4E3A;2314</p>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">int</span>* <span class="hljs-title">permutation_from_index</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index, <span class="hljs-keyword">int</span> n)</span>
+</span>{
+    <span class="hljs-comment">// &#x9012;&#x63A8;&#x7B97;&#x597D;1~n&#x7684;&#x9636;&#x4E58;&#xFF0C;&#x505A;&#x597D;&#x51C6;&#x5907;</span>
+    <span class="hljs-keyword">int</span> factorial[n + <span class="hljs-number">1</span>];
+    factorial[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++)
+        factorial[i] = factorial[i - <span class="hljs-number">1</span>] * i;
+    <span class="hljs-comment">// &#x6784;&#x5EFA;&#x7B54;&#x6848;</span>
+    <span class="hljs-keyword">int</span> *res = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n];
+    <span class="hljs-keyword">bool</span> used[n + <span class="hljs-number">1</span>];
+    <span class="hljs-built_in">memset</span>(used, <span class="hljs-number">0</span>, <span class="hljs-keyword">sizeof</span>(used));
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) <span class="hljs-comment">// &#x5C1D;&#x8BD5;&#x7B2C;i&#x4F4D;</span>
+    {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= n; j++) <span class="hljs-comment">// &#x5C1D;&#x8BD5;1~n</span>
+        {
+            <span class="hljs-keyword">if</span> (!used[j])
+                <span class="hljs-keyword">if</span> (factorial[n - i - <span class="hljs-number">1</span>] &gt;= index + <span class="hljs-number">1</span>)
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">else</span>
+                    index -= factorial[n - i - <span class="hljs-number">1</span>];
+        }
+        res[i] = j;
+        used[j] = <span class="hljs-literal">true</span>;
+    }
+    <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<h1 id="generating-combinations-&#x751F;&#x6210;&#x7EC4;&#x5408;"><a name="generating-combinations-&#x751F;&#x6210;&#x7EC4;&#x5408;" class="anchor-navigation-ex-anchor" href="#generating-combinations-&#x751F;&#x6210;&#x7EC4;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>4. Generating Combinations &#x751F;&#x6210;&#x7EC4;&#x5408;</h1>
+<h2 id="&#x4F4D;&#x4E32;&#x8868;&#x793A;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;"><a name="&#x4F4D;&#x4E32;&#x8868;&#x793A;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x4F4D;&#x4E32;&#x8868;&#x793A;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. &#x4F4D;&#x4E32;&#x8868;&#x793A;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;</h2>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F4D;&#x4E32;&#x6765;&#x8868;&#x793A;&#x7EC4;&#x5408;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x751F;&#x6210;&#x4E0B;&#x4E00;&#x4E2A;&#x4F4D;&#x4E32;&#x5373;&#x53EF;</p>
+<p>&#x8FD9;&#x5C31;&#x7B49;&#x4EF7;&#x4E8E;&#x4E8C;&#x8FDB;&#x5236;&#x4E0B;&#x52A0;1</p>
+<p>&#x5F53;&#x7136;<code>int</code>&#x8303;&#x56F4;&#x5185;&#x7684;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x52A0;1&#xFF0C;&#x4F46;&#x662F;&#x8003;&#x8651;&#x66F4;&#x52A0;&#x4E00;&#x822C;&#x5316;&#x7684;&#x60C5;&#x666F;&#xFF0C;&#x6BD4;&#x5982;&#x50A8;&#x5B58;&#x5728;&#x6570;&#x7EC4;&#x6216;&#x8005;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x4F4D;&#x4E32;</p>
+<p>&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">next_bit_string</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* b, <span class="hljs-keyword">int</span> n)</span>
+</span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = n - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--)
+    {
+        <span class="hljs-keyword">if</span> (b[i] == <span class="hljs-number">1</span>)
+            b[i] = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">else</span>
+        {
+            b[i] = <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">break</span>;
+        }
+    }
+}
+</code></pre>
+<h2 id="&#x5E38;&#x89C4;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;"><a name="&#x5E38;&#x89C4;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C4;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. &#x5E38;&#x89C4;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E0B;&#x7684;&#x751F;&#x6210;&#x7EC4;&#x5408;</h2>
+<p>&#x5982;&#x679C;&#x5355;&#x7EAF;&#x662F;&#x7528;&#x6570;&#x7EC4;&#x5B58;&#x653E;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x6392;&#x5217;&#x7684;&#xFF0C;&#x7B97;&#x6CD5;&#x5982;&#x4E0B;&#xFF08;&#x89C4;&#x5B9A;&#x6BCF;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x5347;&#x5E8F;&#x6392;&#x5217;&#x7684;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">next_r_combination</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* a, <span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> r)</span>
+</span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = r - <span class="hljs-number">1</span>; i &gt; <span class="hljs-number">0</span>; i--)
+    {
+        <span class="hljs-keyword">if</span> (a[i] != n - r + <span class="hljs-number">1</span> + i)
+        {
+            a[i]++;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = i + <span class="hljs-number">1</span>; i &lt; r; i++)
+                a[j] = a[i] + j - i;
+            <span class="hljs-keyword">break</span>;
+        }
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CH06_03_Generalized_Permutations_and_Combinations" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 03 Generalized Permutations and Combinations">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04 Algorithms About Counting","level":"7.4","depth":1,"next":{"title":"To be added...","level":"8.1","depth":1,"ref":"","articles":[]},"previous":{"title":"03 Generalized Permutations and Combinations","level":"7.3","depth":1,"path":"CH06_Counting/CH06_03_Generalized_Permutations_and_Combinations","ref":"CH06_Counting/CH06_03_Generalized_Permutations_and_Combinations","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","mathjax"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/iamncj"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"Donate","title":"","wechat":"https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG","wechatText":""},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"NCJ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Discrete Mathematics Explained in Detail","language":"en","links":{"sidebar":{"DM Explained in Detail":"https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail","Personal Blog":"https://iamncj.github.io"}},"gitbook":"3.2.3","description":"Explained discrete mathematics in detail!"},"file":{"path":"CH06_Counting/CH06_04_Algorithms_About_Counting.md","mtime":"2019-05-04T13:33:21.687Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-04T13:45:13.203Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

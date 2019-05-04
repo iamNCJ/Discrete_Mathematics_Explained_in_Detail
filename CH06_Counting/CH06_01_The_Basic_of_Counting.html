@@ -1,0 +1,751 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01 The Basic of Counting · Discrete Mathematics Explained in Detail</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="NCJ">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CH06_02_The_Pigeonhole_Principle.html" />
+    
+    
+    <link rel="prev" href="../CH05_Induction_and_Recursion/CH05_02_Recursive.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail" target="_blank" class="custom-link">DM Explained in Detail</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://iamncj.github.io" target="_blank" class="custom-link">Personal Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 01 Logic and Proofs</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                    
+                    01 Proposition Logic and Propositional Equivalences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                    
+                    02 Predicate Logic and Nested Quantifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                    
+                    03 Normal Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                    
+                    04 Rules of Inference and Proofs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 02 Basic Structures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                    
+                    01 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                    
+                    02 Function and Sequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                    
+                    03 Cardinality of Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 03 Algorithms</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                <a href="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                    
+                    01 Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 04 Number Theory</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    To be added…
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 05 Induction and Recursion</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../CH05_Induction_and_Recursion/CH05_01_Induction.html">
+            
+                <a href="../CH05_Induction_and_Recursion/CH05_01_Induction.html">
+            
+                    
+                    01 Induction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../CH05_Induction_and_Recursion/CH05_02_Recursive.html">
+            
+                <a href="../CH05_Induction_and_Recursion/CH05_02_Recursive.html">
+            
+                    
+                    02 Recursive
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 06 Counting</li>
+        
+        
+    
+        <li class="chapter active" data-level="7.1" data-path="CH06_01_The_Basic_of_Counting.html">
+            
+                <a href="CH06_01_The_Basic_of_Counting.html">
+            
+                    
+                    01 The Basic of Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="CH06_02_The_Pigeonhole_Principle.html">
+            
+                <a href="CH06_02_The_Pigeonhole_Principle.html">
+            
+                    
+                    02 The Pigeonhole Principal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="CH06_03_Generalized_Permutations_and_Combinations">
+            
+                <span>
+            
+                    
+                    03 Generalized Permutations and Combinations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="CH06_04_Algorithms_About_Counting.html">
+            
+                <a href="CH06_04_Algorithms_About_Counting.html">
+            
+                    
+                    04 Algorithms About Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 07 Discrete Possibility</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    To be added...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 08 Advcanced Counting Techniques</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../CH08_Advanced_Counting_Techniques/CH08_01_Deeper_Discussion_About_Recurrence_Relations.html">
+            
+                <a href="../CH08_Advanced_Counting_Techniques/CH08_01_Deeper_Discussion_About_Recurrence_Relations.html">
+            
+                    
+                    01 Deeper Discussion About Recurrence Relations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >01 The Basic of Counting</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#basic-counting-principles-&#x57FA;&#x672C;&#x8BA1;&#x6570;&#x539F;&#x7406;"><b>1. </b>Basic Counting Principles &#x57FA;&#x672C;&#x8BA1;&#x6570;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#the-sum-rule-&#x52A0;&#x6CD5;&#x539F;&#x7406;"><b>1.1. </b>The Sum Rule &#x52A0;&#x6CD5;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#phrased-in-terms-of-sets"><b>1.1.1. </b>Phrased in terms of sets</a></li><li><span class="title-icon "></span><a href="#the-extended-version-of-the-sum-rule"><b>1.1.2. </b>The extended version of the sum rule</a></li></ul><li><span class="title-icon "></span><a href="#the-product-rule-&#x4E58;&#x6CD5;&#x539F;&#x7406;"><b>1.2. </b>The Product Rule &#x4E58;&#x6CD5;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#phrased-in-terms-of-sets_1"><b>1.2.1. </b>Phrased in terms of sets</a></li><li><span class="title-icon "></span><a href="#the-extended-version-of-the-product-rule"><b>1.2.2. </b>The extended version of the product rule</a></li></ul><li><span class="title-icon "></span><a href="#subtraction-rule-&#x51CF;&#x6CD5;&#x539F;&#x7406;"><b>1.3. </b>Subtraction Rule &#x51CF;&#x6CD5;&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#division-rule-&#x9664;&#x6CD5;&#x539F;&#x7406;"><b>1.4. </b>Division Rule &#x9664;&#x6CD5;&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#tree-diagrams-&#x6811;&#x72B6;&#x56FE;"><b>1.5. </b>Tree Diagrams &#x6811;&#x72B6;&#x56FE;</a></li></ul><li><span class="title-icon "></span><a href="#permutations-and-combinations-&#x6392;&#x5217;&#x7EC4;&#x5408;"><b>2. </b>Permutations and Combinations &#x6392;&#x5217;&amp;&#x7EC4;&#x5408;</a></li><ul><li><span class="title-icon "></span><a href="#permutations-&#x6392;&#x5217;"><b>2.1. </b>Permutations &#x6392;&#x5217;</a></li><ul><li><span class="title-icon "></span><a href="#definition-&#x5B9A;&#x4E49;"><b>2.1.1. </b>Definition &#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#theorem-&#x5B9A;&#x7406;"><b>2.1.2. </b>Theorem &#x5B9A;&#x7406;</a></li><li><span class="title-icon "></span><a href="#phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;"><b>2.1.3. </b>Phrased in terms of functions &#x51FD;&#x6570;&#x8868;&#x793A;</a></li></ul><li><span class="title-icon "></span><a href="#combinations-&#x7EC4;&#x5408;"><b>2.2. </b>Combinations &#x7EC4;&#x5408;</a></li><ul><li><span class="title-icon "></span><a href="#definition-&#x5B9A;&#x4E49;_1"><b>2.2.1. </b>Definition &#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#theorem-&#x5B9A;&#x7406;_1"><b>2.2.2. </b>Theorem &#x5B9A;&#x7406;</a></li><li><span class="title-icon "></span><a href="#phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;_1"><b>2.2.3. </b>Phrased in terms of functions &#x51FD;&#x6570;&#x8868;&#x793A;</a></li><li><span class="title-icon "></span><a href="#corollary-&#x63A8;&#x8BBA;"><b>2.2.4. </b>Corollary &#x63A8;&#x8BBA;</a></li></ul><li><span class="title-icon "></span><a href="#combinatorial-proofs--&#x7EC4;&#x5408;&#x8BC1;&#x660E;"><b>2.3. </b>Combinatorial Proofs  &#x7EC4;&#x5408;&#x8BC1;&#x660E;</a></li><ul><li><span class="title-icon "></span><a href="#double-counting-proof-&#x53CC;&#x8BA1;&#x6570;&#x8BC1;&#x660E;"><b>2.3.1. </b>Double Counting Proof &#x53CC;&#x8BA1;&#x6570;&#x8BC1;&#x660E;</a></li><li><span class="title-icon "></span><a href="#bijective-proof-&#x53CC;&#x5C04;&#x8BC1;&#x660E;"><b>2.3.2. </b>Bijective Proof &#x53CC;&#x5C04;&#x8BC1;&#x660E;</a></li></ul></ul><li><span class="title-icon "></span><a href="#binomial-coefficients-&#x4E8C;&#x9879;&#x5F0F;&#x7CFB;&#x6570;"><b>3. </b>Binomial Coefficients &#x4E8C;&#x9879;&#x5F0F;&#x7CFB;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#the-binomial-theorem-&#x4E8C;&#x9879;&#x5F0F;&#x5B9A;&#x7406;"><b>3.1. </b>The Binomial Theorem &#x4E8C;&#x9879;&#x5F0F;&#x5B9A;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#corollary-1-&#x63A8;&#x8BBA;-1"><b>3.1.1. </b>Corollary 1 &#x63A8;&#x8BBA; 1</a></li><li><span class="title-icon "></span><a href="#corollary-2-&#x63A8;&#x8BBA;-2"><b>3.1.2. </b>Corollary 2 &#x63A8;&#x8BBA; 2</a></li><li><span class="title-icon "></span><a href="#corollary-3-&#x63A8;&#x8BBA;-3"><b>3.1.3. </b>Corollary 3 &#x63A8;&#x8BBA; 3</a></li></ul><li><span class="title-icon "></span><a href="#pascals-identity-&#x5E15;&#x65AF;&#x5361;&#x6052;&#x7B49;&#x5F0F;"><b>3.2. </b>PASCAL&#x2019;S Identity &#x5E15;&#x65AF;&#x5361;&#x6052;&#x7B49;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#pascals-triangle-&#x5E15;&#x65AF;&#x5361;&#x4E09;&#x89D2;&#x5F62;"><b>3.2.1. </b>Pascal&apos;s Triangle &#x5E15;&#x65AF;&#x5361;&#x4E09;&#x89D2;&#x5F62;</a></li></ul><li><span class="title-icon "></span><a href="#vandermondes-identity-&#x8303;&#x5FB7;&#x8499;&#x5FB7;&#x6052;&#x7B49;&#x5F0F;"><b>3.3. </b>Vandermonde&#x2019;s Identity &#x8303;&#x5FB7;&#x8499;&#x5FB7;&#x6052;&#x7B49;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#corollary-4-&#x63A8;&#x8BBA;-4"><b>3.3.1. </b>Corollary 4 &#x63A8;&#x8BBA; 4</a></li></ul><li><span class="title-icon "></span><a href="#another-identity-&#x65E0;&#x540D;&#x6052;&#x7B49;&#x5F0F;"><b>3.4. </b>Another Identity &#x201C;&#x65E0;&#x540D;&#x201D;&#x6052;&#x7B49;&#x5F0F;</a></li></ul></ul></div><a href="#basic-counting-principles-&#x57FA;&#x672C;&#x8BA1;&#x6570;&#x539F;&#x7406;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><font size="6"> Chaptcer 06 Counting &#x8BA1;&#x6570;</font>
+
+<p>Part 01 The Basic of Counting &#x8BA1;&#x6570;&#x57FA;&#x7840;</p>
+<p>covering 6.1&#x3001;6.3&#x3001;6.4</p>
+<hr>
+<h1 id="basic-counting-principles-&#x57FA;&#x672C;&#x8BA1;&#x6570;&#x539F;&#x7406;"><a name="basic-counting-principles-&#x57FA;&#x672C;&#x8BA1;&#x6570;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#basic-counting-principles-&#x57FA;&#x672C;&#x8BA1;&#x6570;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Basic Counting Principles &#x57FA;&#x672C;&#x8BA1;&#x6570;&#x539F;&#x7406;</h1>
+<h2 id="the-sum-rule-&#x52A0;&#x6CD5;&#x539F;&#x7406;"><a name="the-sum-rule-&#x52A0;&#x6CD5;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#the-sum-rule-&#x52A0;&#x6CD5;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. The Sum Rule &#x52A0;&#x6CD5;&#x539F;&#x7406;</h2>
+<p>If a first task can be done in <script type="math/tex; ">n_1</script> ways and a second task in <script type="math/tex; ">n_2</script> ways, and if these tasks cannot be done at the same time, then there are <script type="math/tex; ">n_1+n_2</script> ways to do one of these tasks. </p>
+<h3 id="phrased-in-terms-of-sets"><a name="phrased-in-terms-of-sets" class="anchor-navigation-ex-anchor" href="#phrased-in-terms-of-sets"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. Phrased in terms of sets</h3>
+<p>If <em>S</em> and <em>T</em> are two disjoint finite sets, then the number of elements in the union of these sets is the sum of numbers of elements in them, namely <script type="math/tex; ">|S\cup T|=|S|+|T|</script></p>
+<blockquote>
+<p><strong>Note</strong>: </p>
+<p>If S and T have common elements, then we should use the  inclusion-Exclusion principle (Subtraction Rule). </p>
+</blockquote>
+<h3 id="the-extended-version-of-the-sum-rule"><a name="the-extended-version-of-the-sum-rule" class="anchor-navigation-ex-anchor" href="#the-extended-version-of-the-sum-rule"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. The extended version of the sum rule</h3>
+<p>We can extend the sum rule to more than two tasks.</p>
+<p>Suppose that the tasks <script type="math/tex; ">T_1,T_2,…,T_m</script> can be done in <script type="math/tex; ">n_1,n_2,…,n_m</script> ways, respectively, and no two of these tasks can be done at the same time. Then the number of ways to do one of these tasks is <script type="math/tex; ">n_1+n_2+…+n_m</script>.</p>
+<p><script type="math/tex; ">|A_1\cup A_2\cup...\cup A_n|=|A_1|+|A_2|+...+|A_n|</script></p>
+<p>(<script type="math/tex; ">A_i\cap A_j=\emptyset(i\neq j,\ i,j=1,2,…,n)</script>)</p>
+<h2 id="the-product-rule-&#x4E58;&#x6CD5;&#x539F;&#x7406;"><a name="the-product-rule-&#x4E58;&#x6CD5;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#the-product-rule-&#x4E58;&#x6CD5;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. The Product Rule &#x4E58;&#x6CD5;&#x539F;&#x7406;</h2>
+<p>Suppose that a procedure can be broken down into two tasks. If there are <script type="math/tex; ">n_1</script> ways to do the first task and <script type="math/tex; ">n_2</script> ways to do the second after the first task has been done, then there are <script type="math/tex; ">n_1n_2</script> ways to complete the procedure. </p>
+<h3 id="phrased-in-terms-of-sets_1"><a name="phrased-in-terms-of-sets_1" class="anchor-navigation-ex-anchor" href="#phrased-in-terms-of-sets_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Phrased in terms of sets</h3>
+<p>If S and T are finite sets, then the number of elements in the Cartesian product of these sets is the product of the  number of elements in each set, namely <script type="math/tex; ">|S\times T|=|S|\cdot|T|</script></p>
+<h3 id="the-extended-version-of-the-product-rule"><a name="the-extended-version-of-the-product-rule" class="anchor-navigation-ex-anchor" href="#the-extended-version-of-the-product-rule"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. The extended version of the product rule</h3>
+<p><script type="math/tex; ">|A_1\times A_2\times...\times A_n|=|A_1||A_2|...|A_n|</script></p>
+<h2 id="subtraction-rule-&#x51CF;&#x6CD5;&#x539F;&#x7406;"><a name="subtraction-rule-&#x51CF;&#x6CD5;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#subtraction-rule-&#x51CF;&#x6CD5;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Subtraction Rule &#x51CF;&#x6CD5;&#x539F;&#x7406;</h2>
+<p>Also known as <strong>the Inclusion-Exclusion Principle</strong></p>
+<p><script type="math/tex; ">|A\cup B|=|A|+|B|-|A\cap B|</script></p>
+<h2 id="division-rule-&#x9664;&#x6CD5;&#x539F;&#x7406;"><a name="division-rule-&#x9664;&#x6CD5;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#division-rule-&#x9664;&#x6CD5;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Division Rule &#x9664;&#x6CD5;&#x539F;&#x7406;</h2>
+<p>There are <strong>n/d</strong> ways to do a task if it can be done using a procedure that can be carried out in n ways, and for every way w, exactly d of the nways correspond to way w.</p>
+<p>&#x8FD9;&#x4E48;&#x8BF4;&#x592A;&#x62BD;&#x8C61;&#x4E86;&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#x5C31;&#x662F;&#x628A;&#x5E73;&#x884C;&#x3001;&#x5BF9;&#x79F0;&#x3001;&#x5BF9;&#x5076;&#x7684;&#x60C5;&#x5F62;&#x9664;&#x53BB;&#xFF0C;&#x5982;&#x679C;&#x4E3E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x7684;&#x8BDD;&#x5C31;&#x662F;<strong>&#x73AF;&#x6392;&#x5217;</strong></p>
+<h2 id="tree-diagrams-&#x6811;&#x72B6;&#x56FE;"><a name="tree-diagrams-&#x6811;&#x72B6;&#x56FE;" class="anchor-navigation-ex-anchor" href="#tree-diagrams-&#x6811;&#x72B6;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Tree Diagrams &#x6811;&#x72B6;&#x56FE;</h2>
+<p>To use trees in counting, we use a branch to represent each possible choice. We represent the possible outcomes by the leaves. </p>
+<p><img src="../img/CH06/01.png" alt=""></p>
+<h1 id="permutations-and-combinations-&#x6392;&#x5217;&#x7EC4;&#x5408;"><a name="permutations-and-combinations-&#x6392;&#x5217;&#x7EC4;&#x5408;" class="anchor-navigation-ex-anchor" href="#permutations-and-combinations-&#x6392;&#x5217;&#x7EC4;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Permutations and Combinations &#x6392;&#x5217;&amp;&#x7EC4;&#x5408;</h1>
+<h2 id="permutations-&#x6392;&#x5217;"><a name="permutations-&#x6392;&#x5217;" class="anchor-navigation-ex-anchor" href="#permutations-&#x6392;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Permutations &#x6392;&#x5217;</h2>
+<h3 id="definition-&#x5B9A;&#x4E49;"><a name="definition-&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#definition-&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. Definition &#x5B9A;&#x4E49;</h3>
+<p>A <strong>permutation</strong> of a set of <strong>distinct</strong> objects is an <strong>ordered</strong> arrangement of these objects.</p>
+<p>An <strong>r-permutation</strong> is an ordered arrangement of r elements of a set. </p>
+<p><strong>Notation</strong>: <script type="math/tex; ">P(n,r)</script></p>
+<h3 id="theorem-&#x5B9A;&#x7406;"><a name="theorem-&#x5B9A;&#x7406;" class="anchor-navigation-ex-anchor" href="#theorem-&#x5B9A;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2. Theorem &#x5B9A;&#x7406;</h3>
+<p><script type="math/tex; ">
+P(n,r)=n(n-1)(n-2)...(n-r+1)=\frac{n!}{(n-r)!}
+</script></p>
+<p>This theorem can be proved by <strong>the product rule</strong>.</p>
+<h3 id="phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;"><a name="phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;" class="anchor-navigation-ex-anchor" href="#phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.3. Phrased in terms of functions &#x51FD;&#x6570;&#x8868;&#x793A;</h3>
+<p><script type="math/tex; ">
+B=\left\{b_{1}, b_{2}, \ldots, b_{r}\right\} \quad A=\left\{a_{1}, a_{2}, \cdots, a_{n}\right\} \quad f : B \rightarrow A
+</script></p>
+<ol>
+<li>f  is an injection from B to A <script type="math/tex; ">\Leftrightarrow</script> an r-permutation of the set A </li>
+<li>the number of injections from B to A <script type="math/tex; ">\Leftrightarrow</script> P(n, r) </li>
+</ol>
+<h2 id="combinations-&#x7EC4;&#x5408;"><a name="combinations-&#x7EC4;&#x5408;" class="anchor-navigation-ex-anchor" href="#combinations-&#x7EC4;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Combinations &#x7EC4;&#x5408;</h2>
+<h3 id="definition-&#x5B9A;&#x4E49;_1"><a name="definition-&#x5B9A;&#x4E49;_1" class="anchor-navigation-ex-anchor" href="#definition-&#x5B9A;&#x4E49;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1. Definition &#x5B9A;&#x4E49;</h3>
+<p>An <strong>r-combination</strong> of elements of a set is an <strong>unordered</strong> selection of r elements from the set. </p>
+<blockquote>
+<p><strong>Note</strong>: An r-combination is simply a subset of the set with r elements. </p>
+</blockquote>
+<p><strong>Notation</strong>: <script type="math/tex; ">C(n, r)=\left( \begin{array}{l}{n} \\ {r}\end{array}\right)</script></p>
+<h3 id="theorem-&#x5B9A;&#x7406;_1"><a name="theorem-&#x5B9A;&#x7406;_1" class="anchor-navigation-ex-anchor" href="#theorem-&#x5B9A;&#x7406;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.2. Theorem &#x5B9A;&#x7406;</h3>
+<p><script type="math/tex; ">
+C(n,r)=\frac{n !}{r !(n-r) !}=n(n-1)(n-2) \dots(n-r+1) / r !
+</script></p>
+<h3 id="phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;_1"><a name="phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;_1" class="anchor-navigation-ex-anchor" href="#phrased-in-terms-of-functions-&#x51FD;&#x6570;&#x8868;&#x793A;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.3. Phrased in terms of functions &#x51FD;&#x6570;&#x8868;&#x793A;</h3>
+<p><script type="math/tex; ">
+A=\left\{a_{1}, a_{2}, \cdots, a_{n}\right\}, B=\{0,1\}, f : A \rightarrow B
+</script></p>
+<p>f is the function from A to B such that the image of r elements in A is 1 <script type="math/tex; ">\Leftrightarrow</script> An r-combination of A. 
+<script type="math/tex; ">
+C(n, r)=|\{f|f : A \rightarrow B \wedge r=|\{a|a \in A\wedge f(a)=1\}|\} |
+</script></p>
+<h3 id="corollary-&#x63A8;&#x8BBA;"><a name="corollary-&#x63A8;&#x8BBA;" class="anchor-navigation-ex-anchor" href="#corollary-&#x63A8;&#x8BBA;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.4. Corollary &#x63A8;&#x8BBA;</h3>
+<p><script type="math/tex; ">C(n,r)=C(n,n-r)</script></p>
+<h2 id="combinatorial-proofs--&#x7EC4;&#x5408;&#x8BC1;&#x660E;"><a name="combinatorial-proofs--&#x7EC4;&#x5408;&#x8BC1;&#x660E;" class="anchor-navigation-ex-anchor" href="#combinatorial-proofs--&#x7EC4;&#x5408;&#x8BC1;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. Combinatorial Proofs  &#x7EC4;&#x5408;&#x8BC1;&#x660E;</h2>
+<p>A <strong>combinatorial proof</strong> of an identity is a proof that uses one of the following methods.</p>
+<h3 id="double-counting-proof-&#x53CC;&#x8BA1;&#x6570;&#x8BC1;&#x660E;"><a name="double-counting-proof-&#x53CC;&#x8BA1;&#x6570;&#x8BC1;&#x660E;" class="anchor-navigation-ex-anchor" href="#double-counting-proof-&#x53CC;&#x8BA1;&#x6570;&#x8BC1;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1. Double Counting Proof &#x53CC;&#x8BA1;&#x6570;&#x8BC1;&#x660E;</h3>
+<p>A <strong>double counting proof</strong> uses counting arguments to prove that both sides of an identity count the same objects, but in different ways.</p>
+<h3 id="bijective-proof-&#x53CC;&#x5C04;&#x8BC1;&#x660E;"><a name="bijective-proof-&#x53CC;&#x5C04;&#x8BC1;&#x660E;" class="anchor-navigation-ex-anchor" href="#bijective-proof-&#x53CC;&#x5C04;&#x8BC1;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.2. Bijective Proof &#x53CC;&#x5C04;&#x8BC1;&#x660E;</h3>
+<p>A <strong>bijective proof</strong> shows that there is a bijection between the sets of objects counted by the two sides of the identity.</p>
+<blockquote>
+<p>e.g. Prove <script type="math/tex; ">C(n,r)=C(n,n-r)</script></p>
+<blockquote>
+<p>Double Counting Proof</p>
+<p>counting the possible sets <script type="math/tex; ">A</script> is equivelent to counting the set <script type="math/tex; ">\overline{A}</script></p>
+<p>Bijective Proof</p>
+<p><script type="math/tex; ">A\to\overline{A}</script> is a bijection from a set containing r elements to a set containing (n-r) elements</p>
+</blockquote>
+</blockquote>
+<h1 id="binomial-coefficients-&#x4E8C;&#x9879;&#x5F0F;&#x7CFB;&#x6570;"><a name="binomial-coefficients-&#x4E8C;&#x9879;&#x5F0F;&#x7CFB;&#x6570;" class="anchor-navigation-ex-anchor" href="#binomial-coefficients-&#x4E8C;&#x9879;&#x5F0F;&#x7CFB;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Binomial Coefficients &#x4E8C;&#x9879;&#x5F0F;&#x7CFB;&#x6570;</h1>
+<h2 id="the-binomial-theorem-&#x4E8C;&#x9879;&#x5F0F;&#x5B9A;&#x7406;"><a name="the-binomial-theorem-&#x4E8C;&#x9879;&#x5F0F;&#x5B9A;&#x7406;" class="anchor-navigation-ex-anchor" href="#the-binomial-theorem-&#x4E8C;&#x9879;&#x5F0F;&#x5B9A;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. The Binomial Theorem &#x4E8C;&#x9879;&#x5F0F;&#x5B9A;&#x7406;</h2>
+<p>Let <em>x</em> and <em>y</em> be varaibles, and let  <em>n</em> be a nonnegative integer, then we have
+<script type="math/tex; ">
+(x+y)^{n}=\sum_{j=0}^{n} \left( \begin{array}{l}{n} \\ {j}\end{array}\right) x^{n-j} y^{j}
+</script></p>
+<h3 id="corollary-1-&#x63A8;&#x8BBA;-1"><a name="corollary-1-&#x63A8;&#x8BBA;-1" class="anchor-navigation-ex-anchor" href="#corollary-1-&#x63A8;&#x8BBA;-1"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.1. Corollary 1 &#x63A8;&#x8BBA; 1</h3>
+<p><script type="math/tex; ">
+\sum_{k=0}^{n} \left( \begin{array}{l}{n} \\ {k}\end{array}\right)=2^{n}
+</script></p>
+<p>(x = y = 1 or use combinatorial proof)</p>
+<h3 id="corollary-2-&#x63A8;&#x8BBA;-2"><a name="corollary-2-&#x63A8;&#x8BBA;-2" class="anchor-navigation-ex-anchor" href="#corollary-2-&#x63A8;&#x8BBA;-2"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.2. Corollary 2 &#x63A8;&#x8BBA; 2</h3>
+<p><script type="math/tex; ">
+\sum_{k=0}^{n}(-1)^{k} \left( \begin{array}{l}{n} \\ {k}\end{array}\right)=0
+</script></p>
+<p>(x = 1, y = -1)</p>
+<blockquote>
+<p><strong>Note</strong>:</p>
+<p>By this corollary, we have
+<script type="math/tex; ">
+> \left( \begin{array}{l}{n} \\ {0}\end{array}\right)+\left( \begin{array}{l}{n} \\ {2}\end{array}\right)+\left( \begin{array}{l}{n} \\ {4}\end{array}\right)+\ldots=\left( \begin{array}{l}{n} \\ {1}\end{array}\right)+\left( \begin{array}{l}{n} \\ {3}\end{array}\right)+\left( \begin{array}{l}{n} \\ {5}\end{array}\right)+\ldots
+> </script></p>
+</blockquote>
+<h3 id="corollary-3-&#x63A8;&#x8BBA;-3"><a name="corollary-3-&#x63A8;&#x8BBA;-3" class="anchor-navigation-ex-anchor" href="#corollary-3-&#x63A8;&#x8BBA;-3"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.3. Corollary 3 &#x63A8;&#x8BBA; 3</h3>
+<p><script type="math/tex; ">
+\sum_{k=0}^{n} 2^{k} \left( \begin{array}{l}{n} \\ {k}\end{array}\right)=3^{n}
+</script></p>
+<p>(x = 1, y = 2)</p>
+<h2 id="pascals-identity-&#x5E15;&#x65AF;&#x5361;&#x6052;&#x7B49;&#x5F0F;"><a name="pascals-identity-&#x5E15;&#x65AF;&#x5361;&#x6052;&#x7B49;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#pascals-identity-&#x5E15;&#x65AF;&#x5361;&#x6052;&#x7B49;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. PASCAL&#x2019;S Identity &#x5E15;&#x65AF;&#x5361;&#x6052;&#x7B49;&#x5F0F;</h2>
+<p>Let <script type="math/tex; ">n</script> and <script type="math/tex; ">k</script> be positive integers with <script type="math/tex; ">k\leq n</script>, then
+<script type="math/tex; ">
+\left( \begin{array}{c}{n+1} \\ {k}\end{array}\right)=\left( \begin{array}{c}{n} \\ {k-1}\end{array}\right)+\left( \begin{array}{l}{n} \\ {k}\end{array}\right)
+</script></p>
+<blockquote>
+<p>Proof:</p>
+<p>Assume we have a set <script type="math/tex; ">A=\left\{x, a_{1}, a_{2}, \cdots, a_{n}\right\}</script></p>
+<p>The left side means the number of subsets of size k from set A</p>
+<p>The right side counts this in another way:</p>
+<blockquote>
+<ol>
+<li>the subsets that contain x <script type="math/tex; ">\left( \begin{array}{c}{n} \\ {k-1}\end{array}\right)</script></li>
+<li>the subsets that don&#x2019;t contain x <script type="math/tex; ">\left( \begin{array}{l}{n} \\ {k}\end{array}\right)</script></li>
+</ol>
+</blockquote>
+</blockquote>
+<h3 id="pascals-triangle-&#x5E15;&#x65AF;&#x5361;&#x4E09;&#x89D2;&#x5F62;"><a name="pascals-triangle-&#x5E15;&#x65AF;&#x5361;&#x4E09;&#x89D2;&#x5F62;" class="anchor-navigation-ex-anchor" href="#pascals-triangle-&#x5E15;&#x65AF;&#x5361;&#x4E09;&#x89D2;&#x5F62;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.1. Pascal&apos;s Triangle &#x5E15;&#x65AF;&#x5361;&#x4E09;&#x89D2;&#x5F62;</h3>
+<p><img src="../img/CH06/02.png" alt=""></p>
+<h2 id="vandermondes-identity-&#x8303;&#x5FB7;&#x8499;&#x5FB7;&#x6052;&#x7B49;&#x5F0F;"><a name="vandermondes-identity-&#x8303;&#x5FB7;&#x8499;&#x5FB7;&#x6052;&#x7B49;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#vandermondes-identity-&#x8303;&#x5FB7;&#x8499;&#x5FB7;&#x6052;&#x7B49;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Vandermonde&#x2019;s Identity &#x8303;&#x5FB7;&#x8499;&#x5FB7;&#x6052;&#x7B49;&#x5F0F;</h2>
+<p>Let m, n and r be nonnegative integer with r not exceeding either m or n, then
+<script type="math/tex; ">
+\left( \begin{array}{c}{m+n} \\ {r}\end{array}\right)=\sum_{k=0}^{r} \left( \begin{array}{c}{m} \\ {r-k}\end{array}\right) \left( \begin{array}{l}{n} \\ {k}\end{array}\right)
+</script></p>
+<blockquote>
+<p><strong>Proof</strong>:
+Assume A and B are two disjoint sets and |A|=m, |B|=n</p>
+<p>The left side means the number of ways to pick r elements from <script type="math/tex; ">A\cup B</script></p>
+<p>The right side counts the same thing in another way: pick r-k elements from A and then k elements from B, where <script type="math/tex; ">0\leq k\leq r</script>, and sum all these numbers up</p>
+</blockquote>
+<h3 id="corollary-4-&#x63A8;&#x8BBA;-4"><a name="corollary-4-&#x63A8;&#x8BBA;-4" class="anchor-navigation-ex-anchor" href="#corollary-4-&#x63A8;&#x8BBA;-4"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.1. Corollary 4 &#x63A8;&#x8BBA; 4</h3>
+<p><script type="math/tex; ">
+\left( \begin{array}{c}{2 n} \\ {n}\end{array}\right)=\sum_{k=0}^{n} \left( \begin{array}{l}{n} \\ {k}\end{array}\right)^{2}
+</script></p>
+<p>(Let m = r = n, <script type="math/tex; ">\left( \begin{array}{c}{2 n} \\ {n}\end{array}\right)=\sum_{k=0}^{n} \left( \begin{array}{c}{n} \\ {n-k}\end{array}\right) \left( \begin{array}{l}{n} \\ {k}\end{array}\right)=\sum_{k=0}^{n} \left( \begin{array}{l}{n} \\ {k}\end{array}\right)^{2}​</script>)</p>
+<h2 id="another-identity-&#x65E0;&#x540D;&#x6052;&#x7B49;&#x5F0F;"><a name="another-identity-&#x65E0;&#x540D;&#x6052;&#x7B49;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#another-identity-&#x65E0;&#x540D;&#x6052;&#x7B49;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. Another Identity &#x201C;&#x65E0;&#x540D;&#x201D;&#x6052;&#x7B49;&#x5F0F;</h2>
+<p>Let n and r be nonnegative integer with <script type="math/tex; ">r\leq n</script>, then
+<script type="math/tex; ">
+\left( \begin{array}{l}{n+1} \\ {r+1}\end{array}\right)=\sum_{j=r}^{n} \left( \begin{array}{l}{j} \\ {r}\end{array}\right)
+</script></p>
+<blockquote>
+<p><strong>Proof</strong>:</p>
+<p>Use <strong><em>bit string</em></strong></p>
+<p>The left-hand side counts the bit strings of length (n+1) containing (r+1) 1s</p>
+<p>The right-hand side counts the same objects by considering the cases corresponding to the possible locations of the final 1 in a string with (r+1) ones  (<script type="math/tex; ">\sum_{k=r+1}^{n+1} \left( \begin{array}{c}{k-1} \\ {r}\end{array}\right)=\sum_{j=r}^{n} \left( \begin{array}{c}{j} \\ {r}\end{array}\right)</script>)</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../CH05_Induction_and_Recursion/CH05_02_Recursive.html" class="navigation navigation-prev " aria-label="Previous page: 02 Recursive">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CH06_02_The_Pigeonhole_Principle.html" class="navigation navigation-next " aria-label="Next page: 02 The Pigeonhole Principal">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01 The Basic of Counting","level":"7.1","depth":1,"next":{"title":"02 The Pigeonhole Principal","level":"7.2","depth":1,"path":"CH06_Counting/CH06_02_The_Pigeonhole_Principle.md","ref":"CH06_Counting/CH06_02_The_Pigeonhole_Principle.md","articles":[]},"previous":{"title":"02 Recursive","level":"6.2","depth":1,"path":"CH05_Induction_and_Recursion/CH05_02_Recursive.md","ref":"CH05_Induction_and_Recursion/CH05_02_Recursive.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","mathjax"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/iamncj"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"Donate","title":"","wechat":"https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG","wechatText":""},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"NCJ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Discrete Mathematics Explained in Detail","language":"en","links":{"sidebar":{"DM Explained in Detail":"https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail","Personal Blog":"https://iamncj.github.io"}},"gitbook":"3.2.3","description":"Explained discrete mathematics in detail!"},"file":{"path":"CH06_Counting/CH06_01_The_Basic_of_Counting.md","mtime":"2019-04-13T01:04:44.267Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-04T13:45:13.203Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

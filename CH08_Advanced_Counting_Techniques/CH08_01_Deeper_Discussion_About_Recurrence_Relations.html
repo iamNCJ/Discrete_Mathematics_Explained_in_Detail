@@ -1,0 +1,724 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01 Deeper Discussion About Recurrence Relations · Discrete Mathematics Explained in Detail</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="NCJ">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail" target="_blank" class="custom-link">DM Explained in Detail</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://iamncj.github.io" target="_blank" class="custom-link">Personal Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 01 Logic and Proofs</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_01_Proposition_Logic_and_Propositional_Equivalences.html">
+            
+                    
+                    01 Proposition Logic and Propositional Equivalences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_02_Predicate_Logic_and_Nested_Quantifiers.html">
+            
+                    
+                    02 Predicate Logic and Nested Quantifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_03_Normal_Form.html">
+            
+                    
+                    03 Normal Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                <a href="../CH01_Logic_and_Proofs/CH01_04_Rules_of_Inference_and_Proofs.html">
+            
+                    
+                    04 Rules of Inference and Proofs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 02 Basic Structures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_01_Set.html">
+            
+                    
+                    01 Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_02_Function_and_Sequence.html">
+            
+                    
+                    02 Function and Sequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                <a href="../CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">
+            
+                    
+                    03 Cardinality of Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 03 Algorithms</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                <a href="../CH03_Algorithms/CH03_01_Algorithms.html">
+            
+                    
+                    01 Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 04 Number Theory</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    To be added…
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 05 Induction and Recursion</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../CH05_Induction_and_Recursion/CH05_01_Induction.html">
+            
+                <a href="../CH05_Induction_and_Recursion/CH05_01_Induction.html">
+            
+                    
+                    01 Induction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../CH05_Induction_and_Recursion/CH05_02_Recursive.html">
+            
+                <a href="../CH05_Induction_and_Recursion/CH05_02_Recursive.html">
+            
+                    
+                    02 Recursive
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 06 Counting</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../CH06_Counting/CH06_01_The_Basic_of_Counting.html">
+            
+                <a href="../CH06_Counting/CH06_01_The_Basic_of_Counting.html">
+            
+                    
+                    01 The Basic of Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../CH06_Counting/CH06_02_The_Pigeonhole_Principle.html">
+            
+                <a href="../CH06_Counting/CH06_02_The_Pigeonhole_Principle.html">
+            
+                    
+                    02 The Pigeonhole Principal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../CH06_Counting/CH06_03_Generalized_Permutations_and_Combinations">
+            
+                <span>
+            
+                    
+                    03 Generalized Permutations and Combinations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../CH06_Counting/CH06_04_Algorithms_About_Counting.html">
+            
+                <a href="../CH06_Counting/CH06_04_Algorithms_About_Counting.html">
+            
+                    
+                    04 Algorithms About Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 07 Discrete Possibility</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    To be added...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 08 Advcanced Counting Techniques</li>
+        
+        
+    
+        <li class="chapter active" data-level="9.1" data-path="CH08_01_Deeper_Discussion_About_Recurrence_Relations.html">
+            
+                <a href="CH08_01_Deeper_Discussion_About_Recurrence_Relations.html">
+            
+                    
+                    01 Deeper Discussion About Recurrence Relations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >01 Deeper Discussion About Recurrence Relations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#applications-of-recurrence-relations-&#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x5E94;&#x7528;"><b>1. </b>Applications of Recurrence Relations &#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x5E94;&#x7528;</a></li><li><span class="title-icon "></span><a href="#solving-linear-recurrence-relations-&#x6C42;&#x89E3;&#x7EBF;&#x6027;&#x9012;&#x5F52;&#x5173;&#x7CFB;"><b>2. </b>Solving Linear Recurrence Relations &#x6C42;&#x89E3;&#x7EBF;&#x6027;&#x9012;&#x5F52;&#x5173;&#x7CFB;</a></li><ul><li><span class="title-icon "></span><a href="#i-terminologies-&#x672F;&#x8BED;"><b>2.1. </b>I. Terminologies &#x672F;&#x8BED;</a></li><li><span class="title-icon "></span><a href="#ii-solution-&#x89E3;&#x6CD5;"><b>2.2. </b>II. Solution &#x89E3;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#1-homogeneous-&#x9F50;&#x6B21;&#x60C5;&#x51B5;"><b>2.2.1. </b>1. Homogeneous &#x9F50;&#x6B21;&#x60C5;&#x51B5;</a></li><li><span class="title-icon "></span><a href="#2-nonhomogeneous-&#x975E;&#x9F50;&#x6B21;&#x60C5;&#x51B5;"><b>2.2.2. </b>2. Nonhomogeneous &#x975E;&#x9F50;&#x6B21;&#x60C5;&#x51B5;</a></li></ul></ul></ul></div><a href="#applications-of-recurrence-relations-&#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x5E94;&#x7528;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><font size="6">Chaptcer 08 Advanced Counting Techniques &#x9AD8;&#x7EA7;&#x8BA1;&#x6570;&#x6280;&#x672F;</font>
+
+<p>Part 01 Deeper Discussion About Recurrence Relations &#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x8BA8;</p>
+<p>covering 8.1 ~ 8.2</p>
+<hr>
+<h1 id="applications-of-recurrence-relations-&#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x5E94;&#x7528;"><a name="applications-of-recurrence-relations-&#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#applications-of-recurrence-relations-&#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Applications of Recurrence Relations &#x9012;&#x5F52;&#x5173;&#x7CFB;&#x7684;&#x5E94;&#x7528;</h1>
+<p>&#x8DDF;DP&#x91CC;&#x627E;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#x6BD4;&#x8F83;&#x7C7B;&#x4F3C;&#xFF0C;&#x6B64;&#x5904;&#x7565;&#x53BB;&#x3002;</p>
+<h1 id="solving-linear-recurrence-relations-&#x6C42;&#x89E3;&#x7EBF;&#x6027;&#x9012;&#x5F52;&#x5173;&#x7CFB;"><a name="solving-linear-recurrence-relations-&#x6C42;&#x89E3;&#x7EBF;&#x6027;&#x9012;&#x5F52;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#solving-linear-recurrence-relations-&#x6C42;&#x89E3;&#x7EBF;&#x6027;&#x9012;&#x5F52;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Solving Linear Recurrence Relations &#x6C42;&#x89E3;&#x7EBF;&#x6027;&#x9012;&#x5F52;&#x5173;&#x7CFB;</h1>
+<h2 id="i-terminologies-&#x672F;&#x8BED;"><a name="i-terminologies-&#x672F;&#x8BED;" class="anchor-navigation-ex-anchor" href="#i-terminologies-&#x672F;&#x8BED;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. I. Terminologies &#x672F;&#x8BED;</h2>
+<ul>
+<li><strong>linear</strong>&#xFF08;<strong>&#x7EBF;&#x6027;</strong>&#xFF09;&#xFF1A;&#x5373;&#x6240;&#x6709;&#x542B;&#x672A;&#x77E5;&#x91CF;&#x7684;&#x9879;&#x90FD;&#x662F;<strong>&#x4E00;&#x6B21;</strong></li>
+<li><strong>homogeneous</strong>&#xFF08;<strong>&#x9F50;&#x6B21;</strong>&#xFF09;&#xFF1A;&#x6240;&#x6709;&#x672A;&#x77E5;&#x91CF;&#x79FB;&#x52A8;&#x5230;&#x5DE6;&#x8FB9;&#x540E;&#xFF0C;&#x53F3;&#x8FB9;&#x4E3A;0</li>
+<li><strong>constant coefficients</strong>&#xFF08;<strong>&#x5E38;&#x7CFB;&#x6570;</strong>&#xFF09;&#xFF1A;&#x7CFB;&#x6570;&#x4E3A;&#x5E38;&#x6570;</li>
+<li><strong>degree</strong>&#xFF08;<strong>&#x9636;</strong>&#xFF09;&#xFF1A;<script type="math/tex; ">a_n</script>&#x4E0E;&#x524D;&#x9762;&#x591A;&#x5C11;&#x9879;&#x76F8;&#x5173;</li>
+</ul>
+<h2 id="ii-solution-&#x89E3;&#x6CD5;"><a name="ii-solution-&#x89E3;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#ii-solution-&#x89E3;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. II. Solution &#x89E3;&#x6CD5;</h2>
+<blockquote>
+<p><strong>&#x57FA;&#x672C;&#x601D;&#x8DEF;</strong>&#xFF1A;</p>
+<p>&#x5148;&#x6C42;&#x901A;&#x89E3;&#xFF0C;&#x518D;&#x7531;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#xFF08;&#x521D;&#x503C;&#xFF09;&#x6C42;&#x51FA;&#x5B9A;&#x89E3;</p>
+<p><em>&#x4EE5;&#x4E0B;&#x90E8;&#x5206;&#x53EA;&#x8BA8;&#x8BBA;&#x901A;&#x89E3;&#x7684;&#x6C42;&#x89E3;</em></p>
+</blockquote>
+<p><img src="../img/CH08/01_mindmap.png" alt=""></p>
+<h5 id="characteristic-equation-and-characteristic-roots-&#x7279;&#x5F81;&#x65B9;&#x7A0B;&#x4E0E;&#x7279;&#x5F81;&#x6839;"><a name="characteristic-equation-and-characteristic-roots-&#x7279;&#x5F81;&#x65B9;&#x7A0B;&#x4E0E;&#x7279;&#x5F81;&#x6839;" class="anchor-navigation-ex-anchor" href="#characteristic-equation-and-characteristic-roots-&#x7279;&#x5F81;&#x65B9;&#x7A0B;&#x4E0E;&#x7279;&#x5F81;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="characteristic-equation-and-characteristic-roots-&#x7279;&#x5F81;&#x65B9;&#x7A0B;&#x4E0E;&#x7279;&#x5F81;&#x6839;" class="plugin-anchor" href="#characteristic-equation-and-characteristic-roots-&#x7279;&#x5F81;&#x65B9;&#x7A0B;&#x4E0E;&#x7279;&#x5F81;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a>Characteristic Equation and Characteristic Roots &#x7279;&#x5F81;&#x65B9;&#x7A0B;&#x4E0E;&#x7279;&#x5F81;&#x6839;</h5>
+<p><script type="math/tex; ">
+a_{n}=c_{1} a_{n-1}+c_{2} a_{n-2}+\cdots+c_{k} a_{n-k}
+</script></p>
+<p>&#x5BF9;&#x4E8E;&#x4E0A;&#x8FF0;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#xFF0C;&#x5176;<strong>&#x7279;&#x5F81;&#x65B9;&#x7A0B;</strong>&#x4E3A;&#xFF1A;
+<script type="math/tex; ">
+r^{n}=c_{1} r^{n-1}+c_{2} r^{n-2}+\cdots+c_{k} r^{n-k}
+</script>
+&#x4E5F;&#x5373;
+<script type="math/tex; ">
+r^{k}-c_{1} r^{k-1}-c_{2} r^{k-2}-\cdots-c_{k-1} r-c_{k}=0
+</script>
+&#x5176;&#x4E2D; <script type="math/tex; ">r</script> &#x5C31;&#x662F;&#x6B64;&#x65B9;&#x7A0B;&#x7684;<strong>&#x7279;&#x5F81;&#x6839;</strong></p>
+<blockquote>
+<p>&#x80CC;&#x540E;&#x7684;&#x539F;&#x7406;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x8BA4;&#x4E3A;&#x6709;&#x4E00;&#x4E2A;&#x521D;&#x6B65;&#x7684;&#x89E3;&#x7684;&#x5F62;&#x6001;<script type="math/tex; ">a_n=r^n</script>&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5728;&#x8FD9;&#x4E2A;&#x5F62;&#x6001;&#x4E0A;&#x6309;&#x9700;&#x8C03;&#x6574;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x4E4B;&#x540E;&#x7684;&#x6C42;&#x89E3;&#x90FD;&#x662F;&#x5EFA;&#x7ACB;&#x5728;&#x8FD9;&#x4E00;&#x8BA4;&#x77E5;&#x4E4B;&#x4E0A;&#x7684;&#x3002;</p>
+</blockquote>
+<h3 id="1-homogeneous-&#x9F50;&#x6B21;&#x60C5;&#x51B5;"><a name="1-homogeneous-&#x9F50;&#x6B21;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#1-homogeneous-&#x9F50;&#x6B21;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1. 1. Homogeneous &#x9F50;&#x6B21;&#x60C5;&#x51B5;</h3>
+<h4 id="11-&#x4E8C;&#x9636;&#xFF08;&#x5165;&#x95E8;&#x3001;&#x7279;&#x6B8A;&#xFF09;"><a name="11-&#x4E8C;&#x9636;&#xFF08;&#x5165;&#x95E8;&#x3001;&#x7279;&#x6B8A;&#xFF09;" class="anchor-navigation-ex-anchor" href="#11-&#x4E8C;&#x9636;&#xFF08;&#x5165;&#x95E8;&#x3001;&#x7279;&#x6B8A;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="11-&#x4E8C;&#x9636;&#xFF08;&#x5165;&#x95E8;&#x3001;&#x7279;&#x6B8A;&#xFF09;" class="plugin-anchor" href="#11-&#x4E8C;&#x9636;&#xFF08;&#x5165;&#x95E8;&#x3001;&#x7279;&#x6B8A;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x4E8C;&#x9636;&#xFF08;&#x5165;&#x95E8;&#x3001;&#x7279;&#x6B8A;&#xFF09;</h4>
+<p><script type="math/tex; ">
+a_{n}=c_{1} a_{n-1}+c_{2} a_{n-2}
+</script></p>
+<p>&#x9996;&#x5148;&#x6C42;&#x51FA;&#x7279;&#x5F81;&#x6839;<script type="math/tex; ">r_1</script>&#x3001;<script type="math/tex; ">r_2</script>&#xFF0C;&#x5B83;&#x4EEC;&#x6EE1;&#x8DB3;&#xFF1A;
+<script type="math/tex; ">
+r^{2}-c_{1} r-c_{2}=0
+</script>
+&#x63A5;&#x4E0B;&#x6765;&#x5206;&#x4E24;&#x79CD;&#x60C5;&#x51B5;</p>
+<h5 id="&#x60C5;&#x51B5;1--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x4E0D;&#x540C;"><a name="&#x60C5;&#x51B5;1--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x4E0D;&#x540C;" class="anchor-navigation-ex-anchor" href="#&#x60C5;&#x51B5;1--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x4E0D;&#x540C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x60C5;&#x51B5;1--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x4E0D;&#x540C;" class="plugin-anchor" href="#&#x60C5;&#x51B5;1--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x4E0D;&#x540C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60C5;&#x51B5;1  &#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x4E0D;&#x540C;</h5>
+<p>&#x6B64;&#x60C5;&#x51B5;&#x6700;&#x57FA;&#x672C;&#xFF0C;&#x5176;&#x89E3;&#x4E3A;&#xFF1A;
+<script type="math/tex; ">
+a_{n}=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}
+</script>
+&#x5176;&#x4E2D;<script type="math/tex; ">a_1</script>&#x3001;<script type="math/tex; ">a_2</script>&#x4E3A;&#x5E38;&#x6570;</p>
+<blockquote>
+<p><strong>&#x539F;&#x7406;</strong>&#xFF1A;</p>
+<p><script type="math/tex; ">a_n=r_1^n</script>&#x3001;<script type="math/tex; ">a_n=r_2^n</script>&#x90FD;&#x6EE1;&#x8DB3;<script type="math/tex; ">a_{n}=c_{1} a_{n-1}+c_{2} a_{n-2}</script>&#xFF0C;&#x7531;&#x4E8E;&#x662F;&#x7EBF;&#x6027;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4EEC;&#x7684;&#x7EBF;&#x6027;&#x548C;&#x4E5F;&#x6EE1;&#x8DB3;&#x5173;&#x7CFB;&#x5F0F;</p>
+<p><strong>&#x8BC1;&#x660E;</strong>&#xFF1A;</p>
+<ol>
+<li><p><script type="math/tex; ">a_n=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}</script>&#x662F;&#x89E3;
+<script type="math/tex; ">
+> \begin{aligned} c_{1} a_{n-1}+c_{2} a_{n-2} &=c_{1}\left(\alpha_{1} r_{1}^{n-1}+\alpha_{2} r_{2}^{n-1}\right)+c_{2}\left(\alpha_{1} r_{1}^{n-2}+\alpha_{2} r_{2}^{n-2}\right) \\ &=\alpha_{1} r_{1}^{n-2}\left(c_{1} r_{1}+c_{2}\right)+\alpha_{2} r_{2}^{n-2}\left(c_{1} r_{2}+c_{2}\right) \\ &=\alpha_{1} r_{1}^{n-2} r_{1}^{2}+\alpha_{2} r_{2}^{n-2} r_{2}^{2} \\ &=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n} \\ &=a_{n} \end{aligned}
+> </script></p>
+</li>
+<li><p>&#x7ED9;&#x5B9A;&#x521D;&#x503C;&#x540E;&#xFF0C;&#x89E3;&#x4E00;&#x5B9A;&#x662F;<script type="math/tex; ">a_{n}=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}</script>&#xFF08;&#x6216;&#x8005;&#x8BF4;&#x6BCF;&#x4E2A;&#x89E3;&#x90FD;&#x6709;&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#xFF09;</p>
+</li>
+</ol>
+<p>&#x7B49;&#x4EF7;&#x4E8E;&#x8BF4;&#x660E;<script type="math/tex; ">\alpha_1</script>&#x3001;<script type="math/tex; ">\alpha_2</script>&#x552F;&#x4E00;&#x786E;&#x5B9A;</p>
+<p>&#x5047;&#x8BBE;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#x4E3A;<script type="math/tex; ">a_{0}=C_{0}, a_{1}=c_{1}</script>&#xFF0C;&#x5219;&#xFF1A;
+<script type="math/tex; ">
+> \begin{array}{l}{a_{0}=C_{0}=\alpha_{1}+\alpha_{2}} \\ {a_{1}=C_{1}=\alpha_{1} r_{1}+\alpha_{2} r_{2}}\end{array}
+> </script></p>
+<p>&#x89E3;&#x5F97;&#xFF1A;<script type="math/tex; ">\alpha_{1}=\frac{C_{1}-C_{0} r_{2}}{r_{1}-r_{2}}, \alpha_{2}=\frac{C_{0} r_{1}-C_{1}}{r_{1}-r_{2}}</script></p>
+<p>&#x5728;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x7EC4;<script type="math/tex; ">\alpha_1</script>&#x3001;<script type="math/tex; ">\alpha_2</script>&#x4E4B;&#x4E0B;&#xFF0C;&#x6240;&#x6709;<script type="math/tex; ">\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}</script>&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#xFF0C;&#x7531;&#x4E8E;&#x89E3;&#x7684;&#x552F;&#x4E00;&#x6027;&#x53EF;&#x77E5;<script type="math/tex; ">a_{n}=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}</script></p>
+</blockquote>
+<p>&#x6CE8;&#x610F;&#x5230;<script type="math/tex; ">\alpha_1</script>&#x3001;<script type="math/tex; ">\alpha_2</script>&#x7684;&#x503C;&#x4F9D;&#x8D56;&#x4E8E;<script type="math/tex; ">r_1\neq r_2</script>&#xFF0C;&#x7531;&#x6B64;&#x5F15;&#x51FA;&#x60C5;&#x51B5;2</p>
+<h5 id="&#x60C5;&#x51B5;2--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x76F8;&#x540C;"><a name="&#x60C5;&#x51B5;2--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x76F8;&#x540C;" class="anchor-navigation-ex-anchor" href="#&#x60C5;&#x51B5;2--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x76F8;&#x540C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x60C5;&#x51B5;2--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x76F8;&#x540C;" class="plugin-anchor" href="#&#x60C5;&#x51B5;2--&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x76F8;&#x540C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60C5;&#x51B5;2  &#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x6839;&#x76F8;&#x540C;</h5>
+<p>&#x8BB0;<script type="math/tex; ">r_0=r_1=r_2</script>&#xFF0C;&#x5219;&#x89E3;&#x4E3A;&#xFF1A;
+<script type="math/tex; ">
+a_{n}=\alpha_{1} r_{0}^{n}+\alpha_{2} n r_{0}^{n}
+</script></p>
+<h4 id="12-&#x9AD8;&#x9636;&#xFF08;&#x4E00;&#x822C;&#x5316;&#x3001;&#x63A8;&#x5E7F;&#xFF09;"><a name="12-&#x9AD8;&#x9636;&#xFF08;&#x4E00;&#x822C;&#x5316;&#x3001;&#x63A8;&#x5E7F;&#xFF09;" class="anchor-navigation-ex-anchor" href="#12-&#x9AD8;&#x9636;&#xFF08;&#x4E00;&#x822C;&#x5316;&#x3001;&#x63A8;&#x5E7F;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="12-&#x9AD8;&#x9636;&#xFF08;&#x4E00;&#x822C;&#x5316;&#x3001;&#x63A8;&#x5E7F;&#xFF09;" class="plugin-anchor" href="#12-&#x9AD8;&#x9636;&#xFF08;&#x4E00;&#x822C;&#x5316;&#x3001;&#x63A8;&#x5E7F;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x9AD8;&#x9636;&#xFF08;&#x4E00;&#x822C;&#x5316;&#x3001;&#x63A8;&#x5E7F;&#xFF09;</h4>
+<h5 id="&#x60C5;&#x51B5;1--&#x65E0;&#x91CD;&#x6839;"><a name="&#x60C5;&#x51B5;1--&#x65E0;&#x91CD;&#x6839;" class="anchor-navigation-ex-anchor" href="#&#x60C5;&#x51B5;1--&#x65E0;&#x91CD;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x60C5;&#x51B5;1--&#x65E0;&#x91CD;&#x6839;" class="plugin-anchor" href="#&#x60C5;&#x51B5;1--&#x65E0;&#x91CD;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60C5;&#x51B5;1  &#x65E0;&#x91CD;&#x6839;</h5>
+<p><script type="math/tex; ">
+a_{n}=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}+\cdots+\alpha_{k} r_{k}^{n}
+</script></p>
+<h5 id="&#x60C5;&#x51B5;2--&#x6709;&#x91CD;&#x6839;"><a name="&#x60C5;&#x51B5;2--&#x6709;&#x91CD;&#x6839;" class="anchor-navigation-ex-anchor" href="#&#x60C5;&#x51B5;2--&#x6709;&#x91CD;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x60C5;&#x51B5;2--&#x6709;&#x91CD;&#x6839;" class="plugin-anchor" href="#&#x60C5;&#x51B5;2--&#x6709;&#x91CD;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60C5;&#x51B5;2  &#x6709;&#x91CD;&#x6839;</h5>
+<p>&#x8BBE;&#x6709;<script type="math/tex; ">t</script>&#x4E2A;&#x4E0D;&#x7B49;&#x6839;<script type="math/tex; ">r_{1}, r_{2}, \cdots, r_{t}</script>&#xFF0C;&#x5176;&#x91CD;&#x6570;&#x5206;&#x522B;&#x4E3A;<script type="math/tex; ">m_{1},  m_{2}, \dots, m_{t}</script> (<script type="math/tex; ">m_{i} \geqslant 1, i = 1,2,...,t</script> &#x4E14;<script type="math/tex; ">m_{1}+m_{2}+\dots+m_{t}=k</script>)&#xFF0C;&#x5219;&#x89E3;&#x4E3A;&#xFF1A;
+<script type="math/tex; ">
+\begin{aligned} a_{n}=&\left(\alpha_{1,0}+\alpha_{1,1} n+\cdots+\alpha_{1, m_{1}-1} n^{m_{1}-1}\right) r_{1}^{n} \\ &+\left(\alpha_{2,0}+\alpha_{2,1} n+\cdots+\alpha_{2, m_{2}-1} n^{m_{2}-1}\right) r_{2}^{n} \\ &+\cdots+\left(\alpha_{t, 0}+\alpha_{t, 1} n+\cdots+\alpha_{t, m_{t}-1} n^{m_{t}-1}\right) r_{t}^{n} \end{aligned}
+</script></p>
+<h3 id="2-nonhomogeneous-&#x975E;&#x9F50;&#x6B21;&#x60C5;&#x51B5;"><a name="2-nonhomogeneous-&#x975E;&#x9F50;&#x6B21;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#2-nonhomogeneous-&#x975E;&#x9F50;&#x6B21;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.2. 2. Nonhomogeneous &#x975E;&#x9F50;&#x6B21;&#x60C5;&#x51B5;</h3>
+<blockquote>
+<p><strong>&#x89E3;&#x6CD5;</strong>&#xFF1A;</p>
+<p>&#x5316;&#x5F52;&#xFF0C;&#x8F6C;&#x5316;&#x4E3A;&#x9F50;&#x6B21;&#x60C5;&#x51B5;&#xFF08;<em>&#x4E0E;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x4E2D;&#x5BF9;&#x4ED8;&#x975E;&#x9F50;&#x6B21;&#x65B9;&#x7A0B;&#x7EC4;&#x7684;&#x601D;&#x60F3;&#x5B8C;&#x5168;&#x4E00;&#x81F4;</em>&#xFF09;</p>
+</blockquote>
+<h4 id="21--&#x57FA;&#x672C;&#x601D;&#x60F3;"><a name="21--&#x57FA;&#x672C;&#x601D;&#x60F3;" class="anchor-navigation-ex-anchor" href="#21--&#x57FA;&#x672C;&#x601D;&#x60F3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="21--&#x57FA;&#x672C;&#x601D;&#x60F3;" class="plugin-anchor" href="#21--&#x57FA;&#x672C;&#x601D;&#x60F3;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1  &#x57FA;&#x672C;&#x601D;&#x60F3;</h4>
+<p>&#x5BF9;&#x4E8E;<strong>&#x5E38;&#x7CFB;&#x6570;&#x7EBF;&#x6027;&#x975E;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;</strong> (<strong>linear nonhomogeneous recurrence relation with constant coefficients</strong>)
+<script type="math/tex; ">
+a_{n}=c_{1} a_{n-1}+c_{2} a_{n-2}+\cdots+c_{k} a_{n-k}+F(n)
+</script>
+&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x81EA;&#x5DF1;&#x5DF2;&#x7ECF;&#x201C;&#x6C42;&#x5F97;&#x201D;&#x4E00;&#x4E2A;<strong>&#x7279;&#x89E3;</strong> (<strong>particular solution</strong>) <script type="math/tex; ">\left\{a_{n}^{(p)}\right\}</script></p>
+<p>&#x540C;&#x65F6;&#xFF0C;&#x5B83;&#x4E5F;&#x5B58;&#x5728;&#x4E00;&#x4E2A;<strong>&#x76F8;&#x4F34;&#x7684;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;</strong> (<strong>associated homogeneous recurrence relation</strong>)
+<script type="math/tex; ">
+a_{n}=c_{1} a_{n-1}+c_{2} a_{n-2}+\cdots+c_{k} a_{n-k}
+</script>
+&#x5229;&#x7528;&#x4E4B;&#x524D;&#x7684;&#x77E5;&#x8BC6;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x6C42;&#x51FA;&#x5176;&#x89E3;<script type="math/tex; ">\left\{a_{n}^{(h)}\right\}</script></p>
+<p>&#x90A3;&#x4E48;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x975E;&#x9F50;&#x6B21;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x901A;&#x89E3;</p>
+<p><script type="math/tex; ">
+\left\{a_{n}^{(p)}+a_{n}^{(h)}\right\}
+</script></p>
+<blockquote>
+<p><strong>&#x8BC1;&#x660E;</strong>&#xFF1A;</p>
+<p>&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x89E3;<script type="math/tex; ">\left\{a_{n}^{(p)}\right\}</script>&#x4EE5;&#x53CA;&#x901A;&#x89E3;&#x7684;&#x67D0;&#x79CD;&#x5F62;&#x5F0F;<script type="math/tex; ">\left\{b_{n}\right\}</script>
+<script type="math/tex; ">
+> a_{n}^{(p)}=c_{1} a_{n-1}^{(p)}+c_{2} a_{n-2}^{(p)}+\dots+c_{k} a_{n-k}^{(p)}+F(n)
+> </script></p>
+<p><script type="math/tex; ">
+> b_{n}=c_{1} b_{n-1}+c_{2} b_{n-2}+\cdots+c_{k} b_{n-k}+F(n)
+> </script></p>
+<p>&#x505A;&#x5DEE;&#xFF1A;
+<script type="math/tex; ">
+> b_{n}-a_{n}^{(p)}=c_{1}\left(b_{n-1}-a_{n-1}^{(p)}\right)+c_{2}\left(b_{n-2}-a_{n-2}^{(p)}\right)+\cdots+c_{k}\left(b_{n-k}-a_{n-k}^{(p)}\right)
+> </script>
+&#x7531;&#x6B64;&#x6CE8;&#x610F;&#x5230;<script type="math/tex; ">\left\{b_{n}-a_{n}^{(p)}\right\}</script>&#x662F;&#x76F8;&#x4F34;&#x7684;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x901A;&#x89E3;&#xFF0C;&#x5373;<script type="math/tex; ">\left\{a_{n}^{(h)}\right\}</script></p>
+<p>&#x7531;&#x89E3;&#x7684;&#x552F;&#x4E00;&#x6027;&#x77E5;&#xFF1A;<script type="math/tex; ">b_{n}-a_{n}^{(p)} = a_{n}^{(h)}</script>&#xFF0C;&#x5373;&#xFF1A;
+<script type="math/tex; ">
+> b_{n}=a_{n}^{(p)}+a_{n}^{(h)}
+> </script></p>
+</blockquote>
+<p>&#x73B0;&#x5728;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x4E3A;&#x4E86;<strong>&#x9F50;&#x6B21;&#x901A;&#x89E3; + &#x975E;&#x9F50;&#x6B21;&#x7279;&#x89E3;</strong>&#x3002;&#x9F50;&#x6B21;&#x901A;&#x89E3;&#x5DF2;&#x7ECF;&#x53EF;&#x6C42;&#xFF1B;&#x5BF9;&#x4E8E;&#x7B80;&#x5355;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#xFF0C;&#x975E;&#x9F50;&#x6B21;&#x7279;&#x89E3;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x62FC;&#x51D1;&#x83B7;&#x5F97;&#xFF0C;&#x4F46;&#x662F;&#x590D;&#x6742;&#x7684;&#x5F0F;&#x5B50;&#x7279;&#x89E3;&#x5E76;&#x4E0D;&#x5BB9;&#x6613;&#x76F4;&#x63A5;&#x770B;&#x51FA;&#xFF0C;&#x7531;&#x6B64;&#x5F15;&#x51FA;&#x4E0B;&#x4E00;&#x4E2A;&#x8BDD;&#x9898;&#x2014;&#x2014;<strong>&#x7279;&#x89E3;&#x7684;&#x6C42;&#x89E3;</strong>&#x3002;</p>
+<h4 id="22-&#x6C42;&#x7279;&#x89E3;"><a name="22-&#x6C42;&#x7279;&#x89E3;" class="anchor-navigation-ex-anchor" href="#22-&#x6C42;&#x7279;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="22-&#x6C42;&#x7279;&#x89E3;" class="plugin-anchor" href="#22-&#x6C42;&#x7279;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 &#x6C42;&#x7279;&#x89E3;</h4>
+<p>&#x7814;&#x7A76;<script type="math/tex; ">F(n)</script>
+<script type="math/tex; ">
+F(n)=\left(b_{t} n^{t}+b_{t-1} n^{t-1}+\cdots+b_{1} n+b_{0}\right) s^{n}
+</script>
+&#x6B64;&#x65F6;&#x53C8;&#x5206;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<h5 id="&#x60C5;&#x51B5;1--s&#x4E0D;&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;"><a name="&#x60C5;&#x51B5;1--s&#x4E0D;&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;" class="anchor-navigation-ex-anchor" href="#&#x60C5;&#x51B5;1--s&#x4E0D;&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x60C5;&#x51B5;1--s&#x4E0D;&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;" class="plugin-anchor" href="#&#x60C5;&#x51B5;1--s&#x4E0D;&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60C5;&#x51B5;1  s&#x4E0D;&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;</h5>
+<p>&#x6B64;&#x65F6;&#x6709;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#x7684;&#x7279;&#x89E3;&#xFF1A;
+<script type="math/tex; ">
+\left(p_{t} n^{t}+p_{t-1} n^{t-1}+\cdots+p_{1} n+p_{0}\right) s^{n}
+</script></p>
+<h5 id="&#x60C5;&#x51B5;2--s&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;"><a name="&#x60C5;&#x51B5;2--s&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;" class="anchor-navigation-ex-anchor" href="#&#x60C5;&#x51B5;2--s&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x60C5;&#x51B5;2--s&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;" class="plugin-anchor" href="#&#x60C5;&#x51B5;2--s&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60C5;&#x51B5;2  s&#x662F;&#x76F8;&#x4F34;&#x9F50;&#x6B21;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#x7684;&#x6839;</h5>
+<p>&#x5047;&#x8BBE;&#x6B64;&#x6839;&#x7684;&#x91CD;&#x6570;&#x4E3A;<script type="math/tex; ">m</script>&#xFF0C;&#x5219;&#x6709;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#x7684;&#x7279;&#x89E3;&#xFF1A;
+<script type="math/tex; ">
+n^{m}\left(p_{t} n^{t}+p_{t-1} n^{t-1}+\cdots+p_{1} n+p_{0}\right) s^{n}
+</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01 Deeper Discussion About Recurrence Relations","level":"9.1","depth":1,"previous":{"title":"To be added...","level":"8.1","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon","mathjax"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/iamncj"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"Donate","title":"","wechat":"https://gitee.com/iamncj/Picture_Bed/raw/master/Money_Tips/Wechat_QR.PNG","wechatText":""},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"iamNCJ","repo":"Discrete_Mathematics_Explained_in_Detail","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"NCJ","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Discrete Mathematics Explained in Detail","language":"en","links":{"sidebar":{"DM Explained in Detail":"https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail","Personal Blog":"https://iamncj.github.io"}},"gitbook":"3.2.3","description":"Explained discrete mathematics in detail!"},"file":{"path":"CH08_Advanced_Counting_Techniques/CH08_01_Deeper_Discussion_About_Recurrence_Relations.md","mtime":"2019-05-03T03:49:24.086Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-04T13:45:13.203Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
