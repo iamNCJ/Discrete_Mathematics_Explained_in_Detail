@@ -20,7 +20,7 @@
 
 ### GitBook
 
-为了提升阅读效果，已将本仓库中的文章使用GitBook部署到GitHub Pages上，直接访问[https://iamncj.github.io/Discrete_Mathematics_Explained_in_Detail/](https://iamncj.github.io/Discrete_Mathematics_Explained_in_Detail/)阅读即可
+为了提升阅读效果，已将本仓库中的文章使用GitBook部署到GitHub Pages上，直接访问[https://ncj.wiki/Discrete_Mathematics_Explained_in_Detail/](https://ncj.wiki/Discrete_Mathematics_Explained_in_Detail/)阅读即可
 
 ### 本地阅读
 
@@ -32,9 +32,9 @@ git clone https://github.com/iamNCJ/Discrete_Mathematics_Explained_in_Detail.git
 
 
 
-~~或者直接在[我的主页](iamncj.github.io)上阅读~~（已停止更新本项目到主页）
+~~或者直接在[我的主页](ncj.wiki)上阅读~~（已停止更新本项目到主页）
 
-[https://iamncj.github.io/tags/Discrete-Math/](https://iamncj.github.io/tags/Discrete-Math/)
+[https://ncj.wiki/tags/Discrete-Math/](https://ncj.wiki/tags/Discrete-Math/)
 
 ## 项目用途
 
