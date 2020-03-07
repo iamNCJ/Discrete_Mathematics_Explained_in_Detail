@@ -10,15 +10,12 @@ Normal Forms
 
 A **literal** is a variable or its negation.
 
-Conjunctions with literals as conjuncts are called **conjunctive clauses (clauses)**.
-
-> 命题变量及其否定统称为**文字**
+> 变量及其否定统称为**文字**，如 $p$ 和 $\neg p$
 >
-> 仅有有限个文字所构成的析取（合取）式称作**简单（合取）式**
 
-Disjunctions (conjunctions) with one or more literals as disjuncts (conjuncts) are called **disjunctive (conjunctive) clauses**.  析取（合取）子句
+Disjunctions (conjunctions) with one or more literals as disjuncts (conjuncts) are called **disjunctive (conjunctive) clauses**.  
 
-Disjunctive and conjunctive clauses are simply called clauses.
+> 由一个或多个文字所构成的析取（合取）式称作 **析取（合取）子句**
 
 ## Two Normal Forms 两类基本范式
 
@@ -26,13 +23,13 @@ Disjunctive and conjunctive clauses are simply called clauses.
 
 A formula is said to be in disjunctive normal form if it is written as a disjunction, in which all the terms are conjunctions of literals.
 
-> 由有限个简单析取式的合取构成的命题公式称为**析取范式**
+> 由有限个简单**析取式的合取**构成的命题公式称为**析取范式**，形如 $(p\land q)\lor(p\and q)$
 
 ### Conjunctive Normal Form 合取范式 CNF
 
 A compound proposition is in Conjunctive Normal Form (CNF) if it is a conjunction of disjunctions.
 
-> 由有限个简单合取式的析取构成的命题公式称为**析取范式**
+> 由有限个简单**合取式的析取**构成的命题公式称为**合取范式**，形如 $(p \lor q) \land (p \lor q)$
 
 ## Identify Normal Forms 判定范式
 
@@ -106,7 +103,7 @@ The reason why this works:
 > - simplifies the surface structure of the sentence
 > - useful to automated theorem proving
 
-$$Q_1x_1Q_2x_2...Q_nx_nB​$$
+$$Q_1x_1Q_2x_2...Q_nx_nB$$
 
 $$Q_i(i = 1,2,...,n)$$ is ∀ or ∃ and the formula B is **quantifier free**
 
