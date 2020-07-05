@@ -1,4 +1,4 @@
-# 离散数学详解Discrete_Mathematics_Explained_in_Detail
+# 离散数学详解 Discrete Mathematics Explained in Detail
 
 >  **Explain Discrete Mathematics in Detail!**
 
