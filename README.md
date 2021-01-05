@@ -20,7 +20,7 @@
 
 ### GitBook
 
-为了提升阅读效果，已将本仓库中的文章使用GitBook部署到GitHub Pages上，直接访问[https://ncj.wiki/Discrete_Mathematics_Explained_in_Detail/](https://ncj.wiki/Discrete_Mathematics_Explained_in_Detail/)阅读即可
+为了提升阅读效果，已将本仓库中的文章使用GitBook部署到GitHub Pages上，直接访问[https://ncj.wiki/Discrete_Mathematics_Explained_in_Detail/](https://iamncj.github.io/Discrete_Mathematics_Explained_in_Detail/)阅读即可
 
 ### 本地阅读
 
